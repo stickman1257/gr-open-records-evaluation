@@ -1,0 +1,197 @@
+{
+ "label": "exploratory; added after the interim results were seen, before the final data",
+ "row_label": "daycares with both carriers observed in the same months",
+ "generated": "2026-11-17 19:53",
+ "nboot": 200,
+ "confirmed_gas_meter_label": "daycares with a confirmed gas meter",
+ "definition": "treated daycare centres on the panel of building-months with both carriers observed (> 0); primary imputation settings; not the same group as 'confirmed gas meter' (>= 1 gas month with status ok)",
+ "both_carriers_same_months": {
+  "elec": {
+   "pct": -0.092847870563453,
+   "pct_ci": [
+    -0.1758451248270152,
+    -0.014998425455659103
+   ],
+   "att_log": -0.09744511477683664,
+   "ci_log": [
+    -0.1933968114270307,
+    -0.015112039289152297
+   ],
+   "n_treated": 92,
+   "n_control": 29,
+   "support_rows": 0.8654545454545455,
+   "pretrend_p": 0.6743512598195593,
+   "nboot": 200,
+   "median_bld_pct": -0.060613369875045175,
+   "status": "ok",
+   "season": {
+    "heating_nov_mar": -0.061268694876630336,
+    "cooling_jun_sep": -0.14734461090571604,
+    "shoulder_apr_may_oct": -0.048212088633530326
+   }
+  },
+  "gas": {
+   "pct": 0.0719119634972647,
+   "pct_ci": [
+    -0.06801411716515271,
+    0.24112150201881533
+   ],
+   "att_log": 0.0694439356729847,
+   "ci_log": [
+    -0.07043761158417605,
+    0.2160154079720932
+   ],
+   "n_treated": 92,
+   "n_control": 29,
+   "support_rows": 0.8654545454545455,
+   "pretrend_p": 0.08609314942135408,
+   "nboot": 200,
+   "median_bld_pct": 0.05605054703081214,
+   "status": "ok",
+   "season": {
+    "heating_nov_mar": -0.041944441634340746,
+    "cooling_jun_sep": 0.20822862173476753,
+    "shoulder_apr_may_oct": 0.07291260969250435
+   }
+  },
+  "total": {
+   "pct": 0.0004876706453387225,
+   "pct_ci": [
+    -0.08397064715043467,
+    0.09402409245799226
+   ],
+   "att_log": 0.00048755177265516237,
+   "ci_log": [
+    -0.0877068702258286,
+    0.08986272611378388
+   ],
+   "n_treated": 92,
+   "n_control": 29,
+   "support_rows": 0.8654545454545455,
+   "pretrend_p": 0.2270776822438794,
+   "nboot": 200,
+   "median_bld_pct": -0.0024383461344404944,
+   "status": "ok",
+   "season": {
+    "heating_nov_mar": -0.07532226417888632,
+    "cooling_jun_sep": 0.06872235730942222,
+    "shoulder_apr_may_oct": 0.050480608489435586
+   }
+  }
+ },
+ "elec_all_months": {
+  "confirmed_gas_meter": {
+   "pct": -0.13009233991312807,
+   "pct_ci": [
+    -0.22398093491409776,
+    -0.035912442496282115
+   ],
+   "att_log": -0.1393682107977076,
+   "ci_log": [
+    -0.2535781906910489,
+    -0.03657316121012523
+   ],
+   "n_treated": 103,
+   "n_control": 46,
+   "support_rows": 0.8551779935275081,
+   "nboot": 200,
+   "median_bld_pct": -0.05036585244718694,
+   "status": "ok",
+   "description": "treated daycares with >= 1 gas month with status ok (group of the level comparison)"
+  },
+  "no_confirmed_gas_meter": {
+   "pct": -0.2318922403540249,
+   "pct_ci": [
+    -0.33335626047958555,
+    -0.15794705759277905
+   ],
+   "att_log": -0.2638252436382482,
+   "ci_log": [
+    -0.40549949941891705,
+    -0.1719123897482881
+   ],
+   "n_treated": 66,
+   "n_control": 46,
+   "support_rows": 0.928030303030303,
+   "nboot": 200,
+   "median_bld_pct": -0.18870566541389622,
+   "status": "ok",
+   "description": "treated daycares without any gas month with status ok"
+  },
+  "both_carriers_same_months_sample": {
+   "pct": -0.07175874908609747,
+   "pct_ci": [
+    -0.14490389401649062,
+    0.010721337389832497
+   ],
+   "att_log": -0.07446361132470987,
+   "ci_log": [
+    -0.15654141170323183,
+    0.010664271372451848
+   ],
+   "n_treated": 92,
+   "n_control": 46,
+   "support_rows": 0.8659420289855072,
+   "nboot": 200,
+   "median_bld_pct": -0.04025137998471329,
+   "status": "ok",
+   "description": "treated daycares of the both-carriers same-month sample (total-energy sample)"
+  },
+  "not_in_both_carriers_sample": {
+   "pct": -0.2800865538756545,
+   "pct_ci": [
+    -0.39106537658294127,
+    -0.19236850922981252
+   ],
+   "att_log": -0.32862428791447074,
+   "ci_log": [
+    -0.4960443677456452,
+    -0.2136494002747038
+   ],
+   "n_treated": 77,
+   "n_control": 46,
+   "support_rows": 0.9047619047619048,
+   "nboot": 200,
+   "median_bld_pct": -0.18699327984685388,
+   "status": "ok",
+   "description": "all other treated daycares of the electricity sample"
+  }
+ },
+ "pre_level_kwh_m2_month": {
+  "elec": 5.311587905212228,
+  "gas": 10.003197734309328,
+  "gas_share_of_total": 0.6561050281496661,
+  "n_buildings": 92
+ },
+ "works_text_share": {
+  "n": 92,
+  "boiler": 0.44565217391304346,
+  "hvac_replacement": 0.782608695652174,
+  "heat_source_change_stated": 0.021739130434782608,
+  "electric_capacity_upgrade": 0.05434782608695652,
+  "instant_water_heater": 0.09782608695652174,
+  "renewable_entry": 0.21739130434782608
+ },
+ "building_level": {
+  "n": 92,
+  "corr_elec_gas": -0.03977703395410354,
+  "share_elec_down_gas_up": 0.3695652173913043,
+  "share_both_down": 0.2608695652173913
+ },
+ "total_energy_rule": {
+  "rule": "main text only if >= 30 treated buildings and >= 10 gas-metered control-pool buildings in the fit",
+  "n_treated": 92,
+  "n_control": 29,
+  "condition_treated_ge30": true,
+  "condition_control_ge10": true,
+  "main_text": true,
+  "checked_on": "both_carriers_same_months.total of this file",
+  "a_total_energy_json": {
+   "n_treated": 93,
+   "n_control": 30,
+   "main_text": true
+  },
+  "agrees_with_a_total_energy_json": false,
+  "note": "a_total_energy.json counts the pooled total-energy row (carrier_frame 'total': zero-gas months kept); small differences in n_control are possible"
+ }
+}

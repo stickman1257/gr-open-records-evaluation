@@ -1,0 +1,252 @@
+{
+ "label": "post-hoc (added 11/16 after the final run)",
+ "generated": "2026-11-17 19:58",
+ "definition": "POST-HOC (added 11/16 after the final run; PI message 2026-11-16 ~02:35 KST). Outlier filter that does not condition on the\noutcome period. Robustness only: no headline number and no pre-specified rule is changed; s04_analysis is imported, not modified.\n\nBackground. `s04_analysis.jumpy_buildings` (rows `imputation_drop_jumpy`, `imputation_health_drop_jumpy` of G7_imputation.csv; D21)\nflags a building if ANY observed electricity month is > 3 x its own median or < median / 3, where both the median and the months\nare taken over every observed month: pre-construction, construction and post-completion months (and, for control-pool buildings,\nbulk-file months at or after their own start). A retrofit that lowers consumption, or a building emptied during the works, can\ntherefore put the building into the flagged set: the filter conditions on the outcome.\n\nHere: the same rule (k = 3, own median, electricity, kWh > 0) on PRE months only\n  treated buildings        months before the recorded construction start (phase == 'pre' in s04_analysis.load(): ym < start_ym)\n  control-pool buildings   months before their own recorded start (same phase definition)\nA building with no pre month is never flagged (as in the original rule a building without months is not flagged).\nThen the headline imputation ATT is re-estimated without the flagged buildings, with the settings of `imputation_health_only`\n(uses = health centres) and `imputation_use` (pooled): s04_analysis.imputation_did(fe='use', drop=flagged), IMP_NBOOT_HEAD\n(default 1,000) bootstrap draws for both samples. For reference the original all-month rule is re-estimated with the same number\nof draws (G7 holds it with IMP_NBOOT = 200 draws), and the unfiltered headline is copied from results/G7_imputation.json.\n\nDecomposition of the original flags (headline treated buildings = treated buildings of the unfiltered headline sample):\noffending months = months outside [median / 3, 3 x median] with the ALL-month median (the original rule), classified by phase.\n  only_post            every offending month lies after completion\n  only_constr          every offending month lies in the construction period\n  only_constr_or_post  no offending month lies before the start (includes the two rows above and mixtures of them)\n  any_pre              at least one offending month lies before the start\n  not_flagged_by_pre_rule = flagged by the original rule but not by the pre-only rule (pre-only median); differs from\n                            only_constr_or_post because the median changes when it is taken over pre months only.\n\nOutputs: results/a_jump_pre.csv (one row per sample x filter), results/a_jump_pre.json (rows + counts + decomposition).\nNo network. About 3 minutes with 1,000 draws.",
+ "k": 3.0,
+ "nboot": 1000,
+ "panel_sha256": "46e6f285b3d11a89f422c7bb4e3bbd0e52f376779a84b08cece6d41e6388a420",
+ "n_buildings_flagged_any_role": {
+  "original_all_months": 563,
+  "pre_months_only": 329,
+  "both": 325,
+  "pre_only_not_original": 4
+ },
+ "samples": {
+  "health_centre": {
+   "uses": [
+    "보건"
+   ],
+   "rows": {
+    "pre_months_only": {
+     "sample": "health_centre",
+     "filter": "pre_months_only",
+     "label": "post-hoc (added 11/16 after the final run)",
+     "pct": -0.23190637691542482,
+     "pct_lo": -0.2959378165761066,
+     "pct_hi": -0.16234692425214015,
+     "att_log": -0.263843648206242,
+     "ci_log_lo": -0.35088859799772576,
+     "ci_log_hi": -0.17715125497222858,
+     "n_treated": 182,
+     "n_control": 122,
+     "support_rows": 1.0,
+     "pretrend_p": 0.7306048599950902,
+     "pretrend_leads_log": [
+      0.004359801110090993,
+      -0.016503543287639755
+     ],
+     "nboot": 1000,
+     "nboot_ok": 1000,
+     "n_treated_flagged": 128,
+     "n_control_flagged": 119,
+     "median_bld_pct": -0.18457417809201215,
+     "anticipation_gap": -0.03637211417755816
+    },
+    "original_all_months": {
+     "sample": "health_centre",
+     "filter": "original_all_months",
+     "label": "post-hoc (added 11/16 after the final run)",
+     "pct": -0.06982915936303657,
+     "pct_lo": -0.14322557303962824,
+     "pct_hi": 0.007426957377610011,
+     "att_log": -0.07238701009590452,
+     "ci_log_lo": -0.15458060744579347,
+     "ci_log_hi": 0.007399513329745961,
+     "n_treated": 86,
+     "n_control": 71,
+     "support_rows": 1.0,
+     "pretrend_p": 0.8678834224884852,
+     "pretrend_leads_log": [
+      0.01599106960223368,
+      0.006669579037282358
+     ],
+     "nboot": 1000,
+     "nboot_ok": 1000,
+     "n_treated_flagged": 224,
+     "n_control_flagged": 170,
+     "median_bld_pct": -0.05327668100445404,
+     "anticipation_gap": -0.028698234207921964
+    },
+    "none_headline_G7": {
+     "sample": "health_centre",
+     "filter": "none_headline_G7",
+     "label": "final run (G7_imputation.json), copied for reference",
+     "pct": -0.18203791931330038,
+     "pct_lo": -0.241190858360669,
+     "pct_hi": -0.11304100272191475,
+     "att_log": -0.20093929958259762,
+     "n_treated": 310,
+     "n_control": 241,
+     "support_rows": 1.0,
+     "pretrend_p": 0.3804210910471304,
+     "nboot": 1000,
+     "n_treated_flagged": 0,
+     "n_control_flagged": 0
+    }
+   },
+   "treated_flags": {
+    "n_headline_treated": 310,
+    "n_flagged_original": 224,
+    "n_flagged_pre_rule": 128,
+    "only_post": 22,
+    "only_constr": 29,
+    "only_constr_or_post": 71,
+    "constr_and_post_no_pre": 20,
+    "any_pre": 153,
+    "any_post": 149,
+    "any_constr": 145,
+    "not_flagged_by_pre_rule": 98,
+    "flagged_by_pre_rule_not_original": 2,
+    "offending_months_by_phase": {
+     "pre": 909,
+     "post": 876,
+     "constr": 200
+    },
+    "offending_low_vs_high": {
+     "below_median_over_k": 913,
+     "n": 1985
+    },
+    "median_pre_months_per_headline_treated": 21.0,
+    "note": "phases by the recorded dates: pre = before the start month, constr = start..completion month, post = after completion; offending months use the all-month median (original rule)",
+    "post_offending_months_low": 709,
+    "post_offending_months_high": 167
+   },
+   "control_flags": {
+    "n_headline_control": 241,
+    "n_flagged_original": 170,
+    "n_flagged_pre_rule": 119,
+    "not_flagged_by_pre_rule": 52
+   },
+   "G7_drop_jumpy_200_draws": {
+    "pct": -0.06982915936303657,
+    "pct_ci": [
+     -0.14417922217886026,
+     -0.003642527608830659
+    ],
+    "n_treated": 86,
+    "n_control": 71,
+    "pretrend_p": 0.8678834224884852,
+    "nboot": 200
+   }
+  },
+  "pooled": {
+   "uses": [
+    "보건",
+    "어린이집"
+   ],
+   "rows": {
+    "pre_months_only": {
+     "sample": "pooled",
+     "filter": "pre_months_only",
+     "label": "post-hoc (added 11/16 after the final run)",
+     "pct": -0.21213800160232354,
+     "pct_lo": -0.2607017385454985,
+     "pct_hi": -0.16068015043988093,
+     "att_log": -0.2384323333980797,
+     "ci_log_lo": -0.3020538380321528,
+     "ci_log_hi": -0.1751634180358545,
+     "n_treated": 324,
+     "n_control": 155,
+     "support_rows": 0.9467455621301775,
+     "pretrend_p": 0.18520086100264538,
+     "pretrend_leads_log": [
+      0.028367382660780704,
+      0.010573206248568758
+     ],
+     "nboot": 1000,
+     "nboot_ok": 1000,
+     "n_treated_flagged": 155,
+     "n_control_flagged": 132,
+     "median_bld_pct": -0.1383274812550096,
+     "anticipation_gap": -0.04624234810348299
+    },
+    "original_all_months": {
+     "sample": "pooled",
+     "filter": "original_all_months",
+     "label": "post-hoc (added 11/16 after the final run)",
+     "pct": -0.061826618648940346,
+     "pct_lo": -0.11204067686383701,
+     "pct_hi": -0.015563890632792066,
+     "att_log": -0.06382050553135242,
+     "ci_log_lo": -0.11882934431824821,
+     "ci_log_hi": -0.015686279537819092,
+     "n_treated": 189,
+     "n_control": 92,
+     "support_rows": 0.9268077601410935,
+     "pretrend_p": 0.3798553141040749,
+     "pretrend_leads_log": [
+      0.017430777554257534,
+      -0.007883682961957298
+     ],
+     "nboot": 1000,
+     "nboot_ok": 1000,
+     "n_treated_flagged": 290,
+     "n_control_flagged": 195,
+     "median_bld_pct": -0.05327668100263938,
+     "anticipation_gap": -0.042490750338041734
+    },
+    "none_headline_G7": {
+     "sample": "pooled",
+     "filter": "none_headline_G7",
+     "label": "final run (G7_imputation.json), copied for reference",
+     "pct": -0.17689936337198198,
+     "pct_lo": -0.22583355890908186,
+     "pct_hi": -0.12745770201055717,
+     "att_log": -0.1946768055522305,
+     "n_treated": 479,
+     "n_control": 287,
+     "support_rows": 0.958899338209683,
+     "pretrend_p": 0.8239398050090959,
+     "nboot": 1000,
+     "n_treated_flagged": 0,
+     "n_control_flagged": 0
+    }
+   },
+   "treated_flags": {
+    "n_headline_treated": 479,
+    "n_flagged_original": 290,
+    "n_flagged_pre_rule": 155,
+    "only_post": 36,
+    "only_constr": 46,
+    "only_constr_or_post": 102,
+    "constr_and_post_no_pre": 20,
+    "any_pre": 188,
+    "any_post": 189,
+    "any_constr": 182,
+    "not_flagged_by_pre_rule": 137,
+    "flagged_by_pre_rule_not_original": 2,
+    "offending_months_by_phase": {
+     "pre": 1087,
+     "post": 1066,
+     "constr": 259
+    },
+    "offending_low_vs_high": {
+     "below_median_over_k": 1106,
+     "n": 2412
+    },
+    "median_pre_months_per_headline_treated": 21.0,
+    "note": "phases by the recorded dates: pre = before the start month, constr = start..completion month, post = after completion; offending months use the all-month median (original rule)",
+    "post_offending_months_low": 855,
+    "post_offending_months_high": 211
+   },
+   "control_flags": {
+    "n_headline_control": 287,
+    "n_flagged_original": 195,
+    "n_flagged_pre_rule": 132,
+    "not_flagged_by_pre_rule": 64
+   },
+   "G7_drop_jumpy_200_draws": {
+    "pct": -0.061826618648940346,
+    "pct_ci": [
+     -0.11109873654768687,
+     -0.014859946216174036
+    ],
+    "n_treated": 189,
+    "n_control": 92,
+    "pretrend_p": 0.3798553141040749,
+    "nboot": 200
+   }
+  }
+ },
+ "runtime_s": 19.0
+}

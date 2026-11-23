@@ -1,0 +1,9 @@
+data/
+__pycache__/
+*.pyc
+*.npz
+*.npy
+results/log_*
+.DS_Store
+paper/figs/
+paper/appendix_D_r3.tex

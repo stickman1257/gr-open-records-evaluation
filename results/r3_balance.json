@@ -1,0 +1,114 @@
+{
+ "label": "post hoc (Energy Policy review R3, E3d)",
+ "coverage": [
+  {
+   "cohort": 20211,
+   "n_treated": 12,
+   "treated_with_early": 2,
+   "controls_b1": 231,
+   "controls_with_early": 0
+  },
+  {
+   "cohort": 20220,
+   "n_treated": 88,
+   "treated_with_early": 42,
+   "controls_b1": 225,
+   "controls_with_early": 0
+  },
+  {
+   "cohort": 20221,
+   "n_treated": 96,
+   "treated_with_early": 78,
+   "controls_b1": 231,
+   "controls_with_early": 0
+  },
+  {
+   "cohort": 20230,
+   "n_treated": 16,
+   "treated_with_early": 14,
+   "controls_b1": 231,
+   "controls_with_early": 0
+  },
+  {
+   "cohort": 20231,
+   "n_treated": 51,
+   "treated_with_early": 48,
+   "controls_b1": 230,
+   "controls_with_early": 0
+  },
+  {
+   "cohort": 20240,
+   "n_treated": 35,
+   "treated_with_early": 35,
+   "controls_b1": 228,
+   "controls_with_early": 228
+  },
+  {
+   "cohort": 20241,
+   "n_treated": 12,
+   "treated_with_early": 11,
+   "controls_b1": 231,
+   "controls_with_early": 230
+  }
+ ],
+ "trajectory_B3": {
+  "att_log": -0.15307483117722834,
+  "pct": -0.1419344906433272,
+  "flags": {
+   "20211": "early_dropped",
+   "20220": "early_dropped",
+   "20221": "early_dropped",
+   "20230": "early_dropped",
+   "20231": "early_dropped"
+  },
+  "ess": 116.53528653408691,
+  "n_pos_controls": 232,
+  "w_max_share": 0.033380477043635566,
+  "treated_means": [
+   2005.348387096774,
+   5.322693578939232,
+   0.14838709677419354,
+   0.3387096774193548,
+   11.049726496816797,
+   2.0502243001538387,
+   10.827183686689386
+  ],
+  "pct_ci": [
+   -0.21475344357545711,
+   -0.05295333531028845
+  ],
+  "nboot": 500
+ },
+ "B1_on_v3": {
+  "att_log": -0.17618802289892754,
+  "pct": -0.16153968122450735,
+  "flags": {},
+  "ess": 120.73012114659144,
+  "n_pos_controls": 232,
+  "w_max_share": 0.03390943731610319,
+  "treated_means": [
+   2005.348387096774,
+   5.322693578939232,
+   0.14838709677419354,
+   0.3387096774193548,
+   11.049726496816797,
+   2.0502243001538387,
+   10.827183686689386
+  ],
+  "pct_ci": [
+   -0.2342251726322243,
+   -0.07469801449073732
+  ],
+  "nboot": 500
+ },
+ "covariates": [
+  "built year",
+  "log floor area",
+  "coldest zone",
+  "southern zone",
+  "mean s-12..s-4",
+  "seasonality s-15..s-4",
+  "mean s-24..s-13"
+ ],
+ "runtime_min": 0.1
+}

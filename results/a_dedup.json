@@ -1,0 +1,30 @@
+{
+ "generated": "2026-11-17 19:53",
+ "rule": "Records of data/processed/analysis_buildings.csv with the same building-register key (reg_pk, non-null) are the same building selected more than once. The earliest record is kept (earliest selection year; on a tie the earliest start_ym; then pid) with its role, start and end; the later records are dropped. Before this rule a re-selected building entered the control pool twice and months after its first recorded start counted as untreated.",
+ "records_before": 1039,
+ "records_after": 1008,
+ "records_dropped": 31,
+ "physical_buildings_with_more_than_one_record": 30,
+ "records_of_those_buildings": 61,
+ "by_roles_of_building": {
+  "aux_2023+control": 18,
+  "control+control": 10,
+  "aux_2023+control+control": 1,
+  "treated+treated": 1
+ },
+ "dropped_by_role": {
+  "control": 30,
+  "treated": 1
+ },
+ "dropped_grade_A_by_use": {
+  "보건|control": 25,
+  "보건|treated": 1,
+  "어린이집|control": 4
+ },
+ "kept_by_role": {
+  "treated": 667,
+  "aux_2023": 179,
+  "control": 162
+ },
+ "note": "declared as a change made after the interim results were seen (PLAN.md, 11/14 02:19, D23)"
+}

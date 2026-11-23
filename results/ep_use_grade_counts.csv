@@ -1,0 +1,21 @@
+facility_type,selection_years,records,matched,grade_A,grade_B,grade_C,definition
+daycare,2021-22,716,639,288,14,337,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+daycare,2023,126,113,50,4,59,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+daycare,2024-25,63,59,36,1,22,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+health_centre,2021-22,692,619,430,16,173,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+health_centre,2023,192,173,126,2,45,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+health_centre,2024-25,326,287,199,8,80,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+other,2021-22,58,53,0,0,53,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+other,2023,97,77,0,0,77,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+other,2024-25,121,107,0,0,107,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+senior_centre,2021-22,24,22,0,0,22,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+senior_centre,2023,445,416,292,11,113,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+senior_centre,2024-25,1014,943,660,13,270,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+daycare,all,905,811,374,19,418,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+health_centre,all,1210,1079,755,26,298,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+other,all,276,237,0,0,237,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+senior_centre,all,1483,1381,952,24,405,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+all,2021-22,1490,1333,718,30,585,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+all,2023,860,779,468,17,294,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+all,2024-25,1524,1396,895,22,479,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade
+all,all,3874,3508,2081,69,1358,facility type from the listed name (s02_link.use_class); grades after s02_link.regrade; unmatched records have no grade

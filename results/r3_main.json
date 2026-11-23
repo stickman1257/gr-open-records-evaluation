@@ -1,0 +1,467 @@
+{
+ "label": "post hoc (Energy Policy review R3; rules recorded in commit e580a0f before the run)",
+ "n_headline_treated": 310,
+ "event_long_sigungu": {
+  "cluster": "sigungu",
+  "n_clusters": 112,
+  "n_treated": 310,
+  "n_control": 241,
+  "support_share": 1.0,
+  "n_obs": 96546,
+  "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+  "crit": 1.9815667570749007,
+  "post_1_12": {
+   "theta_log": -0.17736446507608844,
+   "se_log": 0.055844160606942556,
+   "pct": -0.1625255013135255,
+   "pct_ci": [
+    -0.2502559499613052,
+    -0.0645293738390268
+   ],
+   "bins": [
+    "ev_1_3",
+    "ev_4_6",
+    "ev_7_9",
+    "ev_10_12"
+   ]
+  },
+  "post_13_24": {
+   "theta_log": -0.15625651020796438,
+   "se_log": 0.06886218805959919,
+   "pct": -0.14466024115041365,
+   "pct_ci": [
+    -0.2537626254066422,
+    -0.0196067257184247
+   ],
+   "bins": [
+    "ev_13_15",
+    "ev_16_18",
+    "ev_19_21",
+    "ev_22_24"
+   ]
+  },
+  "pretrend": {
+   "leads": [
+    "ev_-36_-34",
+    "ev_-33_-31",
+    "ev_-30_-28",
+    "ev_-27_-25",
+    "ev_-24_-22",
+    "ev_-21_-19",
+    "ev_-18_-16",
+    "ev_-15_-13",
+    "ev_-12_-10",
+    "ev_-9_-7"
+   ],
+   "q": 10,
+   "wald": 10.12370125847395,
+   "p_F": 0.43770161926866563,
+   "p_chi2": 0.4297084570314695
+  },
+  "lead_slope_per_3m": {
+   "g": 0.007647858507513164,
+   "se": 0.005216528106550624
+  },
+  "trend_adjusted": {
+   "distance_3m": 6.909677419354838,
+   "mean_construction_months": 9.229032258064516,
+   "median_construction_months": 9.0,
+   "slope_per_3m": {
+    "g": 0.007647858507513164,
+    "se": 0.005216528106550624
+   },
+   "bias_log": 0.052844235235784506,
+   "theta_adj_log": -0.23020870031187293,
+   "se_log": 0.06693182876817216,
+   "pct": -0.20563219960522428,
+   "pct_ci": [
+    -0.3043012808775333,
+    -0.09296914747811524
+   ]
+  },
+  "own_rm": {
+   "median_construction_months_inclusive": 10.0,
+   "gap_bins": 3,
+   "adjacent": {
+    "steps": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "breakdown_last_excluding_zero": 0.1,
+    "breakdown_first_including_zero": 0.11,
+    "identified_set_breakdown": 0.5407758354651164
+   },
+   "gap_3_bins": {
+    "steps": [
+     5,
+     6,
+     7,
+     8
+    ],
+    "breakdown_last_excluding_zero": 0.05,
+    "breakdown_first_including_zero": 0.06,
+    "identified_set_breakdown": 0.2911869883273704
+   }
+  }
+ },
+ "event_long_pid": {
+  "cluster": "pid",
+  "n_clusters": 551,
+  "n_treated": 310,
+  "n_control": 241,
+  "support_share": 1.0,
+  "n_obs": 96546,
+  "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+  "crit": 1.9642865509120817,
+  "post_1_12": {
+   "theta_log": -0.17736446507608844,
+   "se_log": 0.04398490171768574,
+   "pct": -0.1625255013135255,
+   "pct_ci": [
+    -0.23184474856901982,
+    -0.08695080240145925
+   ],
+   "bins": [
+    "ev_1_3",
+    "ev_4_6",
+    "ev_7_9",
+    "ev_10_12"
+   ]
+  },
+  "post_13_24": {
+   "theta_log": -0.15625651020796438,
+   "se_log": 0.05664713160408957,
+   "pct": -0.14466024115041365,
+   "pct_ci": [
+    -0.23473087448685104,
+    -0.043988475847249076
+   ],
+   "bins": [
+    "ev_13_15",
+    "ev_16_18",
+    "ev_19_21",
+    "ev_22_24"
+   ]
+  },
+  "pretrend": {
+   "leads": [
+    "ev_-36_-34",
+    "ev_-33_-31",
+    "ev_-30_-28",
+    "ev_-27_-25",
+    "ev_-24_-22",
+    "ev_-21_-19",
+    "ev_-18_-16",
+    "ev_-15_-13",
+    "ev_-12_-10",
+    "ev_-9_-7"
+   ],
+   "q": 10,
+   "wald": 14.267160714211945,
+   "p_F": 0.16461898692770177,
+   "p_chi2": 0.1611506426199053
+  },
+  "lead_slope_per_3m": {
+   "g": 0.0069426780239423376,
+   "se": 0.005262186838573143
+  },
+  "trend_adjusted": {
+   "distance_3m": 6.909677419354838,
+   "mean_construction_months": 9.229032258064516,
+   "median_construction_months": 9.0,
+   "slope_per_3m": {
+    "g": 0.0069426780239423376,
+    "se": 0.005262186838573143
+   },
+   "bias_log": 0.04797166557188544,
+   "theta_adj_log": -0.22533613064797386,
+   "se_log": 0.05790478844906931,
+   "pct": -0.20175214191000268,
+   "pct_ci": [
+    -0.2875729284746187,
+    -0.10559316396981222
+   ]
+  }
+ },
+ "single_post_sigungu": {
+  "theta_log": -0.1766136117884321,
+  "se_log": 0.05047910269284601,
+  "pct": -0.16189644469779851,
+  "pct_ci": [
+   -0.24167355787300393,
+   -0.0737266559767974
+  ],
+  "n_treated": 310,
+  "n_control": 241,
+  "cluster": "sigungu"
+ },
+ "single_post_pid": {
+  "theta_log": -0.1766136117884321,
+  "se_log": 0.04222050800803558,
+  "pct": -0.16189644469779851,
+  "pct_ci": [
+   -0.2285988850433085,
+   -0.08942629743330632
+  ],
+  "n_treated": 310,
+  "n_control": 241,
+  "cluster": "pid"
+ },
+ "imputation_w12": {
+  "n_treated": 310,
+  "n_control": 241,
+  "att_log": -0.20093929958259762,
+  "pct": -0.18203791931330038,
+  "trend_att_log": -0.007611304421215663,
+  "trend_pct": -0.007582411793718324,
+  "gamma_per_year": -0.09824484286343313,
+  "n_clusters_sig": 112,
+  "ci_plain_pid": [
+   -0.24145840335628055,
+   -0.11818122935475517
+  ],
+  "nboot_plain_pid": 1000,
+  "se_log_plain_pid": 0.03956209871438378,
+  "ci_plain_sig": [
+   -0.2647290626099771,
+   -0.09824129616055421
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.05128754484203033,
+  "ci_trend_pid": [
+   -0.2544788292583,
+   0.37208677624989184
+  ],
+  "nboot_trend_pid": 1000,
+  "se_log_trend_pid": 0.157563215635288,
+  "ci_trend_sig": [
+   -0.3097604977196675,
+   0.5026739030350162
+  ],
+  "nboot_trend_sig": 1000,
+  "se_log_trend_sig": 0.2058407044602067
+ },
+ "imputation_full": {
+  "n_treated": 307,
+  "n_control": 241,
+  "att_log": -0.18559224201298113,
+  "pct": -0.1693877852955461,
+  "trend_att_log": -0.2476503834762589,
+  "trend_pct": -0.21936718229340502,
+  "gamma_per_year": 0.02656294607963529,
+  "n_clusters_sig": 112,
+  "ci_plain_pid": [
+   -0.23540169201795813,
+   -0.10545452306781544
+  ],
+  "nboot_plain_pid": 1000,
+  "se_log_plain_pid": 0.039998255322064406,
+  "ci_plain_sig": [
+   -0.2599444707084001,
+   -0.08459550366156043
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.05366151191524684,
+  "ci_trend_pid": [
+   -0.2985132050211532,
+   -0.12799112740026164
+  ],
+  "nboot_trend_pid": 1000,
+  "se_log_trend_pid": 0.05537218954002778,
+  "ci_trend_sig": [
+   -0.3105445034367017,
+   -0.10887791511072076
+  ],
+  "nboot_trend_sig": 1000,
+  "se_log_trend_sig": 0.06421792666535832
+ },
+ "subsample_sizes": {
+  "clean_elec_heat_no_renewable": 172,
+  "clean_plus_no_boiler": 82,
+  "boiler_entry": 176,
+  "no_boiler_entry": 134,
+  "elec_heat": 249,
+  "no_renewable": 219,
+  "single_meter_no_annex": 290
+ },
+ "shared_meter_flags": {
+  "multi_record_months": 3,
+  "annex_buildings": 17,
+  "either": 20,
+  "controls_flagged": 16
+ },
+ "sub_clean_elec_heat_no_renewable": {
+  "n_treated": 172,
+  "n_control": 241,
+  "att_log": -0.2181079971509427,
+  "pct": -0.19596139690089753,
+  "trend_att_log": 0.2410742839266336,
+  "trend_pct": 0.27261556667849285,
+  "gamma_per_year": -0.23206368053203116,
+  "n_clusters_sig": 96,
+  "ci_plain_sig": [
+   -0.2844358570472283,
+   -0.10759058535458954
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.056830030983840936
+ },
+ "sub_clean_plus_no_boiler": {
+  "n_treated": 82,
+  "n_control": 241,
+  "att_log": -0.2622614225481016,
+  "pct": -0.23069011753246083,
+  "trend_att_log": -0.2044462859268754,
+  "trend_pct": -0.1849014769966636,
+  "gamma_per_year": -0.029014758434246453,
+  "n_clusters_sig": 88,
+  "ci_plain_sig": [
+   -0.3287985428190674,
+   -0.13339198314039313
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.0647201865210786
+ },
+ "sub_boiler_entry": {
+  "n_treated": 176,
+  "n_control": 241,
+  "att_log": -0.17965976363556832,
+  "pct": -0.16444555093742874,
+  "trend_att_log": 0.286661435738066,
+  "trend_pct": 0.33197317861170883,
+  "gamma_per_year": -0.23926093691643469,
+  "n_clusters_sig": 103,
+  "ci_plain_sig": [
+   -0.24805256399714615,
+   -0.06698737366514584
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.05523811043824309
+ },
+ "sub_no_boiler_entry": {
+  "n_treated": 134,
+  "n_control": 241,
+  "att_log": -0.22675214020045076,
+  "pct": -0.20288166860327572,
+  "trend_att_log": -0.37820192536067315,
+  "trend_pct": -0.3149078507813179,
+  "gamma_per_year": 0.07561861536450021,
+  "n_clusters_sig": 96,
+  "ci_plain_sig": [
+   -0.2965469759403846,
+   -0.10442163196074339
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.06157825952842707
+ },
+ "sub_elec_heat": {
+  "n_treated": 249,
+  "n_control": 241,
+  "att_log": -0.2595601381703532,
+  "pct": -0.2286091834332875,
+  "trend_att_log": 0.06902548813944753,
+  "trend_pct": 0.0714635184118837,
+  "gamma_per_year": -0.16625316923574648,
+  "n_clusters_sig": 108,
+  "ci_plain_sig": [
+   -0.3078241943312233,
+   -0.14911743519109766
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.05143076615081725
+ },
+ "sub_no_renewable": {
+  "n_treated": 219,
+  "n_control": 241,
+  "att_log": -0.15727121116901416,
+  "pct": -0.1455277150380182,
+  "trend_att_log": 0.07936806942521334,
+  "trend_pct": 0.08260272170796745,
+  "gamma_per_year": -0.11973728016389369,
+  "n_clusters_sig": 101,
+  "ci_plain_sig": [
+   -0.23286468670544858,
+   -0.04827618258285282
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.05516497252559605
+ },
+ "sub_single_meter_no_annex": {
+  "n_treated": 290,
+  "n_control": 227,
+  "att_log": -0.18832964298403082,
+  "pct": -0.1716583947764697,
+  "trend_att_log": 0.0038112114816480675,
+  "trend_pct": 0.003818483383444038,
+  "gamma_per_year": -0.09751859382658501,
+  "n_clusters_sig": 111,
+  "ci_plain_sig": [
+   -0.25022818377513534,
+   -0.08425134753138908
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.05157937925257205
+ },
+ "distribution": {
+  "n": 310,
+  "fall_ge30": 99,
+  "fall_ge50": 36,
+  "rise_ge30": 54,
+  "median_pct": -0.1356973490979127,
+  "buildings_with_low_post_month": 97,
+  "buildings_with_3plus_low_post_months": 49,
+  "without_fall_ge50": {
+   "n_treated": 274,
+   "n_control": 241,
+   "att_log": -0.06023677333227166,
+   "pct": -0.058458424746248294,
+   "trend_att_log": 0.19760037912363926,
+   "trend_pct": 0.21847536832083314,
+   "gamma_per_year": -0.1315409254299596,
+   "n_clusters_sig": 112,
+   "ci_plain_sig": [
+    -0.13452138397443036,
+    0.022013125148854673
+   ],
+   "nboot_plain_sig": 1000,
+   "se_log_plain_sig": 0.041861871729662256
+  },
+  "composition": {
+   "fall_ge50": {
+    "n": 36,
+    "heat_elec": 0.8611111111111112,
+    "hvac": 0.8333333333333334,
+    "boiler": 0.5277777777777778,
+    "renewable": 0.4444444444444444,
+    "low_post_months_mean": 5.805555555555555,
+    "with_3plus_low": 30
+   },
+   "fall_30_50": {
+    "n": 63,
+    "heat_elec": 0.9365079365079365,
+    "hvac": 0.8253968253968254,
+    "boiler": 0.6031746031746031,
+    "renewable": 0.30158730158730157,
+    "low_post_months_mean": 1.507936507936508,
+    "with_3plus_low": 14
+   },
+   "other": {
+    "n": 211,
+    "heat_elec": 0.7535545023696683,
+    "hvac": 0.8625592417061612,
+    "boiler": 0.5639810426540285,
+    "renewable": 0.26540284360189575,
+    "low_post_months_mean": 0.23222748815165878,
+    "with_3plus_low": 5
+   }
+  },
+  "comparison_reference": {
+   "n": 233,
+   "share_with_low_month": 0.11158798283261803,
+   "share_with_3plus_low": 0.05150214592274678
+  }
+ },
+ "runtime_min": 0.9
+}

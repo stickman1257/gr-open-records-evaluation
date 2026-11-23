@@ -1,0 +1,7017 @@
+[
+ {
+  "spec": "imputation_use",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.1946768055522305,
+  "pct": -0.17689936337198198,
+  "ci_log": [
+   -0.25596838834108804,
+   -0.13634414700963235
+  ],
+  "pct_ci": [
+   -0.22583355890908186,
+   -0.12745770201055717
+  ],
+  "att_log_rowmean": -0.1970118413078802,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 1000,
+  "n_treated": 479,
+  "n_treated_total": 479,
+  "n_control": 287,
+  "n_control_by_role": {
+   "aux_2023": 145,
+   "control": 142
+  },
+  "support_rows": 0.958899338209683,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310,
+   "어린이집": 169
+  },
+  "n_control_by_use": {
+   "보건": 241,
+   "어린이집": 46
+  },
+  "anticipation_gap": -0.04823381773960061,
+  "anticipation_gap_ci": [
+   -0.09588600843886717,
+   -0.0035344627936555327
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.006599351071559189,
+    -0.018602547738397084
+   ],
+   "se": [
+    0.022332722076028842,
+    0.03146893600360357
+   ],
+   "p": [
+    0.7676910542258131,
+    0.5546012184986319
+   ],
+   "p_joint": 0.8239398050090959,
+   "wald": 0.38741367233904983,
+   "df": [
+    2,
+    765
+   ],
+   "n_obs": 18244,
+   "n_buildings": 766,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.2647127213950509,
+    "n_bld": 72.0,
+    "weight": 0.15031315240083507
+   },
+   {
+    "cohort": 20230,
+    "att": -0.13597314148045975,
+    "n_bld": 34.0,
+    "weight": 0.0709812108559499
+   },
+   {
+    "cohort": 20240,
+    "att": -0.2857019469961244,
+    "n_bld": 57.0,
+    "weight": 0.11899791231732777
+   },
+   {
+    "cohort": 20241,
+    "att": -0.0803635936112645,
+    "n_bld": 30.0,
+    "weight": 0.06263048016701461
+   },
+   {
+    "cohort": 20211,
+    "att": 0.04804381379064259,
+    "n_bld": 16.0,
+    "weight": 0.033402922755741124
+   },
+   {
+    "cohort": 20220,
+    "att": -0.13169612026814934,
+    "n_bld": 120.0,
+    "weight": 0.25052192066805845
+   },
+   {
+    "cohort": 20221,
+    "att": -0.23891356606729633,
+    "n_bld": 150.0,
+    "weight": 0.31315240083507306
+   }
+  ],
+  "pretrend_p": 0.8239398050090959,
+  "nboot": 1000,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.12769728152018148,
+  "median_bld_pct": -0.11988023265967784,
+  "median_bld_pct_ci": [
+   -0.1690299830554438,
+   -0.08026101273963904
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.13747898613134546,
+    "pct": -0.12844733550205478,
+    "pct_ci": [
+     -0.19006435197708182,
+     -0.06436778417510947
+    ],
+    "n_treated": 479,
+    "n_rows": 2288,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.28080177288288233,
+    "pct": -0.2448219825944895,
+    "pct_ci": [
+     -0.300404347960018,
+     -0.18091092623489136
+    ],
+    "n_treated": 465,
+    "n_rows": 1841,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.1779462626504227,
+    "pct": -0.1630126002352027,
+    "pct_ci": [
+     -0.2167595643223732,
+     -0.10498812822955694
+    ],
+    "n_treated": 468,
+    "n_rows": 1377,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.12844733550205478,
+  "pct_heating_nov_mar_lo": -0.19006435197708182,
+  "pct_heating_nov_mar_hi": -0.06436778417510947,
+  "pct_cooling_jun_sep": -0.2448219825944895,
+  "pct_cooling_jun_sep_lo": -0.300404347960018,
+  "pct_cooling_jun_sep_hi": -0.18091092623489136,
+  "pct_shoulder_apr_may_oct": -0.1630126002352027,
+  "pct_shoulder_apr_may_oct_lo": -0.2167595643223732,
+  "pct_shoulder_apr_may_oct_hi": -0.10498812822955694
+ },
+ {
+  "spec": "imputation_health_only",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.20093929958259762,
+  "pct": -0.18203791931330038,
+  "ci_log": [
+   -0.2760049934986837,
+   -0.11995652403405237
+  ],
+  "pct_ci": [
+   -0.241190858360669,
+   -0.11304100272191475
+  ],
+  "att_log_rowmean": -0.2008899881231106,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 1000,
+  "n_treated": 310,
+  "n_treated_total": 310,
+  "n_control": 241,
+  "n_control_by_role": {
+   "control": 127,
+   "aux_2023": 114
+  },
+  "support_rows": 1.0,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310
+  },
+  "n_control_by_use": {
+   "보건": 241
+  },
+  "anticipation_gap": -0.03153820910121959,
+  "anticipation_gap_ci": [
+   -0.09254944681646352,
+   0.02906873370863099
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.03950123923541483,
+    -0.05158160746218438
+   ],
+   "se": [
+    0.029698865036361054,
+    0.04150392515979135
+   ],
+   "p": [
+    0.1840501493598353,
+    0.21446641536801242
+   ],
+   "p_joint": 0.3804210910471304,
+   "wald": 1.9363536365687566,
+   "df": [
+    2,
+    550
+   ],
+   "n_obs": 14842,
+   "n_buildings": 551,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.25709674918895276,
+    "n_bld": 51.0,
+    "weight": 0.16451612903225807
+   },
+   {
+    "cohort": 20230,
+    "att": -0.18179696448840374,
+    "n_bld": 16.0,
+    "weight": 0.05161290322580645
+   },
+   {
+    "cohort": 20240,
+    "att": -0.34494960135501723,
+    "n_bld": 35.0,
+    "weight": 0.11290322580645161
+   },
+   {
+    "cohort": 20241,
+    "att": -0.03463371414650862,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   },
+   {
+    "cohort": 20220,
+    "att": -0.12978284294672252,
+    "n_bld": 88.0,
+    "weight": 0.2838709677419355
+   },
+   {
+    "cohort": 20221,
+    "att": -0.25179914301676926,
+    "n_bld": 96.0,
+    "weight": 0.3096774193548387
+   },
+   {
+    "cohort": 20211,
+    "att": 0.15099594132924257,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   }
+  ],
+  "pretrend_p": 0.3804210910471304,
+  "nboot": 1000,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.14780549990347558,
+  "median_bld_pct": -0.1374011258087865,
+  "median_bld_pct_ci": [
+   -0.20572850326216563,
+   -0.07204864259803867
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.16419053476096102,
+    "pct": -0.15141967757287722,
+    "pct_ci": [
+     -0.22404917036559624,
+     -0.06789595890859812
+    ],
+    "n_treated": 310,
+    "n_rows": 1550,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2500663848502249,
+    "pct": -0.22125091578590494,
+    "pct_ci": [
+     -0.29655353114239946,
+     -0.1322706293571092
+    ],
+    "n_treated": 310,
+    "n_rows": 1235,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.1970213822285921,
+    "pct": -0.17882692538545852,
+    "pct_ci": [
+     -0.24683774437372286,
+     -0.09737280161744444
+    ],
+    "n_treated": 310,
+    "n_rows": 929,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.15141967757287722,
+  "pct_heating_nov_mar_lo": -0.22404917036559624,
+  "pct_heating_nov_mar_hi": -0.06789595890859812,
+  "pct_cooling_jun_sep": -0.22125091578590494,
+  "pct_cooling_jun_sep_lo": -0.29655353114239946,
+  "pct_cooling_jun_sep_hi": -0.1322706293571092,
+  "pct_shoulder_apr_may_oct": -0.17882692538545852,
+  "pct_shoulder_apr_may_oct_lo": -0.24683774437372286,
+  "pct_shoulder_apr_may_oct_hi": -0.09737280161744444
+ },
+ {
+  "spec": "imputation_daycare_only",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.19032802173794872,
+  "pct": -0.17331208214414828,
+  "ci_log": [
+   -0.2928576731123808,
+   -0.11049507950208876
+  ],
+  "pct_ci": [
+   -0.25387167273697564,
+   -0.10460926405310733
+  ],
+  "att_log_rowmean": -0.18897420889347455,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 1000,
+  "n_treated": 169,
+  "n_treated_total": 169,
+  "n_control": 46,
+  "n_control_by_role": {
+   "aux_2023": 31,
+   "control": 15
+  },
+  "support_rows": 0.883629191321499,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 169
+  },
+  "n_control_by_use": {
+   "어린이집": 46
+  },
+  "anticipation_gap": -0.07872600673905761,
+  "anticipation_gap_ci": [
+   -0.15134244267723607,
+   -0.008296618512972344
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.05600549353929153,
+    0.04571002063847575
+   ],
+   "se": [
+    0.03149096438839917,
+    0.045278654446774175
+   ],
+   "p": [
+    0.07674768328662389,
+    0.31386207878845773
+   ],
+   "p_joint": 0.19002722749814482,
+   "wald": 3.347081184362176,
+   "df": [
+    2,
+    214
+   ],
+   "n_obs": 3402,
+   "n_buildings": 215,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.2832086539336322,
+    "n_bld": 21.0,
+    "weight": 0.1242603550295858
+   },
+   {
+    "cohort": 20230,
+    "att": -0.09524085435238983,
+    "n_bld": 18.0,
+    "weight": 0.10650887573964497
+   },
+   {
+    "cohort": 20241,
+    "att": -0.21755323205556773,
+    "n_bld": 18.0,
+    "weight": 0.10650887573964497
+   },
+   {
+    "cohort": 20240,
+    "att": -0.15874268767820962,
+    "n_bld": 22.0,
+    "weight": 0.1301775147928994
+   },
+   {
+    "cohort": 20211,
+    "att": -0.2608125688083968,
+    "n_bld": 4.0,
+    "weight": 0.023668639053254437
+   },
+   {
+    "cohort": 20220,
+    "att": -0.1369526503658373,
+    "n_bld": 32.0,
+    "weight": 0.1893491124260355
+   },
+   {
+    "cohort": 20221,
+    "att": -0.21610529944264495,
+    "n_bld": 54.0,
+    "weight": 0.31952662721893493
+   }
+  ],
+  "pretrend_p": 0.19002722749814482,
+  "nboot": 1000,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.11179050044411525,
+  "median_bld_pct": -0.1057684210035551,
+  "median_bld_pct_ci": [
+   -0.17183065371726114,
+   -0.041052949493935564
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.09342279226073219,
+    "pct": -0.08919166383586963,
+    "pct_ci": [
+     -0.18603889205325352,
+     0.004199564240030984
+    ],
+    "n_treated": 169,
+    "n_rows": 738,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.3439487158243874,
+    "pct": -0.2910347141825652,
+    "pct_ci": [
+     -0.39072455396911654,
+     -0.18897987166382502
+    ],
+    "n_treated": 155,
+    "n_rows": 606,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.14135367456479603,
+    "pct": -0.13181779657028403,
+    "pct_ci": [
+     -0.2157838377415645,
+     -0.0393444674653477
+    ],
+    "n_treated": 158,
+    "n_rows": 448,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.08919166383586963,
+  "pct_heating_nov_mar_lo": -0.18603889205325352,
+  "pct_heating_nov_mar_hi": 0.004199564240030984,
+  "pct_cooling_jun_sep": -0.2910347141825652,
+  "pct_cooling_jun_sep_lo": -0.39072455396911654,
+  "pct_cooling_jun_sep_hi": -0.18897987166382502,
+  "pct_shoulder_apr_may_oct": -0.13181779657028403,
+  "pct_shoulder_apr_may_oct_lo": -0.2157838377415645,
+  "pct_shoulder_apr_may_oct_hi": -0.0393444674653477
+ },
+ {
+  "spec": "imputation_controls_2024_25_only",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.20685377029306354,
+  "pct": -0.18686145369440277,
+  "ci_log": [
+   -0.2619026561502396,
+   -0.1384482605386758
+  ],
+  "pct_ci": [
+   -0.23041406548094923,
+   -0.1292916999178777
+  ],
+  "att_log_rowmean": -0.21084932011761726,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 479,
+  "n_treated_total": 479,
+  "n_control": 142,
+  "n_control_by_role": {
+   "control": 142
+  },
+  "support_rows": 0.958899338209683,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310,
+   "어린이집": 169
+  },
+  "n_control_by_use": {
+   "보건": 127,
+   "어린이집": 15
+  },
+  "anticipation_gap": -0.045384766507425595,
+  "anticipation_gap_ci": [
+   -0.09305288928284589,
+   0.005033985422455671
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.015394467288250606,
+    -0.03073104676449021
+   ],
+   "se": [
+    0.02224002508912522,
+    0.03290239823717607
+   ],
+   "p": [
+    0.48907309301192714,
+    0.35066425600872997
+   ],
+   "p_joint": 0.6466964276813877,
+   "wald": 0.8723697468784882,
+   "df": [
+    2,
+    620
+   ],
+   "n_obs": 12289,
+   "n_buildings": 621,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.23430162178041125,
+    "n_bld": 72.0,
+    "weight": 0.15031315240083507
+   },
+   {
+    "cohort": 20230,
+    "att": -0.1566769892730467,
+    "n_bld": 34.0,
+    "weight": 0.0709812108559499
+   },
+   {
+    "cohort": 20240,
+    "att": -0.2524532255427033,
+    "n_bld": 57.0,
+    "weight": 0.11899791231732777
+   },
+   {
+    "cohort": 20241,
+    "att": -0.055840275767650736,
+    "n_bld": 30.0,
+    "weight": 0.06263048016701461
+   },
+   {
+    "cohort": 20211,
+    "att": -0.004015472625005757,
+    "n_bld": 16.0,
+    "weight": 0.033402922755741124
+   },
+   {
+    "cohort": 20220,
+    "att": -0.17136721715732503,
+    "n_bld": 120.0,
+    "weight": 0.25052192066805845
+   },
+   {
+    "cohort": 20221,
+    "att": -0.26795243878041025,
+    "n_bld": 150.0,
+    "weight": 0.31315240083507306
+   }
+  ],
+  "pretrend_p": 0.6466964276813877,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.1406264128194554,
+  "median_bld_pct": -0.13118617121510434,
+  "median_bld_pct_ci": [
+   -0.1781927665157944,
+   -0.07975842272060851
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1339567137485179,
+    "pct": -0.1253720768518144,
+    "pct_ci": [
+     -0.1825826875468589,
+     -0.052619464561513674
+    ],
+    "n_treated": 479,
+    "n_rows": 2288,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.3122365421113766,
+    "pct": -0.2681915957515001,
+    "pct_ci": [
+     -0.32293771946003,
+     -0.19944430217802367
+    ],
+    "n_treated": 465,
+    "n_rows": 1841,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.1937178805690364,
+    "pct": -0.17610969305104773,
+    "pct_ci": [
+     -0.21971263625596804,
+     -0.11643078365019
+    ],
+    "n_treated": 468,
+    "n_rows": 1377,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.1253720768518144,
+  "pct_heating_nov_mar_lo": -0.1825826875468589,
+  "pct_heating_nov_mar_hi": -0.052619464561513674,
+  "pct_cooling_jun_sep": -0.2681915957515001,
+  "pct_cooling_jun_sep_lo": -0.32293771946003,
+  "pct_cooling_jun_sep_hi": -0.19944430217802367,
+  "pct_shoulder_apr_may_oct": -0.17610969305104773,
+  "pct_shoulder_apr_may_oct_lo": -0.21971263625596804,
+  "pct_shoulder_apr_may_oct_hi": -0.11643078365019
+ },
+ {
+  "spec": "imputation_drop_renewable",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.16264271034779884,
+  "pct": -0.15010520721106702,
+  "ci_log": [
+   -0.23916968140529732,
+   -0.10488491624358892
+  ],
+  "pct_ci": [
+   -0.2127187159562085,
+   -0.09957185872338647
+  ],
+  "att_log_rowmean": -0.16069587867612023,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 344,
+  "n_treated_total": 344,
+  "n_control": 198,
+  "n_control_by_role": {
+   "aux_2023": 101,
+   "control": 97
+  },
+  "support_rows": 0.9553831231813773,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 219,
+   "어린이집": 125
+  },
+  "n_control_by_use": {
+   "보건": 166,
+   "어린이집": 32
+  },
+  "anticipation_gap": -0.06024838064190532,
+  "anticipation_gap_ci": [
+   -0.1223488962962337,
+   -0.009180821448107078
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.00349050955633866,
+    -0.009009602468140447
+   ],
+   "se": [
+    0.026618479423034584,
+    0.039358404044689384
+   ],
+   "p": [
+    0.8957203750212503,
+    0.8190239882945667
+   ],
+   "p_joint": 0.9728793547748464,
+   "wald": 0.054993189909041014,
+   "df": [
+    2,
+    541
+   ],
+   "n_obs": 12602,
+   "n_buildings": 542,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.2300473475624002,
+    "n_bld": 52.0,
+    "weight": 0.1511627906976744
+   },
+   {
+    "cohort": 20230,
+    "att": -0.04759512632787261,
+    "n_bld": 26.0,
+    "weight": 0.0755813953488372
+   },
+   {
+    "cohort": 20240,
+    "att": -0.2790737378041122,
+    "n_bld": 45.0,
+    "weight": 0.1308139534883721
+   },
+   {
+    "cohort": 20241,
+    "att": -0.17384178114660867,
+    "n_bld": 24.0,
+    "weight": 0.06976744186046512
+   },
+   {
+    "cohort": 20220,
+    "att": -0.06661889029829493,
+    "n_bld": 85.0,
+    "weight": 0.24709302325581395
+   },
+   {
+    "cohort": 20221,
+    "att": -0.205515335892722,
+    "n_bld": 101.0,
+    "weight": 0.2936046511627907
+   },
+   {
+    "cohort": 20211,
+    "att": 0.03645623157730371,
+    "n_bld": 11.0,
+    "weight": 0.03197674418604651
+   }
+  ],
+  "pretrend_p": 0.9728793547748464,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.10430167394526835,
+  "median_bld_pct": -0.09904653776498584,
+  "median_bld_pct_ci": [
+   -0.15559109733200327,
+   -0.05481877150795922
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.11085418978535015,
+    "pct": -0.10493075034595101,
+    "pct_ci": [
+     -0.17661058824191167,
+     -0.025685917710090322
+    ],
+    "n_treated": 344,
+    "n_rows": 1637,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2544845784219201,
+    "pct": -0.22468399040504594,
+    "pct_ci": [
+     -0.30648880211908125,
+     -0.14271264976420006
+    ],
+    "n_treated": 333,
+    "n_rows": 1317,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.12162749411226131,
+    "pct": -0.11452184709908175,
+    "pct_ci": [
+     -0.18450593322744935,
+     -0.04666327751011734
+    ],
+    "n_treated": 335,
+    "n_rows": 986,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.10493075034595101,
+  "pct_heating_nov_mar_lo": -0.17661058824191167,
+  "pct_heating_nov_mar_hi": -0.025685917710090322,
+  "pct_cooling_jun_sep": -0.22468399040504594,
+  "pct_cooling_jun_sep_lo": -0.30648880211908125,
+  "pct_cooling_jun_sep_hi": -0.14271264976420006,
+  "pct_shoulder_apr_may_oct": -0.11452184709908175,
+  "pct_shoulder_apr_may_oct_lo": -0.18450593322744935,
+  "pct_shoulder_apr_may_oct_hi": -0.04666327751011734
+ },
+ {
+  "spec": "imputation_donut3",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.19607616589027452,
+  "pct": -0.17805037223119846,
+  "ci_log": [
+   -0.26532617346757015,
+   -0.11793049216454328
+  ],
+  "pct_ci": [
+   -0.233044251442438,
+   -0.11124217389954072
+  ],
+  "att_log_rowmean": -0.1959420077563595,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 465,
+  "n_treated_total": 479,
+  "n_control": 287,
+  "n_control_by_role": {
+   "aux_2023": 145,
+   "control": 142
+  },
+  "support_rows": 0.9477594613420014,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310,
+   "어린이집": 155
+  },
+  "n_control_by_use": {
+   "보건": 241,
+   "어린이집": 46
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.006599351071559189,
+    -0.018602547738397084
+   ],
+   "se": [
+    0.022332722076028842,
+    0.03146893600360357
+   ],
+   "p": [
+    0.7676910542258131,
+    0.5546012184986319
+   ],
+   "p_joint": 0.8239398050090959,
+   "wald": 0.38741367233904983,
+   "df": [
+    2,
+    765
+   ],
+   "n_obs": 18244,
+   "n_buildings": 766,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.27377225627594437,
+    "n_bld": 72.0,
+    "weight": 0.15483870967741936
+   },
+   {
+    "cohort": 20230,
+    "att": -0.12050169750050482,
+    "n_bld": 34.0,
+    "weight": 0.07311827956989247
+   },
+   {
+    "cohort": 20240,
+    "att": -0.2785844755604582,
+    "n_bld": 57.0,
+    "weight": 0.12258064516129032
+   },
+   {
+    "cohort": 20241,
+    "att": -0.026588182004836015,
+    "n_bld": 16.0,
+    "weight": 0.034408602150537634
+   },
+   {
+    "cohort": 20211,
+    "att": 0.07417581098284835,
+    "n_bld": 16.0,
+    "weight": 0.034408602150537634
+   },
+   {
+    "cohort": 20220,
+    "att": -0.1305630924029364,
+    "n_bld": 120.0,
+    "weight": 0.25806451612903225
+   },
+   {
+    "cohort": 20221,
+    "att": -0.24387515226961468,
+    "n_bld": 150.0,
+    "weight": 0.3225806451612903
+   }
+  ],
+  "pretrend_p": 0.8239398050090959,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.12396688499930833,
+  "median_bld_pct": -0.11659090550884332,
+  "median_bld_pct_ci": [
+   -0.16121744736949817,
+   -0.05256644824376866
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1387632704106466,
+    "pct": -0.12956593843182307,
+    "pct_ci": [
+     -0.19965360222905126,
+     -0.05986272732618769
+    ],
+    "n_treated": 465,
+    "n_rows": 1626,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2803294770933744,
+    "pct": -0.24446523095702333,
+    "pct_ci": [
+     -0.30262354404543834,
+     -0.18081976033028757
+    ],
+    "n_treated": 458,
+    "n_rows": 1338,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.1642343448672992,
+    "pct": -0.1514568531527003,
+    "pct_ci": [
+     -0.21816974303930192,
+     -0.0781183454402904
+    ],
+    "n_treated": 461,
+    "n_rows": 1118,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.12956593843182307,
+  "pct_heating_nov_mar_lo": -0.19965360222905126,
+  "pct_heating_nov_mar_hi": -0.05986272732618769,
+  "pct_cooling_jun_sep": -0.24446523095702333,
+  "pct_cooling_jun_sep_lo": -0.30262354404543834,
+  "pct_cooling_jun_sep_hi": -0.18081976033028757,
+  "pct_shoulder_apr_may_oct": -0.1514568531527003,
+  "pct_shoulder_apr_may_oct_lo": -0.21816974303930192,
+  "pct_shoulder_apr_may_oct_hi": -0.0781183454402904
+ },
+ {
+  "spec": "imputation_use_sido",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.15337228103673797,
+  "pct": -0.14218968415301703,
+  "ci_log": [
+   -0.25233323696403304,
+   -0.08767145727391688
+  ],
+  "pct_ci": [
+   -0.22301422545737248,
+   -0.08393820727262002
+  ],
+  "att_log_rowmean": -0.15496382161157582,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 423,
+  "n_treated_total": 479,
+  "n_control": 287,
+  "n_control_by_role": {
+   "aux_2023": 145,
+   "control": 142
+  },
+  "support_rows": 0.8336816440264716,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 293,
+   "어린이집": 130
+  },
+  "n_control_by_use": {
+   "보건": 241,
+   "어린이집": 46
+  },
+  "anticipation_gap": -0.025686225736959892,
+  "anticipation_gap_ci": [
+   -0.0712566057475735,
+   0.04004883985180583
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.004097689011978618,
+    -0.003828783663531448
+   ],
+   "se": [
+    0.024996167189071865,
+    0.034676032150410485
+   ],
+   "p": [
+    0.8698274301771642,
+    0.9121085409203264
+   ],
+   "p_joint": 0.9217386924167551,
+   "wald": 0.1630043827458779,
+   "df": [
+    2,
+    765
+   ],
+   "n_obs": 18011,
+   "n_buildings": 766,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.16807149236504362,
+    "n_bld": 62.0,
+    "weight": 0.14657210401891252
+   },
+   {
+    "cohort": 20230,
+    "att": -0.003186160064487521,
+    "n_bld": 24.0,
+    "weight": 0.05673758865248227
+   },
+   {
+    "cohort": 20240,
+    "att": -0.12013149349468749,
+    "n_bld": 46.0,
+    "weight": 0.10874704491725769
+   },
+   {
+    "cohort": 20241,
+    "att": -0.09406157632452516,
+    "n_bld": 18.0,
+    "weight": 0.0425531914893617
+   },
+   {
+    "cohort": 20211,
+    "att": 0.08814939291917123,
+    "n_bld": 16.0,
+    "weight": 0.037825059101654845
+   },
+   {
+    "cohort": 20220,
+    "att": -0.1627731876045656,
+    "n_bld": 113.0,
+    "weight": 0.26713947990543735
+   },
+   {
+    "cohort": 20221,
+    "att": -0.20956553835523264,
+    "n_bld": 144.0,
+    "weight": 0.3404255319148936
+   }
+  ],
+  "pretrend_p": 0.9217386924167551,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.11226780759975467,
+  "median_bld_pct": -0.10619514228834614,
+  "median_bld_pct_ci": [
+   -0.1629077145688268,
+   -0.03128070594581289
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1380413968834492,
+    "pct": -0.12893736827882518,
+    "pct_ci": [
+     -0.20833259855629527,
+     -0.06276166762375579
+    ],
+    "n_treated": 419,
+    "n_rows": 2007,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.18375582841843127,
+    "pct": -0.1678610362904187,
+    "pct_ci": [
+     -0.2744301733082197,
+     -0.09123955820490226
+    ],
+    "n_treated": 405,
+    "n_rows": 1574,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.1413434981616175,
+    "pct": -0.13180896155319521,
+    "pct_ci": [
+     -0.22596621593041655,
+     -0.06853876084481658
+    ],
+    "n_treated": 417,
+    "n_rows": 1206,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.12893736827882518,
+  "pct_heating_nov_mar_lo": -0.20833259855629527,
+  "pct_heating_nov_mar_hi": -0.06276166762375579,
+  "pct_cooling_jun_sep": -0.1678610362904187,
+  "pct_cooling_jun_sep_lo": -0.2744301733082197,
+  "pct_cooling_jun_sep_hi": -0.09123955820490226,
+  "pct_shoulder_apr_may_oct": -0.13180896155319521,
+  "pct_shoulder_apr_may_oct_lo": -0.22596621593041655,
+  "pct_shoulder_apr_may_oct_hi": -0.06853876084481658
+ },
+ {
+  "spec": "imputation_use_minctrl5",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.20218646341311583,
+  "pct": -0.18305741616312476,
+  "ci_log": [
+   -0.26286784367704447,
+   -0.1298507778186342
+  ],
+  "pct_ci": [
+   -0.2311565018729419,
+   -0.12177352798691365
+  ],
+  "att_log_rowmean": -0.1999254567765254,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 465,
+  "n_treated_total": 479,
+  "n_control": 287,
+  "n_control_by_role": {
+   "aux_2023": 145,
+   "control": 142
+  },
+  "support_rows": 0.9320794148380356,
+  "min_ctrl": 5,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310,
+   "어린이집": 155
+  },
+  "n_control_by_use": {
+   "보건": 241,
+   "어린이집": 46
+  },
+  "anticipation_gap": -0.04823381773960061,
+  "anticipation_gap_ci": [
+   -0.0910487694594238,
+   -0.0036596268277196953
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.006599351071559189,
+    -0.018602547738397084
+   ],
+   "se": [
+    0.022332722076028842,
+    0.03146893600360357
+   ],
+   "p": [
+    0.7676910542258131,
+    0.5546012184986319
+   ],
+   "p_joint": 0.8239398050090959,
+   "wald": 0.38741367233904983,
+   "df": [
+    2,
+    765
+   ],
+   "n_obs": 18244,
+   "n_buildings": 766,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.2715218540121211,
+    "n_bld": 72.0,
+    "weight": 0.15483870967741936
+   },
+   {
+    "cohort": 20230,
+    "att": -0.13597314148045975,
+    "n_bld": 34.0,
+    "weight": 0.07311827956989247
+   },
+   {
+    "cohort": 20240,
+    "att": -0.3185622299847566,
+    "n_bld": 57.0,
+    "weight": 0.12258064516129032
+   },
+   {
+    "cohort": 20241,
+    "att": -0.05088310982108087,
+    "n_bld": 16.0,
+    "weight": 0.034408602150537634
+   },
+   {
+    "cohort": 20211,
+    "att": 0.04804381379064259,
+    "n_bld": 16.0,
+    "weight": 0.034408602150537634
+   },
+   {
+    "cohort": 20220,
+    "att": -0.13169612026814934,
+    "n_bld": 120.0,
+    "weight": 0.25806451612903225
+   },
+   {
+    "cohort": 20221,
+    "att": -0.23891356606729633,
+    "n_bld": 150.0,
+    "weight": 0.3225806451612903
+   }
+  ],
+  "pretrend_p": 0.8239398050090959,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.13139016633434122,
+  "median_bld_pct": -0.12312441969176313,
+  "median_bld_pct_ci": [
+   -0.17309084956761678,
+   -0.06799812586321541
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1457674355435577,
+    "pct": -0.13564130107750938,
+    "pct_ci": [
+     -0.19268674958393084,
+     -0.068903995816885
+    ],
+    "n_treated": 448,
+    "n_rows": 2182,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.28080177288288233,
+    "pct": -0.2448219825944895,
+    "pct_ci": [
+     -0.29818279871513376,
+     -0.1693944740223272
+    ],
+    "n_treated": 465,
+    "n_rows": 1841,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.18103339012639288,
+    "pct": -0.165592502741153,
+    "pct_ci": [
+     -0.21777851394363756,
+     -0.09900739962278293
+    ],
+    "n_treated": 457,
+    "n_rows": 1329,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.13564130107750938,
+  "pct_heating_nov_mar_lo": -0.19268674958393084,
+  "pct_heating_nov_mar_hi": -0.068903995816885,
+  "pct_cooling_jun_sep": -0.2448219825944895,
+  "pct_cooling_jun_sep_lo": -0.29818279871513376,
+  "pct_cooling_jun_sep_hi": -0.1693944740223272,
+  "pct_shoulder_apr_may_oct": -0.165592502741153,
+  "pct_shoulder_apr_may_oct_lo": -0.21777851394363756,
+  "pct_shoulder_apr_may_oct_hi": -0.09900739962278293
+ },
+ {
+  "spec": "imputation_use_minctrl10",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.1957157038903923,
+  "pct": -0.1777540372190236,
+  "ci_log": [
+   -0.2576490123438899,
+   -0.12504847433461075
+  ],
+  "pct_ci": [
+   -0.22713354890895954,
+   -0.11754587482874179
+  ],
+  "att_log_rowmean": -0.19078962041019554,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 457,
+  "n_treated_total": 479,
+  "n_control": 287,
+  "n_control_by_role": {
+   "aux_2023": 145,
+   "control": 142
+  },
+  "support_rows": 0.9022988505747126,
+  "min_ctrl": 10,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310,
+   "어린이집": 147
+  },
+  "n_control_by_use": {
+   "보건": 241,
+   "어린이집": 46
+  },
+  "anticipation_gap": -0.04823381773960061,
+  "anticipation_gap_ci": [
+   -0.09044358425475243,
+   -0.0032152669887271054
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.006599351071559189,
+    -0.018602547738397084
+   ],
+   "se": [
+    0.022332722076028842,
+    0.03146893600360357
+   ],
+   "p": [
+    0.7676910542258131,
+    0.5546012184986319
+   ],
+   "p_joint": 0.8239398050090959,
+   "wald": 0.38741367233904983,
+   "df": [
+    2,
+    765
+   ],
+   "n_obs": 18244,
+   "n_buildings": 766,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.22834589094388652,
+    "n_bld": 72.0,
+    "weight": 0.1575492341356674
+   },
+   {
+    "cohort": 20230,
+    "att": -0.13597314148045975,
+    "n_bld": 34.0,
+    "weight": 0.07439824945295405
+   },
+   {
+    "cohort": 20240,
+    "att": -0.32113383704611853,
+    "n_bld": 53.0,
+    "weight": 0.11597374179431072
+   },
+   {
+    "cohort": 20241,
+    "att": -0.040510336212288174,
+    "n_bld": 12.0,
+    "weight": 0.0262582056892779
+   },
+   {
+    "cohort": 20211,
+    "att": 0.04804381379064259,
+    "n_bld": 16.0,
+    "weight": 0.0350109409190372
+   },
+   {
+    "cohort": 20220,
+    "att": -0.13169612026814934,
+    "n_bld": 120.0,
+    "weight": 0.26258205689277897
+   },
+   {
+    "cohort": 20221,
+    "att": -0.23891356606729633,
+    "n_bld": 150.0,
+    "weight": 0.3282275711159737
+   }
+  ],
+  "pretrend_p": 0.8239398050090959,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.11591681405066419,
+  "median_bld_pct": -0.10945069859463119,
+  "median_bld_pct_ci": [
+   -0.15896853738249983,
+   -0.05832664600190329
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1457674355435577,
+    "pct": -0.13564130107750938,
+    "pct_ci": [
+     -0.19501574185296022,
+     -0.068903995816885
+    ],
+    "n_treated": 448,
+    "n_rows": 2182,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2609469867732682,
+    "pct": -0.22967824422546346,
+    "pct_ci": [
+     -0.2898948958782458,
+     -0.1599772878811021
+    ],
+    "n_treated": 420,
+    "n_rows": 1670,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.18103339012639288,
+    "pct": -0.165592502741153,
+    "pct_ci": [
+     -0.21917563506375903,
+     -0.09823747076790712
+    ],
+    "n_treated": 457,
+    "n_rows": 1329,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.13564130107750938,
+  "pct_heating_nov_mar_lo": -0.19501574185296022,
+  "pct_heating_nov_mar_hi": -0.068903995816885,
+  "pct_cooling_jun_sep": -0.22967824422546346,
+  "pct_cooling_jun_sep_lo": -0.2898948958782458,
+  "pct_cooling_jun_sep_hi": -0.1599772878811021,
+  "pct_shoulder_apr_may_oct": -0.165592502741153,
+  "pct_shoulder_apr_may_oct_lo": -0.21917563506375903,
+  "pct_shoulder_apr_may_oct_hi": -0.09823747076790712
+ },
+ {
+  "spec": "imputation_strict_12_12",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.2022817824886844,
+  "pct": -0.18313528266386836,
+  "ci_log": [
+   -0.26717806264830235,
+   -0.13679000871167507
+  ],
+  "pct_ci": [
+   -0.23446325417185276,
+   -0.12784664849003002
+  ],
+  "att_log_rowmean": -0.205985852419492,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 353,
+  "n_treated_total": 353,
+  "n_control": 287,
+  "n_control_by_role": {
+   "aux_2023": 145,
+   "control": 142
+  },
+  "support_rows": 0.9442870632672332,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 12,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 238,
+   "어린이집": 115
+  },
+  "n_control_by_use": {
+   "보건": 241,
+   "어린이집": 46
+  },
+  "anticipation_gap": -0.04198220143144835,
+  "anticipation_gap_ci": [
+   -0.09448329548609909,
+   0.014650322599447705
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.014282237120679272,
+    -0.024942684788484954
+   ],
+   "se": [
+    0.027585485335958424,
+    0.03738930947501824
+   ],
+   "p": [
+    0.6048156415935456,
+    0.5049443566971613
+   ],
+   "p_joint": 0.7993008891778762,
+   "wald": 0.4481927509006786,
+   "df": [
+    2,
+    639
+   ],
+   "n_obs": 17145,
+   "n_buildings": 640,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.27011560799974826,
+    "n_bld": 65.0,
+    "weight": 0.18413597733711048
+   },
+   {
+    "cohort": 20230,
+    "att": 0.011204703878248415,
+    "n_bld": 12.0,
+    "weight": 0.0339943342776204
+   },
+   {
+    "cohort": 20240,
+    "att": -0.28620984283444584,
+    "n_bld": 57.0,
+    "weight": 0.16147308781869688
+   },
+   {
+    "cohort": 20241,
+    "att": -0.08011875971045641,
+    "n_bld": 30.0,
+    "weight": 0.08498583569405099
+   },
+   {
+    "cohort": 20211,
+    "att": 0.07196880923492883,
+    "n_bld": 15.0,
+    "weight": 0.042492917847025496
+   },
+   {
+    "cohort": 20220,
+    "att": -0.15069418790030817,
+    "n_bld": 98.0,
+    "weight": 0.2776203966005666
+   },
+   {
+    "cohort": 20221,
+    "att": -0.2838998557431259,
+    "n_bld": 76.0,
+    "weight": 0.21529745042492918
+   }
+  ],
+  "pretrend_p": 0.7993008891778762,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.14690642538710086,
+  "median_bld_pct": -0.13662523640421687,
+  "median_bld_pct_ci": [
+   -0.19710171837713708,
+   -0.0891373720432489
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1290110795440066,
+    "pct": -0.12103577303119917,
+    "pct_ci": [
+     -0.1856054449810396,
+     -0.05622069504333793
+    ],
+    "n_treated": 353,
+    "n_rows": 1658,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.30514823877719316,
+    "pct": -0.2629858877773873,
+    "pct_ci": [
+     -0.3368909204786613,
+     -0.1875192013659649
+    ],
+    "n_treated": 339,
+    "n_rows": 1342,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.19233759702257702,
+    "pct": -0.17497170562429087,
+    "pct_ci": [
+     -0.23719367378339085,
+     -0.11211419566039804
+    ],
+    "n_treated": 342,
+    "n_rows": 1000,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.12103577303119917,
+  "pct_heating_nov_mar_lo": -0.1856054449810396,
+  "pct_heating_nov_mar_hi": -0.05622069504333793,
+  "pct_cooling_jun_sep": -0.2629858877773873,
+  "pct_cooling_jun_sep_lo": -0.3368909204786613,
+  "pct_cooling_jun_sep_hi": -0.1875192013659649,
+  "pct_shoulder_apr_may_oct": -0.17497170562429087,
+  "pct_shoulder_apr_may_oct_lo": -0.23719367378339085,
+  "pct_shoulder_apr_may_oct_hi": -0.11211419566039804
+ },
+ {
+  "spec": "imputation_use_no_anticip_holdout",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.18542788975979912,
+  "pct": -0.16925126108781563,
+  "ci_log": [
+   -0.24597801622469903,
+   -0.12486856214003851
+  ],
+  "pct_ci": [
+   -0.2180605852830796,
+   -0.1173870962878033
+  ],
+  "att_log_rowmean": -0.18562829229527825,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 479,
+  "n_treated_total": 479,
+  "n_control": 287,
+  "n_control_by_role": {
+   "aux_2023": 145,
+   "control": 142
+  },
+  "support_rows": 0.958899338209683,
+  "min_ctrl": 1,
+  "anticip": 0,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310,
+   "어린이집": 169
+  },
+  "n_control_by_use": {
+   "보건": 241,
+   "어린이집": 46
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4",
+    "lead_-3_-1"
+   ],
+   "coef": [
+    -0.003770029471398297,
+    -0.015381908730901322,
+    -0.049805070782556
+   ],
+   "se": [
+    0.022388379746115673,
+    0.03151858264440183,
+    0.028559705753352437
+   ],
+   "p": [
+    0.8663192202098727,
+    0.625670796843218,
+    0.0815794234414959
+   ],
+   "p_joint": 0.24998097379598147,
+   "wald": 4.116885608815792,
+   "df": [
+    3,
+    765
+   ],
+   "n_obs": 19595,
+   "n_buildings": 766,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.2475540945661977,
+    "n_bld": 72.0,
+    "weight": 0.15031315240083507
+   },
+   {
+    "cohort": 20230,
+    "att": -0.15611062276784818,
+    "n_bld": 34.0,
+    "weight": 0.0709812108559499
+   },
+   {
+    "cohort": 20240,
+    "att": -0.3097653958563192,
+    "n_bld": 57.0,
+    "weight": 0.11899791231732777
+   },
+   {
+    "cohort": 20241,
+    "att": -0.12822852261501996,
+    "n_bld": 30.0,
+    "weight": 0.06263048016701461
+   },
+   {
+    "cohort": 20211,
+    "att": 0.05665861604494829,
+    "n_bld": 16.0,
+    "weight": 0.033402922755741124
+   },
+   {
+    "cohort": 20220,
+    "att": -0.11311700563801229,
+    "n_bld": 120.0,
+    "weight": 0.25052192066805845
+   },
+   {
+    "cohort": 20221,
+    "att": -0.21011544766645074,
+    "n_bld": 150.0,
+    "weight": 0.31315240083507306
+   }
+  ],
+  "pretrend_p": 0.24998097379598147,
+  "nboot": 200,
+  "fit_window": "s-12..s-1",
+  "median_bld_log": -0.10697770738011457,
+  "median_bld_pct": -0.10145429629514147,
+  "median_bld_pct_ci": [
+   -0.14623419874334087,
+   -0.059838146395259195
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.13174632710593043,
+    "pct": -0.12343667276558479,
+    "pct_ci": [
+     -0.18616109495276523,
+     -0.06201234758920582
+    ],
+    "n_treated": 479,
+    "n_rows": 2288,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2625818854199563,
+    "pct": -0.2309366132882642,
+    "pct_ci": [
+     -0.2868295677427656,
+     -0.17260612046352575
+    ],
+    "n_treated": 465,
+    "n_rows": 1841,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.17088354666237615,
+    "pct": -0.1570802714279943,
+    "pct_ci": [
+     -0.20945114434309908,
+     -0.09126928395997747
+    ],
+    "n_treated": 468,
+    "n_rows": 1377,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.12343667276558479,
+  "pct_heating_nov_mar_lo": -0.18616109495276523,
+  "pct_heating_nov_mar_hi": -0.06201234758920582,
+  "pct_cooling_jun_sep": -0.2309366132882642,
+  "pct_cooling_jun_sep_lo": -0.2868295677427656,
+  "pct_cooling_jun_sep_hi": -0.17260612046352575,
+  "pct_shoulder_apr_may_oct": -0.1570802714279943,
+  "pct_shoulder_apr_may_oct_lo": -0.20945114434309908,
+  "pct_shoulder_apr_may_oct_hi": -0.09126928395997747
+ },
+ {
+  "spec": "imputation_drop_jumpy",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.06382050553135242,
+  "pct": -0.061826618648940346,
+  "ci_log": [
+   -0.11776911436943273,
+   -0.014971461335037758
+  ],
+  "pct_ci": [
+   -0.11109873654768687,
+   -0.014859946216174036
+  ],
+  "att_log_rowmean": -0.06976508600096835,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 189,
+  "n_treated_total": 189,
+  "n_control": 92,
+  "n_control_by_role": {
+   "control": 55,
+   "aux_2023": 37
+  },
+  "support_rows": 0.9268077601410935,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 103,
+   "보건": 86
+  },
+  "n_control_by_use": {
+   "보건": 71,
+   "어린이집": 21
+  },
+  "anticipation_gap": -0.042490750338041734,
+  "anticipation_gap_ci": [
+   -0.0865990172772077,
+   -0.0022336423458213686
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.017430777554257534,
+    -0.007883682961957298
+   ],
+   "se": [
+    0.020425896016045015,
+    0.02678598188219393
+   ],
+   "p": [
+    0.39418546131190074,
+    0.7687305309376223
+   ],
+   "p_joint": 0.3798553141040749,
+   "wald": 1.942637695624148,
+   "df": [
+    2,
+    280
+   ],
+   "n_obs": 6235,
+   "n_buildings": 281,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.05151331347624593,
+    "n_bld": 30.0,
+    "weight": 0.15873015873015872
+   },
+   {
+    "cohort": 20230,
+    "att": -0.08272034726402804,
+    "n_bld": 17.0,
+    "weight": 0.08994708994708994
+   },
+   {
+    "cohort": 20241,
+    "att": 0.04674897163356659,
+    "n_bld": 16.0,
+    "weight": 0.08465608465608465
+   },
+   {
+    "cohort": 20240,
+    "att": -0.08950742516280222,
+    "n_bld": 19.0,
+    "weight": 0.10052910052910052
+   },
+   {
+    "cohort": 20211,
+    "att": -0.03396652643585118,
+    "n_bld": 8.0,
+    "weight": 0.042328042328042326
+   },
+   {
+    "cohort": 20220,
+    "att": -0.06327165263190031,
+    "n_bld": 39.0,
+    "weight": 0.20634920634920634
+   },
+   {
+    "cohort": 20221,
+    "att": -0.09030743402604426,
+    "n_bld": 60.0,
+    "weight": 0.31746031746031744
+   }
+  ],
+  "pretrend_p": 0.3798553141040749,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.054748394274279966,
+  "median_bld_pct": -0.05327668100263938,
+  "median_bld_pct_ci": [
+   -0.1260876747576557,
+   -0.013656015640450825
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.018881696855599282,
+    "pct": -0.018704554287035213,
+    "pct_ci": [
+     -0.07479023055768275,
+     0.038843607236398014
+    ],
+    "n_treated": 189,
+    "n_rows": 869,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.14817660457454088,
+    "pct": -0.1377211808896136,
+    "pct_ci": [
+     -0.2019650902885881,
+     -0.06977731394173647
+    ],
+    "n_treated": 178,
+    "n_rows": 706,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.039379151320952835,
+    "pct": -0.038613870785584536,
+    "pct_ci": [
+     -0.10108222065724326,
+     0.02121652260859075
+    ],
+    "n_treated": 180,
+    "n_rows": 527,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.018704554287035213,
+  "pct_heating_nov_mar_lo": -0.07479023055768275,
+  "pct_heating_nov_mar_hi": 0.038843607236398014,
+  "pct_cooling_jun_sep": -0.1377211808896136,
+  "pct_cooling_jun_sep_lo": -0.2019650902885881,
+  "pct_cooling_jun_sep_hi": -0.06977731394173647,
+  "pct_shoulder_apr_may_oct": -0.038613870785584536,
+  "pct_shoulder_apr_may_oct_lo": -0.10108222065724326,
+  "pct_shoulder_apr_may_oct_hi": 0.02121652260859075
+ },
+ {
+  "spec": "imputation_fit_s15_s4",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.18068759727771913,
+  "pct": -0.1653039207037943,
+  "ci_log": [
+   -0.23928514411904966,
+   -0.12578771754264442
+  ],
+  "pct_ci": [
+   -0.21280961234207796,
+   -0.11819798198458598
+  ],
+  "att_log_rowmean": -0.1818146786050283,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 473,
+  "n_treated_total": 473,
+  "n_control": 287,
+  "n_control_by_role": {
+   "aux_2023": 145,
+   "control": 142
+  },
+  "support_rows": 0.9583774250440917,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 306,
+   "어린이집": 167
+  },
+  "n_control_by_use": {
+   "보건": 241,
+   "어린이집": 46
+  },
+  "anticipation_gap": -0.03630194229862918,
+  "anticipation_gap_ci": [
+   -0.07018899385655299,
+   0.002483150563165231
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.02271476731585737,
+    0.013222673207069366
+   ],
+   "se": [
+    0.023681561444484345,
+    0.028146000807364378
+   ],
+   "p": [
+    0.3377759111199499,
+    0.6386409260853202
+   ],
+   "p_joint": 0.6151726925446733,
+   "wald": 0.972326773921875,
+   "df": [
+    2,
+    759
+   ],
+   "n_obs": 19587,
+   "n_buildings": 760,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.23429135519716285,
+    "n_bld": 70.0,
+    "weight": 0.14799154334038056
+   },
+   {
+    "cohort": 20230,
+    "att": -0.16413710549772287,
+    "n_bld": 34.0,
+    "weight": 0.07188160676532769
+   },
+   {
+    "cohort": 20240,
+    "att": -0.29724359378613835,
+    "n_bld": 57.0,
+    "weight": 0.12050739957716702
+   },
+   {
+    "cohort": 20241,
+    "att": -0.09656721485325119,
+    "n_bld": 29.0,
+    "weight": 0.0613107822410148
+   },
+   {
+    "cohort": 20211,
+    "att": 0.05676463700061266,
+    "n_bld": 16.0,
+    "weight": 0.03382663847780127
+   },
+   {
+    "cohort": 20220,
+    "att": -0.11227675204179129,
+    "n_bld": 118.0,
+    "weight": 0.24947145877378435
+   },
+   {
+    "cohort": 20221,
+    "att": -0.21074107675276132,
+    "n_bld": 149.0,
+    "weight": 0.3150105708245243
+   }
+  ],
+  "pretrend_p": 0.6151726925446733,
+  "nboot": 200,
+  "fit_window": "s-15..s-4",
+  "median_bld_log": -0.11777317629814815,
+  "median_bld_pct": -0.11110234719392098,
+  "median_bld_pct_ci": [
+   -0.14269646446601658,
+   -0.05882343035037496
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.12468989954414397,
+    "pct": -0.11722939228777252,
+    "pct_ci": [
+     -0.18498573510695726,
+     -0.06121685342832439
+    ],
+    "n_treated": 473,
+    "n_rows": 2258,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2623365613955473,
+    "pct": -0.23074792041870973,
+    "pct_ci": [
+     -0.289398716057094,
+     -0.1706977915515414
+    ],
+    "n_treated": 459,
+    "n_rows": 1817,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.16626417476827055,
+    "pct": -0.15317750449887246,
+    "pct_ci": [
+     -0.2058902040313092,
+     -0.09002298154753707
+    ],
+    "n_treated": 462,
+    "n_rows": 1359,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.11722939228777252,
+  "pct_heating_nov_mar_lo": -0.18498573510695726,
+  "pct_heating_nov_mar_hi": -0.06121685342832439,
+  "pct_cooling_jun_sep": -0.23074792041870973,
+  "pct_cooling_jun_sep_lo": -0.289398716057094,
+  "pct_cooling_jun_sep_hi": -0.1706977915515414,
+  "pct_shoulder_apr_may_oct": -0.15317750449887246,
+  "pct_shoulder_apr_may_oct_lo": -0.2058902040313092,
+  "pct_shoulder_apr_may_oct_hi": -0.09002298154753707
+ },
+ {
+  "spec": "imputation_health_controls_2024_25_only",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.19848989771310868,
+  "pct": -0.18003194574891068,
+  "ci_log": [
+   -0.27954278942131,
+   -0.11353382850851339
+  ],
+  "pct_ci": [
+   -0.24387062721535002,
+   -0.1073260019295379
+  ],
+  "att_log_rowmean": -0.1984286569930409,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 310,
+  "n_treated_total": 310,
+  "n_control": 127,
+  "n_control_by_role": {
+   "control": 127
+  },
+  "support_rows": 1.0,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310
+  },
+  "n_control_by_use": {
+   "보건": 127
+  },
+  "anticipation_gap": -0.015481415037214018,
+  "anticipation_gap_ci": [
+   -0.078356315352422,
+   0.05888943934478696
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.040444752117732595,
+    -0.04940895570101546
+   ],
+   "se": [
+    0.029770980081380734,
+    0.043439326837378306
+   ],
+   "p": [
+    0.1749982101744628,
+    0.2559855466520478
+   ],
+   "p_joint": 0.39052239264415456,
+   "wald": 1.8846013121911023,
+   "df": [
+    2,
+    436
+   ],
+   "n_obs": 9983,
+   "n_buildings": 437,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.22318241031038488,
+    "n_bld": 51.0,
+    "weight": 0.16451612903225807
+   },
+   {
+    "cohort": 20230,
+    "att": -0.16890522094347574,
+    "n_bld": 16.0,
+    "weight": 0.05161290322580645
+   },
+   {
+    "cohort": 20240,
+    "att": -0.3163777313767249,
+    "n_bld": 35.0,
+    "weight": 0.11290322580645161
+   },
+   {
+    "cohort": 20241,
+    "att": -0.016569576447735115,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   },
+   {
+    "cohort": 20220,
+    "att": -0.1496345603895404,
+    "n_bld": 88.0,
+    "weight": 0.2838709677419355
+   },
+   {
+    "cohort": 20221,
+    "att": -0.25375057204415224,
+    "n_bld": 96.0,
+    "weight": 0.3096774193548387
+   },
+   {
+    "cohort": 20211,
+    "att": 0.11273915966149299,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   }
+  ],
+  "pretrend_p": 0.39052239264415456,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.14757350595402227,
+  "median_bld_pct": -0.13720098487432364,
+  "median_bld_pct_ci": [
+   -0.20399844741006434,
+   -0.06264251194572223
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1508480185593185,
+    "pct": -0.14002161051774742,
+    "pct_ci": [
+     -0.2143810053122981,
+     -0.05480432992178896
+    ],
+    "n_treated": 310,
+    "n_rows": 1550,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.25599763501112244,
+    "pct": -0.2258562003684409,
+    "pct_ci": [
+     -0.2923761457249159,
+     -0.1435181792586947
+    ],
+    "n_treated": 310,
+    "n_rows": 1235,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.20160711097406514,
+    "pct": -0.1825839813550515,
+    "pct_ci": [
+     -0.24884431211075964,
+     -0.10271301504574293
+    ],
+    "n_treated": 310,
+    "n_rows": 929,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.14002161051774742,
+  "pct_heating_nov_mar_lo": -0.2143810053122981,
+  "pct_heating_nov_mar_hi": -0.05480432992178896,
+  "pct_cooling_jun_sep": -0.2258562003684409,
+  "pct_cooling_jun_sep_lo": -0.2923761457249159,
+  "pct_cooling_jun_sep_hi": -0.1435181792586947,
+  "pct_shoulder_apr_may_oct": -0.1825839813550515,
+  "pct_shoulder_apr_may_oct_lo": -0.24884431211075964,
+  "pct_shoulder_apr_may_oct_hi": -0.10271301504574293
+ },
+ {
+  "spec": "imputation_health_drop_renewable",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.16960354992555396,
+  "pct": -0.15600064611498432,
+  "ci_log": [
+   -0.24643093828532467,
+   -0.09026127354799415
+  ],
+  "pct_ci": [
+   -0.21841466270328724,
+   -0.08630756958064834
+  ],
+  "att_log_rowmean": -0.16958495082668312,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 219,
+  "n_treated_total": 219,
+  "n_control": 166,
+  "n_control_by_role": {
+   "control": 89,
+   "aux_2023": 77
+  },
+  "support_rows": 1.0,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 219
+  },
+  "n_control_by_use": {
+   "보건": 166
+  },
+  "anticipation_gap": -0.036887156521269115,
+  "anticipation_gap_ci": [
+   -0.11195140871940741,
+   0.04150376327414564
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.04560443906556424,
+    -0.0457944699685496
+   ],
+   "se": [
+    0.03576977583008828,
+    0.05296297172760755
+   ],
+   "p": [
+    0.20310014833037685,
+    0.38777035037414653
+   ],
+   "p_joint": 0.44270222336587006,
+   "wald": 1.6331790306250038,
+   "df": [
+    2,
+    384
+   ],
+   "n_obs": 10235,
+   "n_buildings": 385,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.25156462311428196,
+    "n_bld": 35.0,
+    "weight": 0.1598173515981735
+   },
+   {
+    "cohort": 20230,
+    "att": -0.025619213327914843,
+    "n_bld": 10.0,
+    "weight": 0.045662100456621
+   },
+   {
+    "cohort": 20240,
+    "att": -0.34339576317936016,
+    "n_bld": 29.0,
+    "weight": 0.1324200913242009
+   },
+   {
+    "cohort": 20241,
+    "att": -0.17416266406822953,
+    "n_bld": 10.0,
+    "weight": 0.045662100456621
+   },
+   {
+    "cohort": 20220,
+    "att": -0.057149755861770325,
+    "n_bld": 65.0,
+    "weight": 0.2968036529680365
+   },
+   {
+    "cohort": 20221,
+    "att": -0.22335615975909648,
+    "n_bld": 61.0,
+    "weight": 0.2785388127853881
+   },
+   {
+    "cohort": 20211,
+    "att": 0.10637112864293279,
+    "n_bld": 9.0,
+    "weight": 0.0410958904109589
+   }
+  ],
+  "pretrend_p": 0.44270222336587006,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.12618978520116222,
+  "median_bld_pct": -0.11855245479144472,
+  "median_bld_pct_ci": [
+   -0.18528660616122428,
+   -0.047758899171385316
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.14233100774876156,
+    "pct": -0.13266588534726542,
+    "pct_ci": [
+     -0.21604461875193293,
+     -0.04218013682225741
+    ],
+    "n_treated": 219,
+    "n_rows": 1095,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.22471303002796372,
+    "pct": -0.20125459818089975,
+    "pct_ci": [
+     -0.2905041709624394,
+     -0.09107522939147117
+    ],
+    "n_treated": 219,
+    "n_rows": 872,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.14197636686346013,
+    "pct": -0.1323582386601705,
+    "pct_ci": [
+     -0.2122659946017904,
+     -0.05099499074827463
+    ],
+    "n_treated": 219,
+    "n_rows": 657,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.13266588534726542,
+  "pct_heating_nov_mar_lo": -0.21604461875193293,
+  "pct_heating_nov_mar_hi": -0.04218013682225741,
+  "pct_cooling_jun_sep": -0.20125459818089975,
+  "pct_cooling_jun_sep_lo": -0.2905041709624394,
+  "pct_cooling_jun_sep_hi": -0.09107522939147117,
+  "pct_shoulder_apr_may_oct": -0.1323582386601705,
+  "pct_shoulder_apr_may_oct_lo": -0.2122659946017904,
+  "pct_shoulder_apr_may_oct_hi": -0.05099499074827463
+ },
+ {
+  "spec": "imputation_health_donut3",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.19205210422931454,
+  "pct": -0.1747361323663753,
+  "ci_log": [
+   -0.28848709735476646,
+   -0.11308687726092152
+  ],
+  "pct_ci": [
+   -0.25060352571802924,
+   -0.10692693099642514
+  ],
+  "att_log_rowmean": -0.19197780187606842,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 310,
+  "n_treated_total": 310,
+  "n_control": 241,
+  "n_control_by_role": {
+   "control": 127,
+   "aux_2023": 114
+  },
+  "support_rows": 1.0,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310
+  },
+  "n_control_by_use": {
+   "보건": 241
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.03950123923541483,
+    -0.05158160746218438
+   ],
+   "se": [
+    0.029698865036361054,
+    0.04150392515979135
+   ],
+   "p": [
+    0.1840501493598353,
+    0.21446641536801242
+   ],
+   "p_joint": 0.3804210910471304,
+   "wald": 1.9363536365687566,
+   "df": [
+    2,
+    550
+   ],
+   "n_obs": 14842,
+   "n_buildings": 551,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.24116898057354857,
+    "n_bld": 51.0,
+    "weight": 0.16451612903225807
+   },
+   {
+    "cohort": 20230,
+    "att": -0.1489325755689045,
+    "n_bld": 16.0,
+    "weight": 0.05161290322580645
+   },
+   {
+    "cohort": 20240,
+    "att": -0.33681971575500025,
+    "n_bld": 35.0,
+    "weight": 0.11290322580645161
+   },
+   {
+    "cohort": 20241,
+    "att": -0.030865413144303896,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   },
+   {
+    "cohort": 20220,
+    "att": -0.1348143940576549,
+    "n_bld": 88.0,
+    "weight": 0.2838709677419355
+   },
+   {
+    "cohort": 20221,
+    "att": -0.24380369326521023,
+    "n_bld": 96.0,
+    "weight": 0.3096774193548387
+   },
+   {
+    "cohort": 20211,
+    "att": 0.2145235955797013,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   }
+  ],
+  "pretrend_p": 0.3804210910471304,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.1349511623323379,
+  "median_bld_pct": -0.12624141702266478,
+  "median_bld_pct_ci": [
+   -0.1943833986720428,
+   -0.052864490745060055
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.15697400574722106,
+    "pct": -0.14527372350019407,
+    "pct_ci": [
+     -0.21999659160948315,
+     -0.052725433887822915
+    ],
+    "n_treated": 310,
+    "n_rows": 1158,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.25737407319384514,
+    "pct": -0.22692102845004003,
+    "pct_ci": [
+     -0.3105922720639952,
+     -0.13872629606611442
+    ],
+    "n_treated": 310,
+    "n_rows": 845,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.17719064367268075,
+    "pct": -0.1623799176684354,
+    "pct_ci": [
+     -0.2479033218354102,
+     -0.0809548741973326
+    ],
+    "n_treated": 310,
+    "n_rows": 783,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.14527372350019407,
+  "pct_heating_nov_mar_lo": -0.21999659160948315,
+  "pct_heating_nov_mar_hi": -0.052725433887822915,
+  "pct_cooling_jun_sep": -0.22692102845004003,
+  "pct_cooling_jun_sep_lo": -0.3105922720639952,
+  "pct_cooling_jun_sep_hi": -0.13872629606611442,
+  "pct_shoulder_apr_may_oct": -0.1623799176684354,
+  "pct_shoulder_apr_may_oct_lo": -0.2479033218354102,
+  "pct_shoulder_apr_may_oct_hi": -0.0809548741973326
+ },
+ {
+  "spec": "imputation_health_use_sido",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.17416043800825212,
+  "pct": -0.15983790708797763,
+  "ci_log": [
+   -0.3097638660458583,
+   -0.09013409586451047
+  ],
+  "pct_ci": [
+   -0.2663798315959507,
+   -0.08619136090451252
+  ],
+  "att_log_rowmean": -0.17446078715799437,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 293,
+  "n_treated_total": 310,
+  "n_control": 241,
+  "n_control_by_role": {
+   "control": 127,
+   "aux_2023": 114
+  },
+  "support_rows": 0.9413031771674745,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 293
+  },
+  "n_control_by_use": {
+   "보건": 241
+  },
+  "anticipation_gap": -0.027944546946940776,
+  "anticipation_gap_ci": [
+   -0.08903662199628574,
+   0.03299566448493855
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.014356377610004063,
+    -0.026698037586884354
+   ],
+   "se": [
+    0.03237737258388194,
+    0.04526080424075084
+   ],
+   "p": [
+    0.6576452050323137,
+    0.555519359054682
+   ],
+   "p_joint": 0.8402966752230032,
+   "wald": 0.34811064752526266,
+   "df": [
+    2,
+    550
+   ],
+   "n_obs": 14701,
+   "n_buildings": 551,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.18839108291876483,
+    "n_bld": 51.0,
+    "weight": 0.17406143344709898
+   },
+   {
+    "cohort": 20230,
+    "att": -0.05305418770337658,
+    "n_bld": 9.0,
+    "weight": 0.030716723549488054
+   },
+   {
+    "cohort": 20240,
+    "att": -0.12797960164931907,
+    "n_bld": 34.0,
+    "weight": 0.11604095563139932
+   },
+   {
+    "cohort": 20241,
+    "att": -0.07019617807716806,
+    "n_bld": 11.0,
+    "weight": 0.03754266211604096
+   },
+   {
+    "cohort": 20220,
+    "att": -0.16344169889832427,
+    "n_bld": 83.0,
+    "weight": 0.2832764505119454
+   },
+   {
+    "cohort": 20221,
+    "att": -0.24584330342307975,
+    "n_bld": 93.0,
+    "weight": 0.3174061433447099
+   },
+   {
+    "cohort": 20211,
+    "att": 0.05074810196687926,
+    "n_bld": 12.0,
+    "weight": 0.040955631399317405
+   }
+  ],
+  "pretrend_p": 0.8402966752230032,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.12185732040554202,
+  "median_bld_pct": -0.11472532987700212,
+  "median_bld_pct_ci": [
+   -0.20781932603013809,
+   -0.03941955720173207
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.16087920182666798,
+    "pct": -0.1486050881543255,
+    "pct_ci": [
+     -0.25995224520775473,
+     -0.06233117995062498
+    ],
+    "n_treated": 293,
+    "n_rows": 1465,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.1944424450665676,
+    "pct": -0.17670643850093215,
+    "pct_ci": [
+     -0.31671184671456654,
+     -0.08765221384953803
+    ],
+    "n_treated": 292,
+    "n_rows": 1154,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.1702467634924225,
+    "pct": -0.15654334339599396,
+    "pct_ci": [
+     -0.2705543094097451,
+     -0.0785459036510866
+    ],
+    "n_treated": 293,
+    "n_rows": 877,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.1486050881543255,
+  "pct_heating_nov_mar_lo": -0.25995224520775473,
+  "pct_heating_nov_mar_hi": -0.06233117995062498,
+  "pct_cooling_jun_sep": -0.17670643850093215,
+  "pct_cooling_jun_sep_lo": -0.31671184671456654,
+  "pct_cooling_jun_sep_hi": -0.08765221384953803,
+  "pct_shoulder_apr_may_oct": -0.15654334339599396,
+  "pct_shoulder_apr_may_oct_lo": -0.2705543094097451,
+  "pct_shoulder_apr_may_oct_hi": -0.0785459036510866
+ },
+ {
+  "spec": "imputation_health_minctrl5",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.20116678172788366,
+  "pct": -0.18222396991977974,
+  "ci_log": [
+   -0.2980596528951135,
+   -0.12095873070726125
+  ],
+  "pct_ci": [
+   -0.25774293935548676,
+   -0.11392947365773276
+  ],
+  "att_log_rowmean": -0.20116109322204784,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 310,
+  "n_treated_total": 310,
+  "n_control": 241,
+  "n_control_by_role": {
+   "control": 127,
+   "aux_2023": 114
+  },
+  "support_rows": 0.9997307485191168,
+  "min_ctrl": 5,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310
+  },
+  "n_control_by_use": {
+   "보건": 241
+  },
+  "anticipation_gap": -0.03153820910121959,
+  "anticipation_gap_ci": [
+   -0.08718039280427256,
+   0.025213978678947695
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.03950123923541483,
+    -0.05158160746218438
+   ],
+   "se": [
+    0.029698865036361054,
+    0.04150392515979135
+   ],
+   "p": [
+    0.1840501493598353,
+    0.21446641536801242
+   ],
+   "p_joint": 0.3804210910471304,
+   "wald": 1.9363536365687566,
+   "df": [
+    2,
+    550
+   ],
+   "n_obs": 14842,
+   "n_buildings": 551,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.25709674918895276,
+    "n_bld": 51.0,
+    "weight": 0.16451612903225807
+   },
+   {
+    "cohort": 20230,
+    "att": -0.18179696448840374,
+    "n_bld": 16.0,
+    "weight": 0.05161290322580645
+   },
+   {
+    "cohort": 20240,
+    "att": -0.34494960135501723,
+    "n_bld": 35.0,
+    "weight": 0.11290322580645161
+   },
+   {
+    "cohort": 20241,
+    "att": -0.0405103362330638,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   },
+   {
+    "cohort": 20220,
+    "att": -0.12978284294672252,
+    "n_bld": 88.0,
+    "weight": 0.2838709677419355
+   },
+   {
+    "cohort": 20221,
+    "att": -0.25179914301676926,
+    "n_bld": 96.0,
+    "weight": 0.3096774193548387
+   },
+   {
+    "cohort": 20211,
+    "att": 0.15099594132924257,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   }
+  ],
+  "pretrend_p": 0.3804210910471304,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.14780549990347558,
+  "median_bld_pct": -0.1374011258087865,
+  "median_bld_pct_ci": [
+   -0.21747414815386323,
+   -0.07741346831944806
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.16419053476096102,
+    "pct": -0.15141967757287722,
+    "pct_ci": [
+     -0.2255213524766423,
+     -0.06786583022532511
+    ],
+    "n_treated": 310,
+    "n_rows": 1550,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2500663848502249,
+    "pct": -0.22125091578590494,
+    "pct_ci": [
+     -0.30024975598555614,
+     -0.1316497757171462
+    ],
+    "n_treated": 310,
+    "n_rows": 1235,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.19796943774018685,
+    "pct": -0.17960507412243665,
+    "pct_ci": [
+     -0.25930021910513534,
+     -0.10731025469147215
+    ],
+    "n_treated": 310,
+    "n_rows": 928,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.15141967757287722,
+  "pct_heating_nov_mar_lo": -0.2255213524766423,
+  "pct_heating_nov_mar_hi": -0.06786583022532511,
+  "pct_cooling_jun_sep": -0.22125091578590494,
+  "pct_cooling_jun_sep_lo": -0.30024975598555614,
+  "pct_cooling_jun_sep_hi": -0.1316497757171462,
+  "pct_shoulder_apr_may_oct": -0.17960507412243665,
+  "pct_shoulder_apr_may_oct_lo": -0.25930021910513534,
+  "pct_shoulder_apr_may_oct_hi": -0.10731025469147215
+ },
+ {
+  "spec": "imputation_health_minctrl10",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.20116678172788366,
+  "pct": -0.18222396991977974,
+  "ci_log": [
+   -0.2980596528951135,
+   -0.12095873070726125
+  ],
+  "pct_ci": [
+   -0.25774293935548676,
+   -0.11392947365773276
+  ],
+  "att_log_rowmean": -0.20116109322204784,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 310,
+  "n_treated_total": 310,
+  "n_control": 241,
+  "n_control_by_role": {
+   "control": 127,
+   "aux_2023": 114
+  },
+  "support_rows": 0.9997307485191168,
+  "min_ctrl": 10,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310
+  },
+  "n_control_by_use": {
+   "보건": 241
+  },
+  "anticipation_gap": -0.03153820910121959,
+  "anticipation_gap_ci": [
+   -0.08718039280427256,
+   0.025213978678947695
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.03950123923541483,
+    -0.05158160746218438
+   ],
+   "se": [
+    0.029698865036361054,
+    0.04150392515979135
+   ],
+   "p": [
+    0.1840501493598353,
+    0.21446641536801242
+   ],
+   "p_joint": 0.3804210910471304,
+   "wald": 1.9363536365687566,
+   "df": [
+    2,
+    550
+   ],
+   "n_obs": 14842,
+   "n_buildings": 551,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.25709674918895276,
+    "n_bld": 51.0,
+    "weight": 0.16451612903225807
+   },
+   {
+    "cohort": 20230,
+    "att": -0.18179696448840374,
+    "n_bld": 16.0,
+    "weight": 0.05161290322580645
+   },
+   {
+    "cohort": 20240,
+    "att": -0.34494960135501723,
+    "n_bld": 35.0,
+    "weight": 0.11290322580645161
+   },
+   {
+    "cohort": 20241,
+    "att": -0.0405103362330638,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   },
+   {
+    "cohort": 20220,
+    "att": -0.12978284294672252,
+    "n_bld": 88.0,
+    "weight": 0.2838709677419355
+   },
+   {
+    "cohort": 20221,
+    "att": -0.25179914301676926,
+    "n_bld": 96.0,
+    "weight": 0.3096774193548387
+   },
+   {
+    "cohort": 20211,
+    "att": 0.15099594132924257,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   }
+  ],
+  "pretrend_p": 0.3804210910471304,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.14780549990347558,
+  "median_bld_pct": -0.1374011258087865,
+  "median_bld_pct_ci": [
+   -0.21747414815386323,
+   -0.07741346831944806
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.16419053476096102,
+    "pct": -0.15141967757287722,
+    "pct_ci": [
+     -0.2255213524766423,
+     -0.06786583022532511
+    ],
+    "n_treated": 310,
+    "n_rows": 1550,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2500663848502249,
+    "pct": -0.22125091578590494,
+    "pct_ci": [
+     -0.30024975598555614,
+     -0.13040020591733503
+    ],
+    "n_treated": 310,
+    "n_rows": 1235,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.19796943774018685,
+    "pct": -0.17960507412243665,
+    "pct_ci": [
+     -0.25930021910513534,
+     -0.10731025469147215
+    ],
+    "n_treated": 310,
+    "n_rows": 928,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.15141967757287722,
+  "pct_heating_nov_mar_lo": -0.2255213524766423,
+  "pct_heating_nov_mar_hi": -0.06786583022532511,
+  "pct_cooling_jun_sep": -0.22125091578590494,
+  "pct_cooling_jun_sep_lo": -0.30024975598555614,
+  "pct_cooling_jun_sep_hi": -0.13040020591733503,
+  "pct_shoulder_apr_may_oct": -0.17960507412243665,
+  "pct_shoulder_apr_may_oct_lo": -0.25930021910513534,
+  "pct_shoulder_apr_may_oct_hi": -0.10731025469147215
+ },
+ {
+  "spec": "imputation_health_strict_12_12",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.1971507661006908,
+  "pct": -0.17893316506451662,
+  "ci_log": [
+   -0.2736818916423022,
+   -0.12493073805688204
+  ],
+  "pct_ci": [
+   -0.23942601827715804,
+   -0.11744197184832272
+  ],
+  "att_log_rowmean": -0.1971507661006908,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 238,
+  "n_treated_total": 238,
+  "n_control": 241,
+  "n_control_by_role": {
+   "control": 127,
+   "aux_2023": 114
+  },
+  "support_rows": 1.0,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 12,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 238
+  },
+  "n_control_by_use": {
+   "보건": 241
+  },
+  "anticipation_gap": -0.014576955034094041,
+  "anticipation_gap_ci": [
+   -0.08321837200008472,
+   0.048183365338009106
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.03425256999726737,
+    -0.034691960492160875
+   ],
+   "se": [
+    0.03554452081454505,
+    0.04773964868995665
+   ],
+   "p": [
+    0.3357073732458358,
+    0.46777114181664603
+   ],
+   "p_joint": 0.62802760095054,
+   "wald": 0.9312482867789206,
+   "df": [
+    2,
+    478
+   ],
+   "n_obs": 14204,
+   "n_buildings": 479,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.2482650478654224,
+    "n_bld": 50.0,
+    "weight": 0.21008403361344538
+   },
+   {
+    "cohort": 20230,
+    "att": -0.03599329985005023,
+    "n_bld": 8.0,
+    "weight": 0.03361344537815126
+   },
+   {
+    "cohort": 20240,
+    "att": -0.34465051125182844,
+    "n_bld": 35.0,
+    "weight": 0.14705882352941177
+   },
+   {
+    "cohort": 20241,
+    "att": -0.034130687741287476,
+    "n_bld": 12.0,
+    "weight": 0.05042016806722689
+   },
+   {
+    "cohort": 20220,
+    "att": -0.142380308772637,
+    "n_bld": 70.0,
+    "weight": 0.29411764705882354
+   },
+   {
+    "cohort": 20221,
+    "att": -0.26573879987393395,
+    "n_bld": 51.0,
+    "weight": 0.21428571428571427
+   },
+   {
+    "cohort": 20211,
+    "att": 0.14757941787264767,
+    "n_bld": 12.0,
+    "weight": 0.05042016806722689
+   }
+  ],
+  "pretrend_p": 0.62802760095054,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.14180929830742775,
+  "median_bld_pct": -0.13221327089450963,
+  "median_bld_pct_ci": [
+   -0.2114321795445594,
+   -0.06383451702567766
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1589021041298966,
+    "pct": -0.14692013212259025,
+    "pct_ci": [
+     -0.21925305561396935,
+     -0.07295374096606522
+    ],
+    "n_treated": 238,
+    "n_rows": 1190,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.24631249006363287,
+    "pct": -0.21832207982695384,
+    "pct_ci": [
+     -0.2907519403813329,
+     -0.1219219391936659
+    ],
+    "n_treated": 238,
+    "n_rows": 952,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.19534957076809173,
+    "pct": -0.17745293061818523,
+    "pct_ci": [
+     -0.25401705052191326,
+     -0.10179339201623894
+    ],
+    "n_treated": 238,
+    "n_rows": 714,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.14692013212259025,
+  "pct_heating_nov_mar_lo": -0.21925305561396935,
+  "pct_heating_nov_mar_hi": -0.07295374096606522,
+  "pct_cooling_jun_sep": -0.21832207982695384,
+  "pct_cooling_jun_sep_lo": -0.2907519403813329,
+  "pct_cooling_jun_sep_hi": -0.1219219391936659,
+  "pct_shoulder_apr_may_oct": -0.17745293061818523,
+  "pct_shoulder_apr_may_oct_lo": -0.25401705052191326,
+  "pct_shoulder_apr_may_oct_hi": -0.10179339201623894
+ },
+ {
+  "spec": "imputation_health_drop_jumpy",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.07238701009590452,
+  "pct": -0.06982915936303657,
+  "ci_log": [
+   -0.15569429646598604,
+   -0.003649177766354231
+  ],
+  "pct_ci": [
+   -0.14417922217886026,
+   -0.003642527608830659
+  ],
+  "att_log_rowmean": -0.0723870100959045,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 86,
+  "n_treated_total": 86,
+  "n_control": 71,
+  "n_control_by_role": {
+   "control": 46,
+   "aux_2023": 25
+  },
+  "support_rows": 1.0,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 86
+  },
+  "n_control_by_use": {
+   "보건": 71
+  },
+  "anticipation_gap": -0.028698234207921964,
+  "anticipation_gap_ci": [
+   -0.10232200293025422,
+   0.05380792235584785
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.01599106960223368,
+    0.006669579037282358
+   ],
+   "se": [
+    0.031621271597732085,
+    0.04005314381337502
+   ],
+   "p": [
+    0.6137768060863436,
+    0.867964763423801
+   ],
+   "p_joint": 0.8678834224884852,
+   "wald": 0.28365332836914625,
+   "df": [
+    2,
+    156
+   ],
+   "n_obs": 4385,
+   "n_buildings": 157,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.05711883198613234,
+    "n_bld": 18.0,
+    "weight": 0.20930232558139536
+   },
+   {
+    "cohort": 20230,
+    "att": -0.263673543458021,
+    "n_bld": 6.0,
+    "weight": 0.06976744186046512
+   },
+   {
+    "cohort": 20241,
+    "att": 0.07058653936739676,
+    "n_bld": 3.0,
+    "weight": 0.03488372093023256
+   },
+   {
+    "cohort": 20240,
+    "att": -0.2551011205460742,
+    "n_bld": 4.0,
+    "weight": 0.046511627906976744
+   },
+   {
+    "cohort": 20220,
+    "att": -0.07241675793171667,
+    "n_bld": 24.0,
+    "weight": 0.27906976744186046
+   },
+   {
+    "cohort": 20221,
+    "att": -0.04431734760486247,
+    "n_bld": 24.0,
+    "weight": 0.27906976744186046
+   },
+   {
+    "cohort": 20211,
+    "att": -0.0006913192556105444,
+    "n_bld": 7.0,
+    "weight": 0.08139534883720931
+   }
+  ],
+  "pretrend_p": 0.8678834224884852,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.054748394276196745,
+  "median_bld_pct": -0.05327668100445404,
+  "median_bld_pct_ci": [
+   -0.1469806804117324,
+   0.03738467000305867
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.06470103847801997,
+    "pct": -0.06265234762676986,
+    "pct_ci": [
+     -0.13390113586849217,
+     0.018814301599202832
+    ],
+    "n_treated": 86,
+    "n_rows": 430,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.09002852224396678,
+    "pct": -0.08609488172526059,
+    "pct_ci": [
+     -0.2070489766787773,
+     0.02519823289772183
+    ],
+    "n_treated": 86,
+    "n_rows": 344,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.06167494659496225,
+    "pct": -0.05981155141696293,
+    "pct_ci": [
+     -0.1489774128010708,
+     0.011509092882917793
+    ],
+    "n_treated": 86,
+    "n_rows": 258,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.06265234762676986,
+  "pct_heating_nov_mar_lo": -0.13390113586849217,
+  "pct_heating_nov_mar_hi": 0.018814301599202832,
+  "pct_cooling_jun_sep": -0.08609488172526059,
+  "pct_cooling_jun_sep_lo": -0.2070489766787773,
+  "pct_cooling_jun_sep_hi": 0.02519823289772183,
+  "pct_shoulder_apr_may_oct": -0.05981155141696293,
+  "pct_shoulder_apr_may_oct_lo": -0.1489774128010708,
+  "pct_shoulder_apr_may_oct_hi": 0.011509092882917793
+ },
+ {
+  "spec": "imputation_health_fit_s15_s4",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.18767256684181668,
+  "pct": -0.1711139324130485,
+  "ci_log": [
+   -0.25391914129516224,
+   -0.11737325776711635
+  ],
+  "pct_ci": [
+   -0.22424547398320194,
+   -0.11074678945804828
+  ],
+  "att_log_rowmean": -0.18764891099303108,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 306,
+  "n_treated_total": 306,
+  "n_control": 241,
+  "n_control_by_role": {
+   "control": 127,
+   "aux_2023": 114
+  },
+  "support_rows": 1.0,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 306
+  },
+  "n_control_by_use": {
+   "보건": 241
+  },
+  "anticipation_gap": -0.02116571621114355,
+  "anticipation_gap_ci": [
+   -0.06598855029761294,
+   0.03049077929252206
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.006339688045728647,
+    -0.014179037814569143
+   ],
+   "se": [
+    0.03113949084607637,
+    0.037607609234917155
+   ],
+   "p": [
+    0.8387497848194407,
+    0.7063009423246805
+   ],
+   "p_joint": 0.9295975400990377,
+   "wald": 0.14602660194139583,
+   "df": [
+    2,
+    546
+   ],
+   "n_obs": 15711,
+   "n_buildings": 547,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.24516861141571378,
+    "n_bld": 49.0,
+    "weight": 0.16013071895424835
+   },
+   {
+    "cohort": 20230,
+    "att": -0.20385027236908962,
+    "n_bld": 16.0,
+    "weight": 0.05228758169934641
+   },
+   {
+    "cohort": 20240,
+    "att": -0.3536227883974408,
+    "n_bld": 35.0,
+    "weight": 0.11437908496732026
+   },
+   {
+    "cohort": 20241,
+    "att": -0.053695903041771624,
+    "n_bld": 11.0,
+    "weight": 0.03594771241830065
+   },
+   {
+    "cohort": 20220,
+    "att": -0.10969423284633305,
+    "n_bld": 87.0,
+    "weight": 0.28431372549019607
+   },
+   {
+    "cohort": 20221,
+    "att": -0.22061270197062796,
+    "n_bld": 96.0,
+    "weight": 0.3137254901960784
+   },
+   {
+    "cohort": 20211,
+    "att": 0.1280609198217226,
+    "n_bld": 12.0,
+    "weight": 0.0392156862745098
+   }
+  ],
+  "pretrend_p": 0.9295975400990377,
+  "nboot": 200,
+  "fit_window": "s-15..s-4",
+  "median_bld_log": -0.1283357492079716,
+  "median_bld_pct": -0.12044198134423545,
+  "median_bld_pct_ci": [
+   -0.17187772244891697,
+   -0.0385519850996191
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.15075304115807786,
+    "pct": -0.139939928126262,
+    "pct_ci": [
+     -0.21354136663823498,
+     -0.07010867915100683
+    ],
+    "n_treated": 306,
+    "n_rows": 1530,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.23676964269906178,
+    "pct": -0.21082694114350264,
+    "pct_ci": [
+     -0.272105450921482,
+     -0.1388666674418163
+    ],
+    "n_treated": 306,
+    "n_rows": 1219,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.18409182049413791,
+    "pct": -0.16814058142300736,
+    "pct_ci": [
+     -0.22431137971535786,
+     -0.10079432555683487
+    ],
+    "n_treated": 306,
+    "n_rows": 917,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.139939928126262,
+  "pct_heating_nov_mar_lo": -0.21354136663823498,
+  "pct_heating_nov_mar_hi": -0.07010867915100683,
+  "pct_cooling_jun_sep": -0.21082694114350264,
+  "pct_cooling_jun_sep_lo": -0.272105450921482,
+  "pct_cooling_jun_sep_hi": -0.1388666674418163,
+  "pct_shoulder_apr_may_oct": -0.16814058142300736,
+  "pct_shoulder_apr_may_oct_lo": -0.22431137971535786,
+  "pct_shoulder_apr_may_oct_hi": -0.10079432555683487
+ },
+ {
+  "spec": "imputation_health_no_anticip_holdout",
+  "status": "ok",
+  "carrier": "elec",
+  "att_log": -0.19457552090607305,
+  "pct": -0.17681599169318496,
+  "ci_log": [
+   -0.28798098318851534,
+   -0.11691019947051157
+  ],
+  "pct_ci": [
+   -0.2502241495505282,
+   -0.11033491802824258
+  ],
+  "att_log_rowmean": -0.19454979189537838,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 310,
+  "n_treated_total": 310,
+  "n_control": 241,
+  "n_control_by_role": {
+   "control": 127,
+   "aux_2023": 114
+  },
+  "support_rows": 1.0,
+  "min_ctrl": 1,
+  "anticip": 0,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 310
+  },
+  "n_control_by_use": {
+   "보건": 241
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4",
+    "lead_-3_-1"
+   ],
+   "coef": [
+    -0.037921930973133094,
+    -0.04830167642776609,
+    -0.05807188625860037
+   ],
+   "se": [
+    0.02975072611798035,
+    0.041511061533444124,
+    0.03613596468296382
+   ],
+   "p": [
+    0.20296939600310737,
+    0.24509650015587733,
+    0.10861982820567236
+   ],
+   "p_joint": 0.3150183845102686,
+   "wald": 3.5528512268514167,
+   "df": [
+    3,
+    550
+   ],
+   "n_obs": 15715,
+   "n_buildings": 551,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.24767586350123097,
+    "n_bld": 51.0,
+    "weight": 0.16451612903225807
+   },
+   {
+    "cohort": 20230,
+    "att": -0.18106119354793035,
+    "n_bld": 16.0,
+    "weight": 0.05161290322580645
+   },
+   {
+    "cohort": 20240,
+    "att": -0.37920947389204535,
+    "n_bld": 35.0,
+    "weight": 0.11290322580645161
+   },
+   {
+    "cohort": 20241,
+    "att": -0.10218111117010939,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   },
+   {
+    "cohort": 20220,
+    "att": -0.1110135060878193,
+    "n_bld": 88.0,
+    "weight": 0.2838709677419355
+   },
+   {
+    "cohort": 20221,
+    "att": -0.23039943301364083,
+    "n_bld": 96.0,
+    "weight": 0.3096774193548387
+   },
+   {
+    "cohort": 20211,
+    "att": 0.13300630664562815,
+    "n_bld": 12.0,
+    "weight": 0.03870967741935484
+   }
+  ],
+  "pretrend_p": 0.3150183845102686,
+  "nboot": 200,
+  "fit_window": "s-12..s-1",
+  "median_bld_log": -0.143614784678173,
+  "median_bld_pct": -0.13377863446010319,
+  "median_bld_pct_ci": [
+   -0.19440259764408918,
+   -0.058193283834362064
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1601426543402496,
+    "pct": -0.1479777643735396,
+    "pct_ci": [
+     -0.22162630696775132,
+     -0.06967407544208315
+    ],
+    "n_treated": 310,
+    "n_rows": 1550,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": -0.2414413551399099,
+    "pct": -0.21450513232511703,
+    "pct_ci": [
+     -0.2948547571511645,
+     -0.12759002276502363
+    ],
+    "n_treated": 310,
+    "n_rows": 1235,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": -0.18979394284005408,
+    "pct": -0.17287044764874238,
+    "pct_ci": [
+     -0.25171181205582593,
+     -0.0979087331881262
+    ],
+    "n_treated": 310,
+    "n_rows": 929,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.1479777643735396,
+  "pct_heating_nov_mar_lo": -0.22162630696775132,
+  "pct_heating_nov_mar_hi": -0.06967407544208315,
+  "pct_cooling_jun_sep": -0.21450513232511703,
+  "pct_cooling_jun_sep_lo": -0.2948547571511645,
+  "pct_cooling_jun_sep_hi": -0.12759002276502363,
+  "pct_shoulder_apr_may_oct": -0.17287044764874238,
+  "pct_shoulder_apr_may_oct_lo": -0.25171181205582593,
+  "pct_shoulder_apr_may_oct_hi": -0.0979087331881262
+ },
+ {
+  "spec": "imputation_use",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.0013703374739303291,
+  "pct": 0.0013712768153490984,
+  "ci_log": [
+   -0.08384431279030541,
+   0.09663833791003112
+  ],
+  "pct_ci": [
+   -0.08042558907470898,
+   0.1014619445481213
+  ],
+  "att_log_rowmean": 0.0007695381160009563,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 1000,
+  "n_treated": 93,
+  "n_treated_total": 93,
+  "n_control": 30,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 12
+  },
+  "support_rows": 0.8660071942446043,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 92,
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "어린이집": 29,
+   "보건": 1
+  },
+  "anticipation_gap": 0.062336803052767405,
+  "anticipation_gap_ci": [
+   0.004273103703520366,
+   0.12661120036799434
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.020979824984889404,
+    0.08056444350279121
+   ],
+   "se": [
+    0.03238547496704457,
+    0.050523703136514844
+   ],
+   "p": [
+    0.5183213123906787,
+    0.11339201308497687
+   ],
+   "p_joint": 0.22596332979448489,
+   "wald": 3.011329004563048,
+   "df": [
+    2,
+    122
+   ],
+   "n_obs": 2005,
+   "n_buildings": 123,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.10761747469414668,
+    "n_bld": 11.0,
+    "weight": 0.11827956989247312
+   },
+   {
+    "cohort": 20230,
+    "att": 0.152832988009755,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20241,
+    "att": 0.00418631136185653,
+    "n_bld": 12.0,
+    "weight": 0.12903225806451613
+   },
+   {
+    "cohort": 20240,
+    "att": 0.0002503225075799005,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20211,
+    "att": -0.10635136040079889,
+    "n_bld": 1.0,
+    "weight": 0.010752688172043012
+   },
+   {
+    "cohort": 20220,
+    "att": 0.0029608595337803746,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20221,
+    "att": -0.022040832663161477,
+    "n_bld": 30.0,
+    "weight": 0.3225806451612903
+   }
+  ],
+  "pretrend_p": 0.22596332979448489,
+  "nboot": 1000,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.0018127916935538058,
+  "median_bld_pct": -0.0018111495791121035,
+  "median_bld_pct_ci": [
+   -0.102493778600387,
+   0.10538795824875136
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.079525152736811,
+    "pct": -0.07644521025410123,
+    "pct_ci": [
+     -0.1516802662819332,
+     0.023639956737413925
+    ],
+    "n_treated": 93,
+    "n_rows": 397,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.06791354481199705,
+    "pct": 0.07027277384490516,
+    "pct_ci": [
+     -0.06863194811661044,
+     0.23028040864326949
+    ],
+    "n_treated": 84,
+    "n_rows": 325,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.053652649620622724,
+    "pct": 0.055118042844038095,
+    "pct_ci": [
+     -0.05638752719932649,
+     0.19052531177553766
+    ],
+    "n_treated": 84,
+    "n_rows": 241,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.07644521025410123,
+  "pct_heating_nov_mar_lo": -0.1516802662819332,
+  "pct_heating_nov_mar_hi": 0.023639956737413925,
+  "pct_cooling_jun_sep": 0.07027277384490516,
+  "pct_cooling_jun_sep_lo": -0.06863194811661044,
+  "pct_cooling_jun_sep_hi": 0.23028040864326949,
+  "pct_shoulder_apr_may_oct": 0.055118042844038095,
+  "pct_shoulder_apr_may_oct_lo": -0.05638752719932649,
+  "pct_shoulder_apr_may_oct_hi": 0.19052531177553766
+ },
+ {
+  "spec": "imputation_health_only",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.07673275827474133,
+  "pct": 0.0797534826486157,
+  "ci_log": [
+   0.07673275827458834,
+   0.07673275827458834
+  ],
+  "pct_ci": [
+   0.0797534826484505,
+   0.0797534826484505
+  ],
+  "att_log_rowmean": 0.07673275827474131,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 1000,
+  "n_treated": 1,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.9166666666666666,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": -0.5759912676939067,
+  "anticipation_gap_ci": [
+   -0.5759912676940596,
+   -0.5759912676940596
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.5550149231446356,
+    -0.2885827958436672
+   ],
+   "se": [
+    1.0837488467862088e-16,
+    1.4062151072366022e-16
+   ],
+   "p": [
+    1.2430944022830704e-16,
+    3.102140371367759e-16
+   ],
+   "p_joint": 1.3321081266493298e-17,
+   "wald": 5.635351947895237e+33,
+   "df": [
+    2,
+    1
+   ],
+   "n_obs": 18,
+   "n_buildings": 2,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20230,
+    "att": 0.07673275827474133,
+    "n_bld": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "pretrend_p": 1.3321081266493298e-17,
+  "nboot": 1000,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": 0.07673275827474133,
+  "median_bld_pct": 0.0797534826486157,
+  "median_bld_pct_ci": [
+   0.0797534826484505,
+   0.0797534826484505
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.19131958344548328,
+    "pct": -0.1741313879643085,
+    "pct_ci": [
+     -0.17413138796443484,
+     -0.17413138796443484
+    ],
+    "n_treated": 1,
+    "n_rows": 5,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.18955460527850007,
+    "pct": 0.2087111241949995,
+    "pct_ci": [
+     0.20871112419481475,
+     0.20871112419481475
+    ],
+    "n_treated": 1,
+    "n_rows": 4,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.5212199185677853,
+    "pct": 0.6840808385672643,
+    "pct_ci": [
+     0.6840808385670065,
+     0.6840808385670065
+    ],
+    "n_treated": 1,
+    "n_rows": 2,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.1741313879643085,
+  "pct_heating_nov_mar_lo": -0.17413138796443484,
+  "pct_heating_nov_mar_hi": -0.17413138796443484,
+  "pct_cooling_jun_sep": 0.2087111241949995,
+  "pct_cooling_jun_sep_lo": 0.20871112419481475,
+  "pct_cooling_jun_sep_hi": 0.20871112419481475,
+  "pct_shoulder_apr_may_oct": 0.6840808385672643,
+  "pct_shoulder_apr_may_oct_lo": 0.6840808385670065,
+  "pct_shoulder_apr_may_oct_hi": 0.6840808385670065
+ },
+ {
+  "spec": "imputation_daycare_only",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.00048755177265516237,
+  "pct": 0.0004876706453387225,
+  "ci_log": [
+   -0.08573631344950797,
+   0.09663848016489865
+  ],
+  "pct_ci": [
+   -0.08216377961902577,
+   0.1014621012364556
+  ],
+  "att_log_rowmean": -0.00010818816600812013,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 1000,
+  "n_treated": 92,
+  "n_treated_total": 92,
+  "n_control": 29,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 11
+  },
+  "support_rows": 0.8654545454545455,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 92
+  },
+  "n_control_by_use": {
+   "어린이집": 29
+  },
+  "anticipation_gap": 0.06981721013217901,
+  "anticipation_gap_ci": [
+   0.01123421429932647,
+   0.13475103973305436
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.024533631879662107,
+    0.08297400630309551
+   ],
+   "se": [
+    0.03244980859724676,
+    0.05074681573033614
+   ],
+   "p": [
+    0.4511016929296693,
+    0.10465736300748497
+   ],
+   "p_joint": 0.2270776822438794,
+   "wald": 3.0018580358215576,
+   "df": [
+    2,
+    120
+   ],
+   "n_obs": 1987,
+   "n_buildings": 121,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.10761747469235537,
+    "n_bld": 11.0,
+    "weight": 0.11956521739130435
+   },
+   {
+    "cohort": 20230,
+    "att": 0.15868685183836262,
+    "n_bld": 12.0,
+    "weight": 0.13043478260869565
+   },
+   {
+    "cohort": 20241,
+    "att": 0.004186311361357129,
+    "n_bld": 12.0,
+    "weight": 0.13043478260869565
+   },
+   {
+    "cohort": 20240,
+    "att": 0.0002503225099821475,
+    "n_bld": 13.0,
+    "weight": 0.14130434782608695
+   },
+   {
+    "cohort": 20211,
+    "att": -0.10635136040250089,
+    "n_bld": 1.0,
+    "weight": 0.010869565217391304
+   },
+   {
+    "cohort": 20220,
+    "att": 0.0029608595333586382,
+    "n_bld": 13.0,
+    "weight": 0.14130434782608695
+   },
+   {
+    "cohort": 20221,
+    "att": -0.02204083266191274,
+    "n_bld": 30.0,
+    "weight": 0.32608695652173914
+   }
+  ],
+  "pretrend_p": 0.2270776822438794,
+  "nboot": 1000,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.002441323741652346,
+  "median_bld_pct": -0.0024383461344404944,
+  "median_bld_pct_ci": [
+   -0.10634762787519325,
+   0.10538795984372973
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.07830999587980297,
+    "pct": -0.07532226417888632,
+    "pct_ci": [
+     -0.15143290959020528,
+     0.026809610015041896
+    ],
+    "n_treated": 92,
+    "n_rows": 392,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.06646387642853703,
+    "pct": 0.06872235730942222,
+    "pct_ci": [
+     -0.07140146298594952,
+     0.2305612799533272
+    ],
+    "n_treated": 83,
+    "n_rows": 321,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.04924778181739345,
+    "pct": 0.050480608489435586,
+    "pct_ci": [
+     -0.061273081017311326,
+     0.18636863878194543
+    ],
+    "n_treated": 83,
+    "n_rows": 239,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.07532226417888632,
+  "pct_heating_nov_mar_lo": -0.15143290959020528,
+  "pct_heating_nov_mar_hi": 0.026809610015041896,
+  "pct_cooling_jun_sep": 0.06872235730942222,
+  "pct_cooling_jun_sep_lo": -0.07140146298594952,
+  "pct_cooling_jun_sep_hi": 0.2305612799533272,
+  "pct_shoulder_apr_may_oct": 0.050480608489435586,
+  "pct_shoulder_apr_may_oct_lo": -0.061273081017311326,
+  "pct_shoulder_apr_may_oct_hi": 0.18636863878194543
+ },
+ {
+  "spec": "imputation_controls_2024_25_only",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": -0.036374524296656024,
+  "pct": -0.03572092009846628,
+  "ci_log": [
+   -0.12768240590373242,
+   0.041252435205005475
+  ],
+  "pct_ci": [
+   -0.11986714023821088,
+   0.04211513889337004
+  ],
+  "att_log_rowmean": -0.047547250947481724,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 93,
+  "n_treated_total": 93,
+  "n_control": 12,
+  "n_control_by_role": {
+   "control": 12
+  },
+  "support_rows": 0.8660071942446043,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 92,
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "어린이집": 11,
+   "보건": 1
+  },
+  "anticipation_gap": 0.031644457188516495,
+  "anticipation_gap_ci": [
+   -0.024613079499344354,
+   0.09509337245932346
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.01054133136964158,
+    0.028777593303730482
+   ],
+   "se": [
+    0.02979634765846879,
+    0.04712817503532587
+   ],
+   "p": [
+    0.7242204758357252,
+    0.5427807102683466
+   ],
+   "p_joint": 0.49335337368535725,
+   "wald": 1.4227024774056043,
+   "df": [
+    2,
+    104
+   ],
+   "n_obs": 1372,
+   "n_buildings": 105,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.09614061756116808,
+    "n_bld": 11.0,
+    "weight": 0.11827956989247312
+   },
+   {
+    "cohort": 20230,
+    "att": 0.09726103846893228,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20241,
+    "att": 0.034323964540519204,
+    "n_bld": 12.0,
+    "weight": 0.12903225806451613
+   },
+   {
+    "cohort": 20240,
+    "att": 0.029497459930005885,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20211,
+    "att": -0.22544122738379777,
+    "n_bld": 1.0,
+    "weight": 0.010752688172043012
+   },
+   {
+    "cohort": 20220,
+    "att": -0.10232841918070716,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20221,
+    "att": -0.09431071144518659,
+    "n_bld": 30.0,
+    "weight": 0.3225806451612903
+   }
+  ],
+  "pretrend_p": 0.49335337368535725,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.0424236782558757,
+  "median_bld_pct": -0.0415363856557851,
+  "median_bld_pct_ci": [
+   -0.14044643694976255,
+   0.051169290465686634
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.10930169104625911,
+    "pct": -0.10354007723466085,
+    "pct_ci": [
+     -0.17129425212843152,
+     -0.03721184463560323
+    ],
+    "n_treated": 93,
+    "n_rows": 397,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.005565607280484523,
+    "pct": 0.0055811240460696965,
+    "pct_ci": [
+     -0.13368055341948593,
+     0.1665016593118216
+    ],
+    "n_treated": 84,
+    "n_rows": 325,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.017201486054557274,
+    "pct": 0.017350283570870317,
+    "pct_ci": [
+     -0.09717859459561184,
+     0.1286660413308074
+    ],
+    "n_treated": 84,
+    "n_rows": 241,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.10354007723466085,
+  "pct_heating_nov_mar_lo": -0.17129425212843152,
+  "pct_heating_nov_mar_hi": -0.03721184463560323,
+  "pct_cooling_jun_sep": 0.0055811240460696965,
+  "pct_cooling_jun_sep_lo": -0.13368055341948593,
+  "pct_cooling_jun_sep_hi": 0.1665016593118216,
+  "pct_shoulder_apr_may_oct": 0.017350283570870317,
+  "pct_shoulder_apr_may_oct_lo": -0.09717859459561184,
+  "pct_shoulder_apr_may_oct_hi": 0.1286660413308074
+ },
+ {
+  "spec": "imputation_drop_renewable",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.06354497346573375,
+  "pct": 0.06560740878211191,
+  "ci_log": [
+   -0.045120649680236845,
+   0.15217785656861663
+  ],
+  "pct_ci": [
+   -0.0441178519997556,
+   0.16436730839109215
+  ],
+  "att_log_rowmean": 0.05822990572338821,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 73,
+  "n_treated_total": 73,
+  "n_control": 21,
+  "n_control_by_role": {
+   "aux_2023": 14,
+   "control": 7
+  },
+  "support_rows": 0.845360824742268,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 72,
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "어린이집": 20,
+   "보건": 1
+  },
+  "anticipation_gap": 0.07119838628180261,
+  "anticipation_gap_ci": [
+   0.0024834569517877035,
+   0.14700240236375303
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.008365526453395944,
+    0.06666512818703767
+   ],
+   "se": [
+    0.03850873700614015,
+    0.058977208635806605
+   ],
+   "p": [
+    0.8284994516224282,
+    0.2612338378619232
+   ],
+   "p_joint": 0.3986119694162747,
+   "wald": 1.8578471588613137,
+   "df": [
+    2,
+    93
+   ],
+   "n_obs": 1455,
+   "n_buildings": 94,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.07539751389934589,
+    "n_bld": 9.0,
+    "weight": 0.1232876712328767
+   },
+   {
+    "cohort": 20230,
+    "att": 0.17783014839327305,
+    "n_bld": 12.0,
+    "weight": 0.1643835616438356
+   },
+   {
+    "cohort": 20241,
+    "att": 0.08654528762692705,
+    "n_bld": 11.0,
+    "weight": 0.1506849315068493
+   },
+   {
+    "cohort": 20240,
+    "att": 0.10480034950026981,
+    "n_bld": 10.0,
+    "weight": 0.136986301369863
+   },
+   {
+    "cohort": 20220,
+    "att": 0.042989016953463785,
+    "n_bld": 9.0,
+    "weight": 0.1232876712328767
+   },
+   {
+    "cohort": 20221,
+    "att": 0.03620436799515136,
+    "n_bld": 22.0,
+    "weight": 0.3013698630136986
+   }
+  ],
+  "pretrend_p": 0.3986119694162747,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": 0.07538224852963736,
+  "median_bld_pct": 0.0782962492734105,
+  "median_bld_pct_ci": [
+   -0.052555869101302055,
+   0.17315720156400793
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.06847109451761517,
+    "pct": -0.06617954775595658,
+    "pct_ci": [
+     -0.16714843046770256,
+     0.03530786066992664
+    ],
+    "n_treated": 73,
+    "n_rows": 306,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.15581670721370597,
+    "pct": 0.16861198531129773,
+    "pct_ci": [
+     0.015510081351508553,
+     0.3396156198119822
+    ],
+    "n_treated": 64,
+    "n_rows": 248,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.16304135835490494,
+    "pct": 0.17708537099629784,
+    "pct_ci": [
+     -0.015427933636007918,
+     0.3179146511116835
+    ],
+    "n_treated": 64,
+    "n_rows": 184,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.06617954775595658,
+  "pct_heating_nov_mar_lo": -0.16714843046770256,
+  "pct_heating_nov_mar_hi": 0.03530786066992664,
+  "pct_cooling_jun_sep": 0.16861198531129773,
+  "pct_cooling_jun_sep_lo": 0.015510081351508553,
+  "pct_cooling_jun_sep_hi": 0.3396156198119822,
+  "pct_shoulder_apr_may_oct": 0.17708537099629784,
+  "pct_shoulder_apr_may_oct_lo": -0.015427933636007918,
+  "pct_shoulder_apr_may_oct_hi": 0.3179146511116835
+ },
+ {
+  "spec": "imputation_donut3",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.016175123310913198,
+  "pct": 0.01630664880811228,
+  "ci_log": [
+   -0.07608022069048857,
+   0.11292294836150904
+  ],
+  "pct_ci": [
+   -0.07325814029454614,
+   0.11954566679716239
+  ],
+  "att_log_rowmean": 0.016726017520606422,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 84,
+  "n_treated_total": 93,
+  "n_control": 30,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 12
+  },
+  "support_rows": 0.8311377245508982,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 83,
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "어린이집": 29,
+   "보건": 1
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.020979824984889404,
+    0.08056444350279121
+   ],
+   "se": [
+    0.03238547496704457,
+    0.050523703136514844
+   ],
+   "p": [
+    0.5183213123906787,
+    0.11339201308497687
+   ],
+   "p_joint": 0.22596332979448489,
+   "wald": 3.011329004563048,
+   "df": [
+    2,
+    122
+   ],
+   "n_obs": 2005,
+   "n_buildings": 123,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.11529539166892762,
+    "n_bld": 11.0,
+    "weight": 0.13095238095238096
+   },
+   {
+    "cohort": 20230,
+    "att": 0.15347603949352773,
+    "n_bld": 13.0,
+    "weight": 0.15476190476190477
+   },
+   {
+    "cohort": 20241,
+    "att": -0.05181966236700988,
+    "n_bld": 3.0,
+    "weight": 0.03571428571428571
+   },
+   {
+    "cohort": 20240,
+    "att": 0.04068749241091098,
+    "n_bld": 13.0,
+    "weight": 0.15476190476190477
+   },
+   {
+    "cohort": 20211,
+    "att": -0.07385395092745052,
+    "n_bld": 1.0,
+    "weight": 0.011904761904761904
+   },
+   {
+    "cohort": 20220,
+    "att": -0.04505980618298053,
+    "n_bld": 13.0,
+    "weight": 0.15476190476190477
+   },
+   {
+    "cohort": 20221,
+    "att": 0.03059747233748121,
+    "n_bld": 30.0,
+    "weight": 0.35714285714285715
+   }
+  ],
+  "pretrend_p": 0.22596332979448489,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.0017927621049076475,
+  "median_bld_pct": -0.0017911560668166793,
+  "median_bld_pct_ci": [
+   -0.08002406502893533,
+   0.11368776434413541
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.06530537191901811,
+    "pct": -0.0632186470248729,
+    "pct_ci": [
+     -0.1437131344151611,
+     0.06594825394412496
+    ],
+    "n_treated": 84,
+    "n_rows": 249,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.06834137668778231,
+    "pct": 0.07073076861873684,
+    "pct_ci": [
+     -0.07679814949522967,
+     0.2542864274531189
+    ],
+    "n_treated": 80,
+    "n_rows": 269,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.09700486037267957,
+    "pct": 0.10186572908608205,
+    "pct_ci": [
+     -0.032244117184838994,
+     0.2747803284710939
+    ],
+    "n_treated": 81,
+    "n_rows": 176,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.0632186470248729,
+  "pct_heating_nov_mar_lo": -0.1437131344151611,
+  "pct_heating_nov_mar_hi": 0.06594825394412496,
+  "pct_cooling_jun_sep": 0.07073076861873684,
+  "pct_cooling_jun_sep_lo": -0.07679814949522967,
+  "pct_cooling_jun_sep_hi": 0.2542864274531189,
+  "pct_shoulder_apr_may_oct": 0.10186572908608205,
+  "pct_shoulder_apr_may_oct_lo": -0.032244117184838994,
+  "pct_shoulder_apr_may_oct_hi": 0.2747803284710939
+ },
+ {
+  "spec": "imputation_use_sido",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.18673254875307516,
+  "pct": 0.2053048816447296,
+  "ci_log": [
+   -0.08291027278444382,
+   0.46825668098607187
+  ],
+  "pct_ci": [
+   -0.07956626852912929,
+   0.5972073228260335
+  ],
+  "att_log_rowmean": 0.2010306535993975,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 75,
+  "n_treated_total": 93,
+  "n_control": 30,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 12
+  },
+  "support_rows": 0.6510791366906474,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 75
+  },
+  "n_control_by_use": {
+   "어린이집": 29,
+   "보건": 1
+  },
+  "anticipation_gap": 0.05770712909639676,
+  "anticipation_gap_ci": [
+   -0.024552245834819773,
+   0.14059709322855846
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.012287772400263314,
+    0.04072134938511811
+   ],
+   "se": [
+    0.03264335793684305,
+    0.04974856317009748
+   ],
+   "p": [
+    0.7072548933622711,
+    0.41464303904308153
+   ],
+   "p_joint": 0.6944797051732475,
+   "wald": 0.7313681674256628,
+   "df": [
+    2,
+    122
+   ],
+   "n_obs": 1879,
+   "n_buildings": 123,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.09847168791303162,
+    "n_bld": 8.0,
+    "weight": 0.10666666666666667
+   },
+   {
+    "cohort": 20230,
+    "att": 0.41312857493767996,
+    "n_bld": 12.0,
+    "weight": 0.16
+   },
+   {
+    "cohort": 20241,
+    "att": -0.038674656056023125,
+    "n_bld": 6.0,
+    "weight": 0.08
+   },
+   {
+    "cohort": 20240,
+    "att": -0.019489294857737784,
+    "n_bld": 9.0,
+    "weight": 0.12
+   },
+   {
+    "cohort": 20211,
+    "att": 0.031410758974301206,
+    "n_bld": 1.0,
+    "weight": 0.013333333333333334
+   },
+   {
+    "cohort": 20220,
+    "att": 0.114218198987299,
+    "n_bld": 11.0,
+    "weight": 0.14666666666666667
+   },
+   {
+    "cohort": 20221,
+    "att": 0.31981472866978283,
+    "n_bld": 28.0,
+    "weight": 0.37333333333333335
+   }
+  ],
+  "pretrend_p": 0.6944797051732475,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": 0.023218283177587434,
+  "median_bld_pct": 0.023489925798832134,
+  "median_bld_pct_ci": [
+   -0.10038329194535456,
+   0.162228378399212
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": 0.09216774280481899,
+    "pct": 0.09654874481660425,
+    "pct_ci": [
+     -0.18543140981985928,
+     0.523556959358829
+    ],
+    "n_treated": 72,
+    "n_rows": 300,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.2669911322551408,
+    "pct": 0.30602886474855184,
+    "pct_ci": [
+     -0.024756597092910115,
+     0.7082266123243086
+    ],
+    "n_treated": 66,
+    "n_rows": 239,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.27057839033272085,
+    "pct": 0.3107223406647359,
+    "pct_ci": [
+     -0.06379713955636468,
+     0.7374732964453077
+    ],
+    "n_treated": 68,
+    "n_rows": 185,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": 0.09654874481660425,
+  "pct_heating_nov_mar_lo": -0.18543140981985928,
+  "pct_heating_nov_mar_hi": 0.523556959358829,
+  "pct_cooling_jun_sep": 0.30602886474855184,
+  "pct_cooling_jun_sep_lo": -0.024756597092910115,
+  "pct_cooling_jun_sep_hi": 0.7082266123243086,
+  "pct_shoulder_apr_may_oct": 0.3107223406647359,
+  "pct_shoulder_apr_may_oct_lo": -0.06379713955636468,
+  "pct_shoulder_apr_may_oct_hi": 0.7374732964453077
+ },
+ {
+  "spec": "imputation_use_minctrl5",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.0006419148710973078,
+  "pct": 0.0006421209425393481,
+  "ci_log": [
+   -0.10872134732545724,
+   0.09806566306642696
+  ],
+  "pct_ci": [
+   -0.10301967135499723,
+   0.10303521140497307
+  ],
+  "att_log_rowmean": -0.0004241249979297522,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 83,
+  "n_treated_total": 93,
+  "n_control": 30,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 12
+  },
+  "support_rows": 0.7769784172661871,
+  "min_ctrl": 5,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 83
+  },
+  "n_control_by_use": {
+   "어린이집": 29,
+   "보건": 1
+  },
+  "anticipation_gap": 0.06981721013183173,
+  "anticipation_gap_ci": [
+   0.0061270310561154385,
+   0.13387499473822287
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.020979824984889404,
+    0.08056444350279121
+   ],
+   "se": [
+    0.03238547496704457,
+    0.050523703136514844
+   ],
+   "p": [
+    0.5183213123906787,
+    0.11339201308497687
+   ],
+   "p_joint": 0.22596332979448489,
+   "wald": 3.011329004563048,
+   "df": [
+    2,
+    122
+   ],
+   "n_obs": 2005,
+   "n_buildings": 123,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.12621980969780341,
+    "n_bld": 11.0,
+    "weight": 0.13253012048192772
+   },
+   {
+    "cohort": 20230,
+    "att": 0.1586868518355366,
+    "n_bld": 12.0,
+    "weight": 0.14457831325301204
+   },
+   {
+    "cohort": 20241,
+    "att": 0.15156944718173476,
+    "n_bld": 3.0,
+    "weight": 0.03614457831325301
+   },
+   {
+    "cohort": 20240,
+    "att": -0.014474504326017778,
+    "n_bld": 13.0,
+    "weight": 0.1566265060240964
+   },
+   {
+    "cohort": 20211,
+    "att": -0.10635136040079889,
+    "n_bld": 1.0,
+    "weight": 0.012048192771084338
+   },
+   {
+    "cohort": 20220,
+    "att": 0.0029608595337803746,
+    "n_bld": 13.0,
+    "weight": 0.1566265060240964
+   },
+   {
+    "cohort": 20221,
+    "att": -0.022040832663161477,
+    "n_bld": 30.0,
+    "weight": 0.3614457831325301
+   }
+  ],
+  "pretrend_p": 0.22596332979448489,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.010706415123414581,
+  "median_bld_pct": -0.010649305455998626,
+  "median_bld_pct_ci": [
+   -0.116732755681629,
+   0.09095021892731747
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.07434313051352265,
+    "pct": -0.07164690708993804,
+    "pct_ci": [
+     -0.15886661576454164,
+     0.040340282978430286
+    ],
+    "n_treated": 73,
+    "n_rows": 329,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.06646387642805231,
+    "pct": 0.06872235730890419,
+    "pct_ci": [
+     -0.07745749068721686,
+     0.2796909860307264
+    ],
+    "n_treated": 83,
+    "n_rows": 321,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.005784020677234619,
+    "pct": 0.0058007804221547055,
+    "pct_ci": [
+     -0.09036595671152958,
+     0.14538603832383323
+    ],
+    "n_treated": 79,
+    "n_rows": 214,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.07164690708993804,
+  "pct_heating_nov_mar_lo": -0.15886661576454164,
+  "pct_heating_nov_mar_hi": 0.040340282978430286,
+  "pct_cooling_jun_sep": 0.06872235730890419,
+  "pct_cooling_jun_sep_lo": -0.07745749068721686,
+  "pct_cooling_jun_sep_hi": 0.2796909860307264,
+  "pct_shoulder_apr_may_oct": 0.0058007804221547055,
+  "pct_shoulder_apr_may_oct_lo": -0.09036595671152958,
+  "pct_shoulder_apr_may_oct_hi": 0.14538603832383323
+ },
+ {
+  "spec": "imputation_use_minctrl10",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": -0.005203611601523142,
+  "pct": -0.005190096267684852,
+  "ci_log": [
+   -0.13275663211079244,
+   0.14370295973901567
+  ],
+  "pct_ci": [
+   -0.1243218218715918,
+   0.1545411123922631
+  ],
+  "att_log_rowmean": 0.010393919639116584,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 77,
+  "n_treated_total": 93,
+  "n_control": 30,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 12
+  },
+  "support_rows": 0.6699640287769785,
+  "min_ctrl": 10,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 77
+  },
+  "n_control_by_use": {
+   "어린이집": 29,
+   "보건": 1
+  },
+  "anticipation_gap": 0.06981721013183173,
+  "anticipation_gap_ci": [
+   -0.0034630429454312207,
+   0.1290888899841577
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.020979824984889404,
+    0.08056444350279121
+   ],
+   "se": [
+    0.03238547496704457,
+    0.050523703136514844
+   ],
+   "p": [
+    0.5183213123906787,
+    0.11339201308497687
+   ],
+   "p_joint": 0.22596332979448489,
+   "wald": 3.011329004563048,
+   "df": [
+    2,
+    122
+   ],
+   "n_obs": 2005,
+   "n_buildings": 123,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.08980282861551053,
+    "n_bld": 11.0,
+    "weight": 0.14285714285714285
+   },
+   {
+    "cohort": 20230,
+    "att": 0.1598174802362644,
+    "n_bld": 12.0,
+    "weight": 0.15584415584415584
+   },
+   {
+    "cohort": 20240,
+    "att": -0.06015715750253408,
+    "n_bld": 10.0,
+    "weight": 0.12987012987012986
+   },
+   {
+    "cohort": 20211,
+    "att": -0.10635136040079889,
+    "n_bld": 1.0,
+    "weight": 0.012987012987012988
+   },
+   {
+    "cohort": 20220,
+    "att": 0.0029608595337803746,
+    "n_bld": 13.0,
+    "weight": 0.16883116883116883
+   },
+   {
+    "cohort": 20221,
+    "att": -0.022040832663161477,
+    "n_bld": 30.0,
+    "weight": 0.38961038961038963
+   }
+  ],
+  "pretrend_p": 0.22596332979448489,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.010706415123414581,
+  "median_bld_pct": -0.010649305455998626,
+  "median_bld_pct_ci": [
+   -0.14194715201749242,
+   0.10306873849615261
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.07434313051352265,
+    "pct": -0.07164690708993804,
+    "pct_ci": [
+     -0.22152310791570606,
+     0.02747699123970837
+    ],
+    "n_treated": 73,
+    "n_rows": 329,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.09287637365091592,
+    "pct": 0.0973260684666597,
+    "pct_ci": [
+     -0.10079698609130583,
+     0.3063569417320122
+    ],
+    "n_treated": 58,
+    "n_rows": 226,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.027947243575107493,
+    "pct": 0.028341431372851167,
+    "pct_ci": [
+     -0.04661602359010275,
+     0.239660290609365
+    ],
+    "n_treated": 77,
+    "n_rows": 190,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.07164690708993804,
+  "pct_heating_nov_mar_lo": -0.22152310791570606,
+  "pct_heating_nov_mar_hi": 0.02747699123970837,
+  "pct_cooling_jun_sep": 0.0973260684666597,
+  "pct_cooling_jun_sep_lo": -0.10079698609130583,
+  "pct_cooling_jun_sep_hi": 0.3063569417320122,
+  "pct_shoulder_apr_may_oct": 0.028341431372851167,
+  "pct_shoulder_apr_may_oct_lo": -0.04661602359010275,
+  "pct_shoulder_apr_may_oct_hi": 0.239660290609365
+ },
+ {
+  "spec": "imputation_strict_12_12",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": -0.0367971618014009,
+  "pct": -0.036128374493853976,
+  "ci_log": [
+   -0.13629865645869077,
+   0.04739532036850499
+  ],
+  "pct_ci": [
+   -0.1274180086778729,
+   0.0485364349686237
+  ],
+  "att_log_rowmean": -0.04384566123099958,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 49,
+  "n_treated_total": 49,
+  "n_control": 30,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 12
+  },
+  "support_rows": 0.7908163265306123,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 12,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 48,
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "어린이집": 29,
+   "보건": 1
+  },
+  "anticipation_gap": 0.01848689998126612,
+  "anticipation_gap_ci": [
+   -0.06753884686240734,
+   0.09937137780025475
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    0.004033936316083107,
+    -0.02609089619443911
+   ],
+   "se": [
+    0.047493918494997164,
+    0.06519832684545233
+   ],
+   "p": [
+    0.9325300219264125,
+    0.690119750192873
+   ],
+   "p_joint": 0.8051700246031656,
+   "wald": 0.4346099538759485,
+   "df": [
+    2,
+    78
+   ],
+   "n_obs": 1630,
+   "n_buildings": 79,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20230,
+    "att": 0.11498976028516114,
+    "n_bld": 4.0,
+    "weight": 0.08163265306122448
+   },
+   {
+    "cohort": 20231,
+    "att": -0.1417512437717406,
+    "n_bld": 7.0,
+    "weight": 0.14285714285714285
+   },
+   {
+    "cohort": 20241,
+    "att": -0.02381476355817039,
+    "n_bld": 10.0,
+    "weight": 0.20408163265306123
+   },
+   {
+    "cohort": 20240,
+    "att": 0.029354640821233246,
+    "n_bld": 11.0,
+    "weight": 0.22448979591836735
+   },
+   {
+    "cohort": 20211,
+    "att": -0.07471649323471953,
+    "n_bld": 1.0,
+    "weight": 0.02040816326530612
+   },
+   {
+    "cohort": 20220,
+    "att": -0.024933673708929027,
+    "n_bld": 8.0,
+    "weight": 0.16326530612244897
+   },
+   {
+    "cohort": 20221,
+    "att": -0.1351660991941018,
+    "n_bld": 8.0,
+    "weight": 0.16326530612244897
+   }
+  ],
+  "pretrend_p": 0.8051700246031656,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": -0.030779965134673917,
+  "median_bld_pct": -0.030311085026348272,
+  "median_bld_pct_ci": [
+   -0.13140596248799674,
+   0.07574241263250014
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.11198458035763943,
+    "pct": -0.10594195655065064,
+    "pct_ci": [
+     -0.18115948097604306,
+     0.012124033123573463
+    ],
+    "n_treated": 49,
+    "n_rows": 188,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.01988388575341573,
+    "pct": 0.020082886993969762,
+    "pct_ci": [
+     -0.1260352650237867,
+     0.15600755864136118
+    ],
+    "n_treated": 42,
+    "n_rows": 160,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.017777250327994775,
+    "pct": 0.017936206178187808,
+    "pct_ci": [
+     -0.09385307114383334,
+     0.1708363116962317
+    ],
+    "n_treated": 42,
+    "n_rows": 117,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.10594195655065064,
+  "pct_heating_nov_mar_lo": -0.18115948097604306,
+  "pct_heating_nov_mar_hi": 0.012124033123573463,
+  "pct_cooling_jun_sep": 0.020082886993969762,
+  "pct_cooling_jun_sep_lo": -0.1260352650237867,
+  "pct_cooling_jun_sep_hi": 0.15600755864136118,
+  "pct_shoulder_apr_may_oct": 0.017936206178187808,
+  "pct_shoulder_apr_may_oct_lo": -0.09385307114383334,
+  "pct_shoulder_apr_may_oct_hi": 0.1708363116962317
+ },
+ {
+  "spec": "imputation_use_no_anticip_holdout",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": -0.018729429204098102,
+  "pct": -0.0185551233576281,
+  "ci_log": [
+   -0.1027818096305478,
+   0.05839729039772129
+  ],
+  "pct_ci": [
+   -0.09767616962548864,
+   0.060136093946008495
+  ],
+  "att_log_rowmean": -0.020599099259953672,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 93,
+  "n_treated_total": 93,
+  "n_control": 30,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 12
+  },
+  "support_rows": 0.8660071942446043,
+  "min_ctrl": 1,
+  "anticip": 0,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 92,
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "어린이집": 29,
+   "보건": 1
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4",
+    "lead_-3_-1"
+   ],
+   "coef": [
+    0.020559861329375737,
+    0.08306942845867206,
+    0.098234861932622
+   ],
+   "se": [
+    0.03174268084690347,
+    0.049685375403488906,
+    0.04535216839322033
+   ],
+   "p": [
+    0.5183934406508554,
+    0.09710518181597658,
+    0.03225266454805085
+   ],
+   "p_joint": 0.1621754968980306,
+   "wald": 5.222875825203146,
+   "df": [
+    3,
+    122
+   ],
+   "n_obs": 2267,
+   "n_buildings": 123,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.11232732212285265,
+    "n_bld": 11.0,
+    "weight": 0.11827956989247312
+   },
+   {
+    "cohort": 20230,
+    "att": 0.11616750302597607,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20241,
+    "att": -0.012063591827903165,
+    "n_bld": 12.0,
+    "weight": 0.12903225806451613
+   },
+   {
+    "cohort": 20240,
+    "att": 0.0017300122648166603,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20211,
+    "att": -0.13791123418965215,
+    "n_bld": 1.0,
+    "weight": 0.010752688172043012
+   },
+   {
+    "cohort": 20220,
+    "att": -0.0336617134498595,
+    "n_bld": 13.0,
+    "weight": 0.13978494623655913
+   },
+   {
+    "cohort": 20221,
+    "att": -0.043954248681246214,
+    "n_bld": 30.0,
+    "weight": 0.3225806451612903
+   }
+  ],
+  "pretrend_p": 0.1621754968980306,
+  "nboot": 200,
+  "fit_window": "s-12..s-1",
+  "median_bld_log": -0.03222757415087478,
+  "median_bld_pct": -0.031713799906262996,
+  "median_bld_pct_ci": [
+   -0.10792219944452841,
+   0.0730351328958958
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.1062921740229265,
+    "pct": -0.10083810205557286,
+    "pct_ci": [
+     -0.16757104211293505,
+     -0.0045932442454750255
+    ],
+    "n_treated": 93,
+    "n_rows": 397,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.05256775423544226,
+    "pct": 0.05397397085995803,
+    "pct_ci": [
+     -0.08270914115811889,
+     0.20014438680841096
+    ],
+    "n_treated": 84,
+    "n_rows": 325,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.03896296754518764,
+    "pct": 0.03973197910966997,
+    "pct_ci": [
+     -0.060216462594472775,
+     0.16453572222760093
+    ],
+    "n_treated": 84,
+    "n_rows": 241,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.10083810205557286,
+  "pct_heating_nov_mar_lo": -0.16757104211293505,
+  "pct_heating_nov_mar_hi": -0.0045932442454750255,
+  "pct_cooling_jun_sep": 0.05397397085995803,
+  "pct_cooling_jun_sep_lo": -0.08270914115811889,
+  "pct_cooling_jun_sep_hi": 0.20014438680841096,
+  "pct_shoulder_apr_may_oct": 0.03973197910966997,
+  "pct_shoulder_apr_may_oct_lo": -0.060216462594472775,
+  "pct_shoulder_apr_may_oct_hi": 0.16453572222760093
+ },
+ {
+  "spec": "imputation_drop_jumpy",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.035613997342200276,
+  "pct": 0.03625577179886941,
+  "ci_log": [
+   -0.058746652412122846,
+   0.11110056026171558
+  ],
+  "pct_ci": [
+   -0.057054368100486585,
+   0.11750727802867389
+  ],
+  "att_log_rowmean": 0.017513633709067618,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 71,
+  "n_treated_total": 71,
+  "n_control": 19,
+  "n_control_by_role": {
+   "aux_2023": 11,
+   "control": 8
+  },
+  "support_rows": 0.8552941176470589,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 71
+  },
+  "n_control_by_use": {
+   "어린이집": 18,
+   "보건": 1
+  },
+  "anticipation_gap": 0.054829204228672795,
+  "anticipation_gap_ci": [
+   -0.002935518569963556,
+   0.1275906837967877
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.0037577936556215585,
+    0.04614631221849474
+   ],
+   "se": [
+    0.03590298980391518,
+    0.05536251977947431
+   ],
+   "p": [
+    0.9168769923632608,
+    0.40677743072942557
+   ],
+   "p_joint": 0.4753134636019801,
+   "wald": 1.5000627722395226,
+   "df": [
+    2,
+    89
+   ],
+   "n_obs": 1396,
+   "n_buildings": 90,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.07759145372865087,
+    "n_bld": 8.0,
+    "weight": 0.11267605633802817
+   },
+   {
+    "cohort": 20241,
+    "att": 0.19360940047562145,
+    "n_bld": 10.0,
+    "weight": 0.14084507042253522
+   },
+   {
+    "cohort": 20240,
+    "att": -0.026072633870719075,
+    "n_bld": 11.0,
+    "weight": 0.15492957746478872
+   },
+   {
+    "cohort": 20211,
+    "att": -0.1583998173116683,
+    "n_bld": 1.0,
+    "weight": 0.014084507042253521
+   },
+   {
+    "cohort": 20220,
+    "att": 0.009694756085616544,
+    "n_bld": 8.0,
+    "weight": 0.11267605633802817
+   },
+   {
+    "cohort": 20221,
+    "att": -0.006961000578206603,
+    "n_bld": 25.0,
+    "weight": 0.352112676056338
+   },
+   {
+    "cohort": 20230,
+    "att": 0.21936214900362785,
+    "n_bld": 8.0,
+    "weight": 0.11267605633802817
+   }
+  ],
+  "pretrend_p": 0.4753134636019801,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": 0.01467851401671505,
+  "median_bld_pct": 0.014786772445985363,
+  "median_bld_pct_ci": [
+   -0.0801047774880228,
+   0.11274006703990258
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.07562828027922718,
+    "pct": -0.07283921353950318,
+    "pct_ci": [
+     -0.15618862097866115,
+     -0.008643760272936007
+    ],
+    "n_treated": 71,
+    "n_rows": 297,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.10966193698784561,
+    "pct": 0.11590076191259535,
+    "pct_ci": [
+     -0.042408802650750754,
+     0.290292032815052
+    ],
+    "n_treated": 63,
+    "n_rows": 247,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.0865059156160053,
+    "pct": 0.09035781783685981,
+    "pct_ci": [
+     -0.021936838192491703,
+     0.20582084070591344
+    ],
+    "n_treated": 63,
+    "n_rows": 183,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.07283921353950318,
+  "pct_heating_nov_mar_lo": -0.15618862097866115,
+  "pct_heating_nov_mar_hi": -0.008643760272936007,
+  "pct_cooling_jun_sep": 0.11590076191259535,
+  "pct_cooling_jun_sep_lo": -0.042408802650750754,
+  "pct_cooling_jun_sep_hi": 0.290292032815052,
+  "pct_shoulder_apr_may_oct": 0.09035781783685981,
+  "pct_shoulder_apr_may_oct_lo": -0.021936838192491703,
+  "pct_shoulder_apr_may_oct_hi": 0.20582084070591344
+ },
+ {
+  "spec": "imputation_fit_s15_s4",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": -0.014829441801858557,
+  "pct": -0.01472002715023446,
+  "ci_log": [
+   -0.09294349245298614,
+   0.07516463473103391
+  ],
+  "pct_ci": [
+   -0.08875500893950805,
+   0.0780616226605062
+  ],
+  "att_log_rowmean": -0.018335019426934017,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 91,
+  "n_treated_total": 91,
+  "n_control": 30,
+  "n_control_by_role": {
+   "aux_2023": 18,
+   "control": 12
+  },
+  "support_rows": 0.8722426470588235,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "어린이집": 90,
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "어린이집": 29,
+   "보건": 1
+  },
+  "anticipation_gap": 0.05138103248340837,
+  "anticipation_gap_ci": [
+   -0.004006303729953271,
+   0.1066447777045511
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.01331026640340064,
+    0.05143007124318967
+   ],
+   "se": [
+    0.03312827252208084,
+    0.04558445612150973
+   ],
+   "p": [
+    0.6885608534553465,
+    0.2614704762540049
+   ],
+   "p_joint": 0.22056904097424465,
+   "wald": 3.061490286732795,
+   "df": [
+    2,
+    120
+   ],
+   "n_obs": 2254,
+   "n_buildings": 121,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20231,
+    "att": -0.10071664015865112,
+    "n_bld": 11.0,
+    "weight": 0.12087912087912088
+   },
+   {
+    "cohort": 20230,
+    "att": 0.11506029923963741,
+    "n_bld": 13.0,
+    "weight": 0.14285714285714285
+   },
+   {
+    "cohort": 20241,
+    "att": 0.010319626481063039,
+    "n_bld": 11.0,
+    "weight": 0.12087912087912088
+   },
+   {
+    "cohort": 20240,
+    "att": -0.0022857667762611993,
+    "n_bld": 13.0,
+    "weight": 0.14285714285714285
+   },
+   {
+    "cohort": 20211,
+    "att": -0.10551147320139308,
+    "n_bld": 1.0,
+    "weight": 0.01098901098901099
+   },
+   {
+    "cohort": 20220,
+    "att": -0.009547008926807895,
+    "n_bld": 12.0,
+    "weight": 0.13186813186813187
+   },
+   {
+    "cohort": 20221,
+    "att": -0.05337017984054877,
+    "n_bld": 30.0,
+    "weight": 0.32967032967032966
+   }
+  ],
+  "pretrend_p": 0.22056904097424465,
+  "nboot": 200,
+  "fit_window": "s-15..s-4",
+  "median_bld_log": -0.020582872701075727,
+  "median_bld_pct": -0.020372491267256154,
+  "median_bld_pct_ci": [
+   -0.10403109867500004,
+   0.0858974857027881
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.10171007703225694,
+    "pct": -0.09670860136765347,
+    "pct_ci": [
+     -0.16572091694424596,
+     0.016347140017880957
+    ],
+    "n_treated": 91,
+    "n_rows": 390,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.055800145399680014,
+    "pct": 0.05738633909403168,
+    "pct_ci": [
+     -0.06923118468140477,
+     0.20767363075431033
+    ],
+    "n_treated": 83,
+    "n_rows": 321,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.036900946851332106,
+    "pct": 0.0375902391676004,
+    "pct_ci": [
+     -0.0543331531829947,
+     0.1699293893746492
+    ],
+    "n_treated": 83,
+    "n_rows": 238,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.09670860136765347,
+  "pct_heating_nov_mar_lo": -0.16572091694424596,
+  "pct_heating_nov_mar_hi": 0.016347140017880957,
+  "pct_cooling_jun_sep": 0.05738633909403168,
+  "pct_cooling_jun_sep_lo": -0.06923118468140477,
+  "pct_cooling_jun_sep_hi": 0.20767363075431033,
+  "pct_shoulder_apr_may_oct": 0.0375902391676004,
+  "pct_shoulder_apr_may_oct_lo": -0.0543331531829947,
+  "pct_shoulder_apr_may_oct_hi": 0.1699293893746492
+ },
+ {
+  "spec": "imputation_health_controls_2024_25_only",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.07673275827474133,
+  "pct": 0.0797534826486157,
+  "ci_log": [
+   0.07673275827458834,
+   0.07673275827458834
+  ],
+  "pct_ci": [
+   0.0797534826484505,
+   0.0797534826484505
+  ],
+  "att_log_rowmean": 0.07673275827474131,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 1,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.9166666666666666,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": -0.5759912676939067,
+  "anticipation_gap_ci": [
+   -0.5759912676940596,
+   -0.5759912676940596
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.5550149231446356,
+    -0.2885827958436672
+   ],
+   "se": [
+    1.0837488467862088e-16,
+    1.4062151072366022e-16
+   ],
+   "p": [
+    1.2430944022830704e-16,
+    3.102140371367759e-16
+   ],
+   "p_joint": 1.3321081266493298e-17,
+   "wald": 5.635351947895237e+33,
+   "df": [
+    2,
+    1
+   ],
+   "n_obs": 18,
+   "n_buildings": 2,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20230,
+    "att": 0.07673275827474133,
+    "n_bld": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "pretrend_p": 1.3321081266493298e-17,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": 0.07673275827474133,
+  "median_bld_pct": 0.0797534826486157,
+  "median_bld_pct_ci": [
+   0.0797534826484505,
+   0.0797534826484505
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.19131958344548328,
+    "pct": -0.1741313879643085,
+    "pct_ci": [
+     -0.17413138796443484,
+     -0.17413138796443484
+    ],
+    "n_treated": 1,
+    "n_rows": 5,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.18955460527850007,
+    "pct": 0.2087111241949995,
+    "pct_ci": [
+     0.20871112419481475,
+     0.20871112419481475
+    ],
+    "n_treated": 1,
+    "n_rows": 4,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.5212199185677853,
+    "pct": 0.6840808385672643,
+    "pct_ci": [
+     0.6840808385670065,
+     0.6840808385670065
+    ],
+    "n_treated": 1,
+    "n_rows": 2,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.1741313879643085,
+  "pct_heating_nov_mar_lo": -0.17413138796443484,
+  "pct_heating_nov_mar_hi": -0.17413138796443484,
+  "pct_cooling_jun_sep": 0.2087111241949995,
+  "pct_cooling_jun_sep_lo": 0.20871112419481475,
+  "pct_cooling_jun_sep_hi": 0.20871112419481475,
+  "pct_shoulder_apr_may_oct": 0.6840808385672643,
+  "pct_shoulder_apr_may_oct_lo": 0.6840808385670065,
+  "pct_shoulder_apr_may_oct_hi": 0.6840808385670065
+ },
+ {
+  "spec": "imputation_health_drop_renewable",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.07673275827474133,
+  "pct": 0.0797534826486157,
+  "ci_log": [
+   0.07673275827458834,
+   0.07673275827458834
+  ],
+  "pct_ci": [
+   0.0797534826484505,
+   0.0797534826484505
+  ],
+  "att_log_rowmean": 0.07673275827474131,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 1,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.9166666666666666,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": -0.5759912676939067,
+  "anticipation_gap_ci": [
+   -0.5759912676940596,
+   -0.5759912676940596
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.5550149231446356,
+    -0.2885827958436672
+   ],
+   "se": [
+    1.0837488467862088e-16,
+    1.4062151072366022e-16
+   ],
+   "p": [
+    1.2430944022830704e-16,
+    3.102140371367759e-16
+   ],
+   "p_joint": 1.3321081266493298e-17,
+   "wald": 5.635351947895237e+33,
+   "df": [
+    2,
+    1
+   ],
+   "n_obs": 18,
+   "n_buildings": 2,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20230,
+    "att": 0.07673275827474133,
+    "n_bld": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "pretrend_p": 1.3321081266493298e-17,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": 0.07673275827474133,
+  "median_bld_pct": 0.0797534826486157,
+  "median_bld_pct_ci": [
+   0.0797534826484505,
+   0.0797534826484505
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.19131958344548328,
+    "pct": -0.1741313879643085,
+    "pct_ci": [
+     -0.17413138796443484,
+     -0.17413138796443484
+    ],
+    "n_treated": 1,
+    "n_rows": 5,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.18955460527850007,
+    "pct": 0.2087111241949995,
+    "pct_ci": [
+     0.20871112419481475,
+     0.20871112419481475
+    ],
+    "n_treated": 1,
+    "n_rows": 4,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.5212199185677853,
+    "pct": 0.6840808385672643,
+    "pct_ci": [
+     0.6840808385670065,
+     0.6840808385670065
+    ],
+    "n_treated": 1,
+    "n_rows": 2,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.1741313879643085,
+  "pct_heating_nov_mar_lo": -0.17413138796443484,
+  "pct_heating_nov_mar_hi": -0.17413138796443484,
+  "pct_cooling_jun_sep": 0.2087111241949995,
+  "pct_cooling_jun_sep_lo": 0.20871112419481475,
+  "pct_cooling_jun_sep_hi": 0.20871112419481475,
+  "pct_shoulder_apr_may_oct": 0.6840808385672643,
+  "pct_shoulder_apr_may_oct_lo": 0.6840808385670065,
+  "pct_shoulder_apr_may_oct_hi": 0.6840808385670065
+ },
+ {
+  "spec": "imputation_health_donut3",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.04820693813861189,
+  "pct": 0.04938779121304293,
+  "ci_log": [
+   0.0482069381384589,
+   0.0482069381384589
+  ],
+  "pct_ci": [
+   0.04938779121288239,
+   0.04938779121288239
+  ],
+  "att_log_rowmean": 0.04820693813861189,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 1,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.8888888888888888,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.5550149231446356,
+    -0.2885827958436672
+   ],
+   "se": [
+    1.0837488467862088e-16,
+    1.4062151072366022e-16
+   ],
+   "p": [
+    1.2430944022830704e-16,
+    3.102140371367759e-16
+   ],
+   "p_joint": 1.3321081266493298e-17,
+   "wald": 5.635351947895237e+33,
+   "df": [
+    2,
+    1
+   ],
+   "n_obs": 18,
+   "n_buildings": 2,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20230,
+    "att": 0.04820693813861189,
+    "n_bld": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "pretrend_p": 1.3321081266493298e-17,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": 0.04820693813861189,
+  "median_bld_pct": 0.04938779121304293,
+  "median_bld_pct_ci": [
+   0.04938779121288239,
+   0.04938779121288239
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.19131958344548328,
+    "pct": -0.1741313879643085,
+    "pct_ci": [
+     -0.17413138796443484,
+     -0.17413138796443484
+    ],
+    "n_treated": 1,
+    "n_rows": 5,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.299813585200741,
+    "pct": 0.34960719737002255,
+    "pct_ci": [
+     0.34960719736981605,
+     0.34960719736981605
+    ],
+    "n_treated": 1,
+    "n_rows": 1,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.5212199185677853,
+    "pct": 0.6840808385672643,
+    "pct_ci": [
+     0.6840808385670065,
+     0.6840808385670065
+    ],
+    "n_treated": 1,
+    "n_rows": 2,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.1741313879643085,
+  "pct_heating_nov_mar_lo": -0.17413138796443484,
+  "pct_heating_nov_mar_hi": -0.17413138796443484,
+  "pct_cooling_jun_sep": 0.34960719737002255,
+  "pct_cooling_jun_sep_lo": 0.34960719736981605,
+  "pct_cooling_jun_sep_hi": 0.34960719736981605,
+  "pct_shoulder_apr_may_oct": 0.6840808385672643,
+  "pct_shoulder_apr_may_oct_lo": 0.6840808385670065,
+  "pct_shoulder_apr_may_oct_hi": 0.6840808385670065
+ },
+ {
+  "spec": "imputation_health_use_sido",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": NaN,
+  "pct": NaN,
+  "ci_log": [
+   NaN,
+   NaN
+  ],
+  "pct_ci": [
+   NaN,
+   NaN
+  ],
+  "att_log_rowmean": NaN,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 0,
+  "n_treated": 0,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.0,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {},
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "error": "LinAlgError: Singular matrix"
+  },
+  "cohorts": [],
+  "pretrend_p": null,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": NaN,
+  "median_bld_pct": NaN,
+  "median_bld_pct_ci": [
+   NaN,
+   NaN
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": NaN,
+  "pct_heating_nov_mar_lo": NaN,
+  "pct_heating_nov_mar_hi": NaN,
+  "pct_cooling_jun_sep": NaN,
+  "pct_cooling_jun_sep_lo": NaN,
+  "pct_cooling_jun_sep_hi": NaN,
+  "pct_shoulder_apr_may_oct": NaN,
+  "pct_shoulder_apr_may_oct_lo": NaN,
+  "pct_shoulder_apr_may_oct_hi": NaN
+ },
+ {
+  "spec": "imputation_health_minctrl5",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": NaN,
+  "pct": NaN,
+  "ci_log": [
+   NaN,
+   NaN
+  ],
+  "pct_ci": [
+   NaN,
+   NaN
+  ],
+  "att_log_rowmean": NaN,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 0,
+  "n_treated": 0,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.0,
+  "min_ctrl": 5,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {},
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.5550149231446356,
+    -0.2885827958436672
+   ],
+   "se": [
+    1.0837488467862088e-16,
+    1.4062151072366022e-16
+   ],
+   "p": [
+    1.2430944022830704e-16,
+    3.102140371367759e-16
+   ],
+   "p_joint": 1.3321081266493298e-17,
+   "wald": 5.635351947895237e+33,
+   "df": [
+    2,
+    1
+   ],
+   "n_obs": 18,
+   "n_buildings": 2,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [],
+  "pretrend_p": 1.3321081266493298e-17,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": NaN,
+  "median_bld_pct": NaN,
+  "median_bld_pct_ci": [
+   NaN,
+   NaN
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": NaN,
+  "pct_heating_nov_mar_lo": NaN,
+  "pct_heating_nov_mar_hi": NaN,
+  "pct_cooling_jun_sep": NaN,
+  "pct_cooling_jun_sep_lo": NaN,
+  "pct_cooling_jun_sep_hi": NaN,
+  "pct_shoulder_apr_may_oct": NaN,
+  "pct_shoulder_apr_may_oct_lo": NaN,
+  "pct_shoulder_apr_may_oct_hi": NaN
+ },
+ {
+  "spec": "imputation_health_minctrl10",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": NaN,
+  "pct": NaN,
+  "ci_log": [
+   NaN,
+   NaN
+  ],
+  "pct_ci": [
+   NaN,
+   NaN
+  ],
+  "att_log_rowmean": NaN,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 0,
+  "n_treated": 0,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.0,
+  "min_ctrl": 10,
+  "anticip": 3,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {},
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.5550149231446356,
+    -0.2885827958436672
+   ],
+   "se": [
+    1.0837488467862088e-16,
+    1.4062151072366022e-16
+   ],
+   "p": [
+    1.2430944022830704e-16,
+    3.102140371367759e-16
+   ],
+   "p_joint": 1.3321081266493298e-17,
+   "wald": 5.635351947895237e+33,
+   "df": [
+    2,
+    1
+   ],
+   "n_obs": 18,
+   "n_buildings": 2,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [],
+  "pretrend_p": 1.3321081266493298e-17,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": NaN,
+  "median_bld_pct": NaN,
+  "median_bld_pct_ci": [
+   NaN,
+   NaN
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": NaN,
+    "pct": NaN,
+    "pct_ci": [
+     NaN,
+     NaN
+    ],
+    "n_treated": 0,
+    "n_rows": 0,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": NaN,
+  "pct_heating_nov_mar_lo": NaN,
+  "pct_heating_nov_mar_hi": NaN,
+  "pct_cooling_jun_sep": NaN,
+  "pct_cooling_jun_sep_lo": NaN,
+  "pct_cooling_jun_sep_hi": NaN,
+  "pct_shoulder_apr_may_oct": NaN,
+  "pct_shoulder_apr_may_oct_lo": NaN,
+  "pct_shoulder_apr_may_oct_hi": NaN
+ },
+ {
+  "spec": "imputation_health_strict_12_12",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.07673275827474133,
+  "pct": 0.0797534826486157,
+  "ci_log": [
+   0.07673275827458834,
+   0.07673275827458834
+  ],
+  "pct_ci": [
+   0.0797534826484505,
+   0.0797534826484505
+  ],
+  "att_log_rowmean": 0.07673275827474131,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 1,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.9166666666666666,
+  "min_ctrl": 1,
+  "anticip": 3,
+  "min_win": 12,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": -0.5759912676939067,
+  "anticipation_gap_ci": [
+   -0.5759912676940596,
+   -0.5759912676940596
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4"
+   ],
+   "coef": [
+    -0.5550149231446356,
+    -0.2885827958436672
+   ],
+   "se": [
+    1.0837488467862088e-16,
+    1.4062151072366022e-16
+   ],
+   "p": [
+    1.2430944022830704e-16,
+    3.102140371367759e-16
+   ],
+   "p_joint": 1.3321081266493298e-17,
+   "wald": 5.635351947895237e+33,
+   "df": [
+    2,
+    1
+   ],
+   "n_obs": 18,
+   "n_buildings": 2,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20230,
+    "att": 0.07673275827474133,
+    "n_bld": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "pretrend_p": 1.3321081266493298e-17,
+  "nboot": 200,
+  "fit_window": "s-12..s-4",
+  "median_bld_log": 0.07673275827474133,
+  "median_bld_pct": 0.0797534826486157,
+  "median_bld_pct_ci": [
+   0.0797534826484505,
+   0.0797534826484505
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.19131958344548328,
+    "pct": -0.1741313879643085,
+    "pct_ci": [
+     -0.17413138796443484,
+     -0.17413138796443484
+    ],
+    "n_treated": 1,
+    "n_rows": 5,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.18955460527850007,
+    "pct": 0.2087111241949995,
+    "pct_ci": [
+     0.20871112419481475,
+     0.20871112419481475
+    ],
+    "n_treated": 1,
+    "n_rows": 4,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.5212199185677853,
+    "pct": 0.6840808385672643,
+    "pct_ci": [
+     0.6840808385670065,
+     0.6840808385670065
+    ],
+    "n_treated": 1,
+    "n_rows": 2,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.1741313879643085,
+  "pct_heating_nov_mar_lo": -0.17413138796443484,
+  "pct_heating_nov_mar_hi": -0.17413138796443484,
+  "pct_cooling_jun_sep": 0.2087111241949995,
+  "pct_cooling_jun_sep_lo": 0.20871112419481475,
+  "pct_cooling_jun_sep_hi": 0.20871112419481475,
+  "pct_shoulder_apr_may_oct": 0.6840808385672643,
+  "pct_shoulder_apr_may_oct_lo": 0.6840808385670065,
+  "pct_shoulder_apr_may_oct_hi": 0.6840808385670065
+ },
+ {
+  "spec": "imputation_health_drop_jumpy",
+  "carrier": "total",
+  "status": "not estimable: RuntimeError: imputation_did: no treated rows"
+ },
+ {
+  "spec": "imputation_health_fit_s15_s4",
+  "carrier": "total",
+  "status": "not estimable (n<30): 1 treated buildings with >= 11 of the 12 fit months s-15..s-4",
+  "n_treated_total": 1,
+  "fit_window": "s-15..s-4"
+ },
+ {
+  "spec": "imputation_health_no_anticip_holdout",
+  "status": "ok",
+  "carrier": "total",
+  "att_log": 0.22073057519821065,
+  "pct": 0.24698741596338403,
+  "ci_log": [
+   0.2207305751982969,
+   0.2207305751982969
+  ],
+  "pct_ci": [
+   0.24698741596349172,
+   0.24698741596349172
+  ],
+  "att_log_rowmean": 0.22073057519821065,
+  "aggregation": "cohort ATTs, treated-count weights",
+  "nboot_ok": 200,
+  "n_treated": 1,
+  "n_treated_total": 1,
+  "n_control": 1,
+  "n_control_by_role": {
+   "control": 1
+  },
+  "support_rows": 0.9166666666666666,
+  "min_ctrl": 1,
+  "anticip": 0,
+  "min_win": 11,
+  "bootstrap": "buildings, stratified by role (treated / control pool) x use type, full refit",
+  "n_treated_by_use": {
+   "보건": 1
+  },
+  "n_control_by_use": {
+   "보건": 1
+  },
+  "anticipation_gap": NaN,
+  "anticipation_gap_ci": [
+   NaN,
+   NaN
+  ],
+  "pretrend": {
+   "reference": "lead_-12_-10",
+   "terms": [
+    "lead_-9_-7",
+    "lead_-6_-4",
+    "lead_-3_-1"
+   ],
+   "coef": [
+    -0.5550149231446359,
+    -0.2885827958436673,
+    -0.8571905073566669
+   ],
+   "se": [
+    3.5323504558062095e-16,
+    1.9782647084231237e-16,
+    4.1044243736312526e-16
+   ],
+   "p": [
+    4.051718340034341e-16,
+    4.3640939324789106e-16,
+    3.048281202388374e-16
+   ],
+   "p_joint": 1.0,
+   "wald": -2.903797319267957e+45,
+   "df": [
+    3,
+    1
+   ],
+   "n_obs": 24,
+   "n_buildings": 2,
+   "se_convention": "pyfixest default (CRV1; singleton cells dropped; small-sample factor G/(G-1) x (N-1)/(N-k) with non-nested absorbed effects counted in k; t(G-1) intervals)",
+   "joint_test": "Wald / q against F(q, G-1)"
+  },
+  "cohorts": [
+   {
+    "cohort": 20230,
+    "att": 0.22073057519821065,
+    "n_bld": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "pretrend_p": 1.0,
+  "nboot": 200,
+  "fit_window": "s-12..s-1",
+  "median_bld_log": 0.22073057519821065,
+  "median_bld_pct": 0.24698741596338403,
+  "median_bld_pct_ci": [
+   0.24698741596349172,
+   0.24698741596349172
+  ],
+  "season": {
+   "heating_nov_mar": {
+    "att_log": -0.047321766522014155,
+    "pct": -0.046219546408449386,
+    "pct_ci": [
+     -0.04621954640836712,
+     -0.04621954640836712
+    ],
+    "n_treated": 1,
+    "n_rows": 5,
+    "label": "exploratory (D21)"
+   },
+   "cooling_jun_sep": {
+    "att_log": 0.3335524222019695,
+    "pct": 0.39591822173045355,
+    "pct_ci": [
+     0.3959182217305739,
+     0.3959182217305739
+    ],
+    "n_treated": 1,
+    "n_rows": 4,
+    "label": "exploratory (D21)"
+   },
+   "shoulder_apr_may_oct": {
+    "att_log": 0.6652177354912548,
+    "pct": 0.9449139520320069,
+    "pct_ci": [
+     0.9449139520321748,
+     0.9449139520321748
+    ],
+    "n_treated": 1,
+    "n_rows": 2,
+    "label": "exploratory (D21)"
+   }
+  },
+  "pct_heating_nov_mar": -0.046219546408449386,
+  "pct_heating_nov_mar_lo": -0.04621954640836712,
+  "pct_heating_nov_mar_hi": -0.04621954640836712,
+  "pct_cooling_jun_sep": 0.39591822173045355,
+  "pct_cooling_jun_sep_lo": 0.3959182217305739,
+  "pct_cooling_jun_sep_hi": 0.3959182217305739,
+  "pct_shoulder_apr_may_oct": 0.9449139520320069,
+  "pct_shoulder_apr_may_oct_lo": 0.9449139520321748,
+  "pct_shoulder_apr_may_oct_hi": 0.9449139520321748
+ }
+]

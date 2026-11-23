@@ -1,0 +1,18 @@
+{
+ "source": "src/pi_regrade_all.py",
+ "n_matched": 3508,
+ "first_assigned": {
+  "A_cand": 2198,
+  "C": 1219,
+  "B": 91
+ },
+ "regraded": {
+  "A_cand": 2081,
+  "C": 1358,
+  "B": 69
+ },
+ "transitions": {
+  "A_cand->C": 117,
+  "B->C": 22
+ }
+}

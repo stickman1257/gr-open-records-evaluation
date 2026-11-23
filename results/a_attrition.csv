@@ -1,0 +1,38 @@
+stage_no,stage,all,sel_2021_22,sel_2023,sel_2024_25,sel_2026_out_of_scope,status,source,note
+1,Listed projects (program locator),4450,1490,860,1524,576,complete,data/processed/gr_list_all.csv (2026-11-13 01:20),
+2,Detail record retrieved,3874,1490,860,1524,0,complete,data/processed/gr_projects_raw.csv (2026-11-13 01:46),detail pages not requested for 2026
+3,Selection year in scope (2021-2025),3874,1490,860,1524,0,complete,data/processed/gr_projects_raw.csv (2026-11-13 01:46),
+3a,  of which construction start/end dates parseable,3722,1430,839,1453,0,complete,data/processed/gr_projects_raw.csv (2026-11-13 01:46),s03_energy.parse_period; informational (not a sequential filter until stage 7)
+4,Linkage attempted (address geocoding run),3874,1490,860,1524,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54),s02_link.py run covers only part of stage 3 until re-run
+5,Address matched to a unique parcel,3801,1433,852,1516,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54),"dropped: ADDR_NOT_FOUND=67, ADDR_AMBIGUOUS=6"
+6,Building register record found,3508,1333,779,1396,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54),dropped: REG_EMPTY=293
+7a,Link grade A_cand,2198,732,514,952,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54),
+7b,Link grade B,91,37,22,32,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54),
+7c,Link grade C (excluded),1219,564,243,412,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54),
+7,Link grade A_cand or B,2289,769,536,984,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54),
+7e,Link grade A_cand after the regrade (analysis grade),2081,718,468,895,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54) + detail records,"s02_link.regrade on every matched project (as src/pi_regrade_all.py); transitions: A_cand->C 117, B->C 22"
+7eb,Link grade B after the regrade,69,30,17,22,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54) + detail records,
+7ec,Link grade C after the regrade (excluded),1358,585,294,479,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54) + detail records,
+7d,  of which construction start/end dates parseable,2213,747,526,940,0,complete,data/processed/gr_parcels.csv (2026-11-13 04:54) + detail records,remaining gap to stage 8 = completion too late for 12 post months (treated_short) or control started before 2024-07 (control_early)
+8,"Role assigned (treated, control or 2023 selection), grades A_cand+B",1039,668,179,192,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),"written by s03_energy.py at the end of a run; dropped A/B projects = unparseable dates, treated_short, control_early"
+8a,"  Role: treated (dates parsed, completion leaves >=12 post months)",668,668,0,0,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),
+8b,"  Role: not-yet-treated control (2024-25 selections, start >= 2024-07)",192,0,0,192,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),
+8d,"  Role: 2023 selection, used only before its own start (control pool)",179,0,179,0,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),
+8c,  of which link grade A_cand as stored (before the regrade),995,636,173,186,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),
+8e,  of which link grade A_cand after the regrade (analysis grade),979,623,170,186,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),"s02_link.regrade applied at load time; treated: A 636 -> 623, A->B 0, A->C 13, B->A 0, use class changed 0 (to health centre 0); control: A 186 -> 186, A->B 0, A->C 0, B->A 0, use class changed 0 (to health centre 0); aux_2023: A 173 -> 170, A->B 0, A->C 3, B->A 0, use class changed 0 (to health centre 0)"
+8f,  of which grade A_cand after D23 (one physical building = one unit),949,622,170,157,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),"dropped later records: 31 ({'control': 30, 'treated': 1}) of 30 physical buildings; results/a_dedup.csv"
+8eh,    health centres (regraded use class),660,378,122,160,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),
+8ed,    daycare centres (regraded use class),319,245,48,26,0,complete,data/processed/analysis_buildings.csv (2026-11-17 18:28),
+9,Electricity meter queried (any month requested),1039,668,179,192,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),"passes present in file: [0, 1, 2, 3, 4, 5, 6, 'bulk']; pass 0 = 2 probe months per building, pass 1 = 12 pre + 12 post"
+10,Electricity data available (>=1 observed month),945,602,163,180,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),ok months with kWh<=0 (excluded): 0
+10c,  of which link grade A_cand as stored (before the regrade),911,577,160,174,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),"until 11/13 23:0x this row was filtered on the regraded grade although it was not labelled so; it now uses the stored grade (pairs with 7a, 8c)"
+10e,  of which link grade A_cand after the regrade (analysis grade),896,565,157,174,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),"pairs with 7e, 8e"
+11,Panel-ready: treated >=12 pre & >=12 post months; controls >=12 pre months,739,561,0,178,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),
+11a,  treated: >=12 pre & >=12 post observed months,561,561,0,0,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),
+11b,  treated: complete 12+12 window (months s-12..s-1 and e+1..e+12),393,393,0,0,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),
+11c,  controls: >=12 observed months before own start,178,0,0,178,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),
+12,"Primary sample (analysis_plan.md): stage 11, link grade A_cand",698,526,0,172,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),primary treated = sel_2021_22 column; sel_2023 auxiliary; grade = regraded (analysis grade) when stage 8e is available
+11d,"  treated: >= 11 of 12 months observed in each window, QA gate passed (rule of 11/13)",511,511,0,0,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),2021-10 electricity is empty in the API for most parcels; strict 12 + 12 after the QA gate: 379
+13,"Analysis sample (paper): health centres and daycares, grade A_cand, imputation frame",766,479,145,142,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),treated = sel_2021_22 with >= 1 supported post month; control pool = sel_2024_25 and sel_2023 buildings with >= 1 untreated month in the fit
+13h,  of which health centres,551,310,114,127,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),
+13d,  of which daycare centres,215,169,31,15,0,complete,data/processed/energy_monthly.csv (2026-11-17 18:28),

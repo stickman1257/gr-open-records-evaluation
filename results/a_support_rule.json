@@ -1,0 +1,308 @@
+{
+ "generated": "2026-11-17 20:59",
+ "rule": {
+  "min_buildings": 10,
+  "min_share_of_treated_post_months": 0.8,
+  "text": "pooled electricity ATT is the headline only if each use has >= 10 control-pool buildings observed in >= 80% of the treated post-period calendar months; otherwise health centres"
+ },
+ "definition": "Headline rule and control support (review R5; main.tex Sect. 4.2 'Headline rule', supplement Table S1 D11).\n\nRule (fixed by the PI before the final estimates): the pooled imputation ATT on electricity (health centres + daycares) is\nthe headline only if EACH use type has >= 10 control-pool buildings observed in >= 80% of the calendar months of the\ntreated post-period; otherwise the health-centre estimate is the headline and the pooled one is secondary.\n\nOperational definition used here (sample = the primary imputation frame of s04_analysis, electricity):\n  treated post-period calendar months of use u = the set of calendar months (yyyymm) in which >= 1 treated building of use u\n      in the analysis sample has an observed post month (e+1 .. e+12);\n  a control-pool building (2024-25 or 2023 selection, same use) is 'observed' in a month if that month is in the fit sample\n      (kWh > 0, before its own start minus the 3 trimmed months);\n  coverage of a building = observed months among the treated post-period months of its use / number of those months.\nThe json also gives the count under two variants (pooled treated post-period months of both uses; control months counted\nwithout the 3-month trim) so that the sensitivity of the rule's outcome to these readings is visible. The rule itself is not\nchanged here.\n\nSecond output: number of control-pool buildings observed per calendar month by use (and by selection group), next to the\nnumber of treated buildings with a post month in that calendar month -> supplement figure.\n\nNo network. Outputs: results/a_support_rule.json, results/a_support_controls_by_month.csv. Partial-data runs: debugging only.",
+ "min_win": 11,
+ "elec": {
+  "status": "ok",
+  "per_use": {
+   "health_centre": {
+    "n_treated": 310,
+    "n_treated_post_calendar_months": 50,
+    "treated_post_first": 202109,
+    "treated_post_last": 202510,
+    "n_control_pool": 241,
+    "n_control_pool_by_group": {
+     "control": 127,
+     "aux_2023": 114
+    },
+    "n_control_ge80": 67,
+    "coverage_quantiles": {
+     "p10": 0.42,
+     "p50": 0.52,
+     "p90": 0.92,
+     "max": 1.0
+    },
+    "n_control_ge50": 145,
+    "controls_per_treated_post_month": {
+     "min": 1.0,
+     "median": 126.0,
+     "months_with_0": 0,
+     "months_with_lt5": 1,
+     "months_with_lt10": 1
+    },
+    "n_control_ge80_pooled_months": 67,
+    "passes": true,
+    "n_control_ge80_no_trim": 71
+   },
+   "daycare": {
+    "n_treated": 169,
+    "n_treated_post_calendar_months": 46,
+    "treated_post_first": 202201,
+    "treated_post_last": 202510,
+    "n_control_pool": 46,
+    "n_control_pool_by_group": {
+     "aux_2023": 31,
+     "control": 15
+    },
+    "n_control_ge80": 0,
+    "coverage_quantiles": {
+     "p10": 0.34782608695652173,
+     "p50": 0.45652173913043476,
+     "p90": 0.717391304347826,
+     "max": 0.782608695652174
+    },
+    "n_control_ge50": 17,
+    "controls_per_treated_post_month": {
+     "min": 0.0,
+     "median": 17.0,
+     "months_with_0": 10,
+     "months_with_lt5": 13,
+     "months_with_lt10": 17
+    },
+    "n_control_ge80_pooled_months": 0,
+    "passes": false,
+    "n_control_ge80_no_trim": 3
+   }
+  },
+  "rule_met": false,
+  "rule_met_variants": {
+   "pooled_months": false,
+   "no_trim": false
+  }
+ },
+ "total": {
+  "status": "ok",
+  "per_use": {
+   "health_centre": {
+    "n_treated": 1,
+    "n_treated_post_calendar_months": 12,
+    "treated_post_first": 202306,
+    "treated_post_last": 202405,
+    "n_control_pool": 1,
+    "n_control_pool_by_group": {
+     "control": 1
+    },
+    "n_control_ge80": 1,
+    "coverage_quantiles": {
+     "p10": 0.9166666666666666,
+     "p50": 0.9166666666666666,
+     "p90": 0.9166666666666666,
+     "max": 0.9166666666666666
+    },
+    "n_control_ge50": 1,
+    "controls_per_treated_post_month": {
+     "min": 0.0,
+     "median": 1.0,
+     "months_with_0": 1,
+     "months_with_lt5": 12,
+     "months_with_lt10": 12
+    },
+    "n_control_ge80_pooled_months": 1,
+    "passes": false,
+    "n_control_ge80_no_trim": 1
+   },
+   "daycare": {
+    "n_treated": 92,
+    "n_treated_post_calendar_months": 46,
+    "treated_post_first": 202201,
+    "treated_post_last": 202510,
+    "n_control_pool": 29,
+    "n_control_pool_by_group": {
+     "aux_2023": 18,
+     "control": 11
+    },
+    "n_control_ge80": 0,
+    "coverage_quantiles": {
+     "p10": 0.34347826086956523,
+     "p50": 0.45652173913043476,
+     "p90": 0.7217391304347825,
+     "max": 0.782608695652174
+    },
+    "n_control_ge50": 12,
+    "controls_per_treated_post_month": {
+     "min": 0.0,
+     "median": 12.0,
+     "months_with_0": 10,
+     "months_with_lt5": 13,
+     "months_with_lt10": 18
+    },
+    "n_control_ge80_pooled_months": 0,
+    "passes": false,
+    "n_control_ge80_no_trim": 3
+   }
+  },
+  "rule_met": false,
+  "rule_met_variants": {
+   "pooled_months": false,
+   "no_trim": false
+  }
+ },
+ "treated_support": {
+  "definition": "Review round 2, minor 2: treated buildings with >= 1 supported post month against the treated buildings of the analysed sample.\nAnalysed sample = treated buildings in the imputation frame (grade A after the regrade, >= MIN_WIN of 12 months in each window, QA gate).\nA post month (e+1 .. e+12) is supported if its use x month cell holds >= 1 control-pool building in the fit (s04 imputation_setup,\nfit()['ok']); only supported post months enter the ATT, so n_treated of the estimate = n_treated_with_supported_post_month.\nSamples: headline_health_centre (specification imputation_health_only) and pooled (imputation_use; with by_use).",
+  "elec": {
+   "headline_health_centre": {
+    "status": "ok",
+    "spec_in_G7": "imputation_health_only",
+    "n_treated_analysed": 310,
+    "n_treated_with_post_month": 310,
+    "n_treated_with_supported_post_month": 310,
+    "n_treated_without_supported_post_month": 0,
+    "n_treated_all_post_months_supported": 310,
+    "share_treated_with_supported_post_month": 1.0,
+    "n_post_months": 3714,
+    "n_post_months_supported": 3714,
+    "share_post_months_supported": 1.0,
+    "median_supported_post_months_per_building": 12.0
+   },
+   "pooled": {
+    "status": "ok",
+    "spec_in_G7": "imputation_use",
+    "n_treated_analysed": 479,
+    "n_treated_with_post_month": 479,
+    "n_treated_with_supported_post_month": 479,
+    "n_treated_without_supported_post_month": 0,
+    "n_treated_all_post_months_supported": 439,
+    "share_treated_with_supported_post_month": 1.0,
+    "n_post_months": 5742,
+    "n_post_months_supported": 5506,
+    "share_post_months_supported": 0.958899338209683,
+    "median_supported_post_months_per_building": 12.0,
+    "by_use": {
+     "health_centre": {
+      "n_treated_analysed": 310,
+      "n_treated_with_post_month": 310,
+      "n_treated_with_supported_post_month": 310,
+      "n_treated_without_supported_post_month": 0,
+      "n_treated_all_post_months_supported": 310,
+      "share_treated_with_supported_post_month": 1.0,
+      "n_post_months": 3714,
+      "n_post_months_supported": 3714,
+      "share_post_months_supported": 1.0,
+      "median_supported_post_months_per_building": 12.0
+     },
+     "daycare": {
+      "n_treated_analysed": 169,
+      "n_treated_with_post_month": 169,
+      "n_treated_with_supported_post_month": 169,
+      "n_treated_without_supported_post_month": 0,
+      "n_treated_all_post_months_supported": 129,
+      "share_treated_with_supported_post_month": 1.0,
+      "n_post_months": 2028,
+      "n_post_months_supported": 1792,
+      "share_post_months_supported": 0.883629191321499,
+      "median_supported_post_months_per_building": 12.0
+     }
+    }
+   }
+  },
+  "total": {
+   "headline_health_centre": {
+    "status": "ok",
+    "spec_in_G7": "imputation_health_only",
+    "n_treated_analysed": 1,
+    "n_treated_with_post_month": 1,
+    "n_treated_with_supported_post_month": 1,
+    "n_treated_without_supported_post_month": 0,
+    "n_treated_all_post_months_supported": 0,
+    "share_treated_with_supported_post_month": 1.0,
+    "n_post_months": 12,
+    "n_post_months_supported": 11,
+    "share_post_months_supported": 0.9166666666666666,
+    "median_supported_post_months_per_building": 11.0
+   },
+   "pooled": {
+    "status": "ok",
+    "spec_in_G7": "imputation_use",
+    "n_treated_analysed": 93,
+    "n_treated_with_post_month": 93,
+    "n_treated_with_supported_post_month": 93,
+    "n_treated_without_supported_post_month": 0,
+    "n_treated_all_post_months_supported": 67,
+    "share_treated_with_supported_post_month": 1.0,
+    "n_post_months": 1112,
+    "n_post_months_supported": 963,
+    "share_post_months_supported": 0.8660071942446043,
+    "median_supported_post_months_per_building": 12.0,
+    "by_use": {
+     "health_centre": {
+      "n_treated_analysed": 1,
+      "n_treated_with_post_month": 1,
+      "n_treated_with_supported_post_month": 1,
+      "n_treated_without_supported_post_month": 0,
+      "n_treated_all_post_months_supported": 0,
+      "share_treated_with_supported_post_month": 1.0,
+      "n_post_months": 12,
+      "n_post_months_supported": 11,
+      "share_post_months_supported": 0.9166666666666666,
+      "median_supported_post_months_per_building": 11.0
+     },
+     "daycare": {
+      "n_treated_analysed": 92,
+      "n_treated_with_post_month": 92,
+      "n_treated_with_supported_post_month": 92,
+      "n_treated_without_supported_post_month": 0,
+      "n_treated_all_post_months_supported": 67,
+      "share_treated_with_supported_post_month": 1.0,
+      "n_post_months": 1100,
+      "n_post_months_supported": 952,
+      "share_post_months_supported": 0.8654545454545455,
+      "median_supported_post_months_per_building": 12.0
+     }
+    }
+   }
+  }
+ },
+ "record_based": {
+  "definition": "Record-based count (NO meter data, no outcome): control-pool candidates whose COLLECTION WINDOW can reach the 80% criterion.\nTreated post-period calendar months of a use = union over grade-A treated candidates of that use of e+1 .. e+12 (<= last collected\nmonth), from the construction dates in the program records. Collection window of a control-pool candidate = the months requested by\ns03_energy.plan for it (2024-25 selections: 2020-01 .. start-1; 2023 selections: 2020-07 .. start-1) minus the 3 trimmed months before\nits own start. A candidate 'can reach' the criterion if window months / treated post-period months >= 0.80. This is an upper bound on\nthe realised count: it assumes a meter is found and every requested month is returned.",
+  "last_collected_month": 202510,
+  "per_use": {
+   "health_centre": {
+    "n_treated_candidates": 377,
+    "n_treated_post_calendar_months": 50,
+    "treated_post_first": 202109,
+    "treated_post_last": 202510,
+    "n_control_pool_candidates": 257,
+    "n_control_pool_candidates_by_group": {
+     "control": 135,
+     "aux_2023": 122
+    },
+    "n_can_reach_80": 74,
+    "n_can_reach_80_by_group": {
+     "control": 74
+    },
+    "max_coverage": 1.0,
+    "median_coverage": 0.62,
+    "n_can_reach_50": 206,
+    "criterion_reachable": true
+   },
+   "daycare": {
+    "n_treated_candidates": 245,
+    "n_treated_post_calendar_months": 49,
+    "treated_post_first": 202110,
+    "treated_post_last": 202510,
+    "n_control_pool_candidates": 70,
+    "n_control_pool_candidates_by_group": {
+     "aux_2023": 48,
+     "control": 22
+    },
+    "n_can_reach_80": 1,
+    "n_can_reach_80_by_group": {
+     "control": 1
+    },
+    "max_coverage": 0.8367346938775511,
+    "median_coverage": 0.4897959183673469,
+    "n_can_reach_50": 30,
+    "criterion_reachable": false
+   }
+  },
+  "headline_use_reachable_from_records": "health_centre"
+ },
+ "headline": "health centres (pooled estimate secondary)",
+ "headline_spec_in_G7": "imputation_health_only",
+ "note": "evaluated on the energy data on disk at run time; partial-data outcomes are for debugging and are not the final outcome of the rule"
+}

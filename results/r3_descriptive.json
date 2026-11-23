@@ -1,0 +1,390 @@
+{
+ "label": "post hoc (Energy Policy review R3, E9 / E11)",
+ "locator_vs_statistics": [
+  {
+   "year": 2021,
+   "type": "total",
+   "locator": 896,
+   "kalis": 895,
+   "diff": 1
+  },
+  {
+   "year": 2021,
+   "type": "daycare",
+   "locator": 442,
+   "kalis": 443,
+   "diff": -1
+  },
+  {
+   "year": 2021,
+   "type": "health",
+   "locator": 403,
+   "kalis": 395,
+   "diff": 8
+  },
+  {
+   "year": 2021,
+   "type": "medical",
+   "locator": 31,
+   "kalis": 57,
+   "diff": -26
+  },
+  {
+   "year": 2021,
+   "type": "library",
+   "locator": 0,
+   "kalis": 0,
+   "diff": 0
+  },
+  {
+   "year": 2021,
+   "type": "senior",
+   "locator": 15,
+   "kalis": 0,
+   "diff": 15
+  },
+  {
+   "year": 2021,
+   "type": "other",
+   "locator": 5,
+   "kalis": 0,
+   "diff": 5
+  },
+  {
+   "year": 2022,
+   "type": "total",
+   "locator": 594,
+   "kalis": 575,
+   "diff": 19
+  },
+  {
+   "year": 2022,
+   "type": "daycare",
+   "locator": 274,
+   "kalis": 271,
+   "diff": 3
+  },
+  {
+   "year": 2022,
+   "type": "health",
+   "locator": 281,
+   "kalis": 276,
+   "diff": 5
+  },
+  {
+   "year": 2022,
+   "type": "medical",
+   "locator": 26,
+   "kalis": 28,
+   "diff": -2
+  },
+  {
+   "year": 2022,
+   "type": "library",
+   "locator": 0,
+   "kalis": 0,
+   "diff": 0
+  },
+  {
+   "year": 2022,
+   "type": "senior",
+   "locator": 9,
+   "kalis": 0,
+   "diff": 9
+  },
+  {
+   "year": 2022,
+   "type": "other",
+   "locator": 4,
+   "kalis": 0,
+   "diff": 4
+  },
+  {
+   "year": 2023,
+   "type": "total",
+   "locator": 860,
+   "kalis": 617,
+   "diff": 243
+  },
+  {
+   "year": 2023,
+   "type": "daycare",
+   "locator": 126,
+   "kalis": 72,
+   "diff": 54
+  },
+  {
+   "year": 2023,
+   "type": "health",
+   "locator": 192,
+   "kalis": 127,
+   "diff": 65
+  },
+  {
+   "year": 2023,
+   "type": "medical",
+   "locator": 13,
+   "kalis": 4,
+   "diff": 9
+  },
+  {
+   "year": 2023,
+   "type": "library",
+   "locator": 57,
+   "kalis": 38,
+   "diff": 19
+  },
+  {
+   "year": 2023,
+   "type": "senior",
+   "locator": 445,
+   "kalis": 376,
+   "diff": 69
+  },
+  {
+   "year": 2023,
+   "type": "other",
+   "locator": 27,
+   "kalis": 0,
+   "diff": 27
+  },
+  {
+   "year": 2024,
+   "type": "total",
+   "locator": 552,
+   "kalis": 562,
+   "diff": -10
+  },
+  {
+   "year": 2024,
+   "type": "daycare",
+   "locator": 62,
+   "kalis": 58,
+   "diff": 4
+  },
+  {
+   "year": 2024,
+   "type": "health",
+   "locator": 161,
+   "kalis": 163,
+   "diff": -2
+  },
+  {
+   "year": 2024,
+   "type": "medical",
+   "locator": 1,
+   "kalis": 1,
+   "diff": 0
+  },
+  {
+   "year": 2024,
+   "type": "library",
+   "locator": 0,
+   "kalis": 0,
+   "diff": 0
+  },
+  {
+   "year": 2024,
+   "type": "senior",
+   "locator": 321,
+   "kalis": 340,
+   "diff": -19
+  },
+  {
+   "year": 2024,
+   "type": "other",
+   "locator": 7,
+   "kalis": 0,
+   "diff": 7
+  },
+  {
+   "year": 2025,
+   "type": "total",
+   "locator": 972,
+   "kalis": 268,
+   "diff": 704
+  },
+  {
+   "year": 2025,
+   "type": "daycare",
+   "locator": 1,
+   "kalis": 0,
+   "diff": 1
+  },
+  {
+   "year": 2025,
+   "type": "health",
+   "locator": 164,
+   "kalis": 40,
+   "diff": 124
+  },
+  {
+   "year": 2025,
+   "type": "medical",
+   "locator": 1,
+   "kalis": 0,
+   "diff": 1
+  },
+  {
+   "year": 2025,
+   "type": "library",
+   "locator": 27,
+   "kalis": 12,
+   "diff": 15
+  },
+  {
+   "year": 2025,
+   "type": "senior",
+   "locator": 693,
+   "kalis": 191,
+   "diff": 502
+  },
+  {
+   "year": 2025,
+   "type": "other",
+   "locator": 86,
+   "kalis": 25,
+   "diff": 61
+  }
+ ],
+ "locator_flags": [
+  {
+   "year": 2021,
+   "records": 896,
+   "distinct_name_address": 896,
+   "distinct_address": 884,
+   "test_entries": 1,
+   "signature_type": 16,
+   "no_period": 6,
+   "zero_cost": 1,
+   "start_year_after_selection_year": 230,
+   "address_also_in_another_year": 15,
+   "repeated_entries": 0,
+   "kalis": 895,
+   "excess": 1,
+   "excess_after_repeats_and_tests": 0
+  },
+  {
+   "year": 2022,
+   "records": 594,
+   "distinct_name_address": 586,
+   "distinct_address": 569,
+   "test_entries": 1,
+   "signature_type": 27,
+   "no_period": 36,
+   "zero_cost": 0,
+   "start_year_after_selection_year": 503,
+   "address_also_in_another_year": 14,
+   "repeated_entries": 8,
+   "kalis": 575,
+   "excess": 19,
+   "excess_after_repeats_and_tests": 10
+  },
+  {
+   "year": 2023,
+   "records": 860,
+   "distinct_name_address": 853,
+   "distinct_address": 846,
+   "test_entries": 3,
+   "signature_type": 16,
+   "no_period": 5,
+   "zero_cost": 1,
+   "start_year_after_selection_year": 367,
+   "address_also_in_another_year": 40,
+   "repeated_entries": 7,
+   "kalis": 617,
+   "excess": 243,
+   "excess_after_repeats_and_tests": 233
+  },
+  {
+   "year": 2024,
+   "records": 552,
+   "distinct_name_address": 552,
+   "distinct_address": 546,
+   "test_entries": 1,
+   "signature_type": 19,
+   "no_period": 3,
+   "zero_cost": 1,
+   "start_year_after_selection_year": 83,
+   "address_also_in_another_year": 35,
+   "repeated_entries": 0,
+   "kalis": 562,
+   "excess": -10,
+   "excess_after_repeats_and_tests": -11
+  },
+  {
+   "year": 2025,
+   "records": 972,
+   "distinct_name_address": 832,
+   "distinct_address": 823,
+   "test_entries": 0,
+   "signature_type": 24,
+   "no_period": 42,
+   "zero_cost": 5,
+   "start_year_after_selection_year": 346,
+   "address_also_in_another_year": 21,
+   "repeated_entries": 140,
+   "kalis": 268,
+   "excess": 704,
+   "excess_after_repeats_and_tests": 564
+  }
+ ],
+ "comparison_health_records": {
+  "by_year": {
+   "2023": 122,
+   "2024": 61,
+   "2025": 74
+  },
+  "share_with": {
+   "period": 1.0,
+   "cost": 1.0,
+   "measures": 1.0
+  }
+ },
+ "controls_2024_only": {
+  "n_treated": 308,
+  "n_control": 55,
+  "att_log": -0.3027307141976295,
+  "pct": -0.26120198259711835,
+  "trend_att_log": -0.09323790718222898,
+  "trend_pct": -0.08902325339732764,
+  "gamma_per_year": -0.11151125367390892,
+  "n_clusters_sig": 95,
+  "ci_plain_sig": [
+   -0.3504111276105294,
+   -0.16286415678481037
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.06406403160037172
+ },
+ "controls_2023_2024": {
+  "n_treated": 308,
+  "n_control": 169,
+  "att_log": -0.28844625363237747,
+  "pct": -0.2505729169513906,
+  "trend_att_log": -0.08203689163277413,
+  "trend_pct": -0.07876202790352227,
+  "gamma_per_year": -0.10864906656210455,
+  "n_clusters_sig": 105,
+  "ci_plain_sig": [
+   -0.3327876488006384,
+   -0.15428208716620717
+  ],
+  "nboot_plain_sig": 1000,
+  "se_log_plain_sig": 0.06255732287618163
+ },
+ "calendar_보건": {
+  "hdd18": 0.00039989700597470914,
+  "cdd24": -0.004784339456500418,
+  "n_buildings": 241,
+  "n_obs": 12063,
+  "method": "y = a_i + l_t + b HDD18 + c CDD24 (t = calendar month; b, c identified across provinces within a month). The weather- and\nseason-adjusted level of month t = l_t minus the mean of l over the base-period months (2020-07..2021-06) of the same calendar month;\nquarterly values = mean over the quarter's months, s.e. from the cluster covariance of the l_t (building clusters)."
+ },
+ "calendar_어린이집": {
+  "hdd18": -0.0029990274246662987,
+  "cdd24": -0.005767395132018704,
+  "n_buildings": 46,
+  "n_obs": 1908,
+  "method": "y = a_i + l_t + b HDD18 + c CDD24 (t = calendar month; b, c identified across provinces within a month). The weather- and\nseason-adjusted level of month t = l_t minus the mean of l over the base-period months (2020-07..2021-06) of the same calendar month;\nquarterly values = mean over the quarter's months, s.e. from the cluster covariance of the l_t (building clusters)."
+ }
+}

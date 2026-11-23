@@ -1,0 +1,54 @@
+{
+ "source": "src/pi_api_probe.py",
+ "run_at": "2026-11-14T00:05:44+0900",
+ "design": {
+  "parcels": 21,
+  "parcels_by_carrier": {
+   "elec": 12,
+   "gas": 12
+  },
+  "probe_months": [
+   201801,
+   201807,
+   201901,
+   201907,
+   201912
+  ],
+  "positive_control": "same carrier status ok in at least one month of 2020 (cache); first 12 parcels per carrier by id"
+ },
+ "quota_hit": false,
+ "new_calls": 120,
+ "status_by_carrier_month": {
+  "elec_201801": {
+   "empty": 12
+  },
+  "elec_201807": {
+   "empty": 12
+  },
+  "elec_201901": {
+   "empty": 12
+  },
+  "elec_201907": {
+   "empty": 12
+  },
+  "elec_201912": {
+   "empty": 12
+  },
+  "gas_201801": {
+   "empty": 12
+  },
+  "gas_201807": {
+   "empty": 12
+  },
+  "gas_201901": {
+   "empty": 12
+  },
+  "gas_201907": {
+   "empty": 12
+  },
+  "gas_201912": {
+   "empty": 12
+  }
+ },
+ "any_ok_before_2020": false
+}

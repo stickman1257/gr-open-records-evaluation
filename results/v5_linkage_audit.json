@@ -1,0 +1,548 @@
+{
+ "label": "exploratory, post hoc (verification round V5)",
+ "source": "src/v5_linkage_audit.py",
+ "seed": 0,
+ "frame": {
+  "treated_A_cand": 622,
+  "treated_B": 26,
+  "treated_C": 19,
+  "control_pool_A_cand": 327
+ },
+ "sampling": "default_rng(0).choice without replacement on rows sorted by pid; order A_cand, B, C, controls",
+ "n_sampled": {
+  "treated_A_cand": 40,
+  "treated_B": 26,
+  "control_A_cand": 20,
+  "treated_C": 19
+ },
+ "coverage": {
+  "treated_A_cand": 0.0643,
+  "treated_B": 1.0,
+  "treated_C": 1.0,
+  "control_A_cand": 0.0612
+ },
+ "rules": "(written before any grade-wise tabulation of this script's output; the earlier AI-assisted audit\nresults/a_audit_links.json had been read). Precedence: conflicting > unresolved > record-consistent. \"Confirmed\" does not\nexist: the register cannot establish who uses a meter.\n  conflicting, if any of\n    C1 name_status == other          (some register / address-search name exists, none contains the facility's proper name\n                                      or its facility-type word)\n    C2 name_on_other_title           (the matched title has a name without the proper name while another title on the\n                                      parcel carries it: the link chose another building of the parcel)\n    C3 use_status == conflict        (facility type known, register main use outside the s02_link.USE_OK list)\n    C4 area_status == outside        (register area outside +/-30% of both area values of the project record)\n  unresolved, if no conflict and any of\n    U1 n_main_titles != 1            (several main buildings share the parcel meter, or none is recorded)\n    U2 collective                    (collective register or address-search building kind 1 = apartment complex)\n    U3 name_status in {blank, type_only}\n    U4 area_status in {footprint_only, no_project_area}\n    U5 use_status == facility_type_other\n  record-consistent otherwise: one main title, proper name found, use compatible, area within +/-30% of the project GFA.\nEvidence recorded but not used in the class: attached-building titles, administrative-code change, energy-response fields.\nThe class overlaps with the grade by construction (grade A already requires one main title, use and area agreement), so\nwithin grade A only the name and the footprint-only area can move a building out of record-consistent.",
+ "sample": {
+  "control_A_cand": {
+   "n": 20,
+   "record-consistent": {
+    "k": 18,
+    "share": 0.9,
+    "wilson95": [
+     0.699,
+     0.9721
+    ]
+   },
+   "unresolved": {
+    "k": 2,
+    "share": 0.1,
+    "wilson95": [
+     0.0279,
+     0.301
+    ]
+   },
+   "conflicting": {
+    "k": 0,
+    "share": 0.0,
+    "wilson95": [
+     -0.0,
+     0.1611
+    ]
+   },
+   "reasons": {
+    "U3": 2
+   }
+  },
+  "treated_A_cand": {
+   "n": 40,
+   "record-consistent": {
+    "k": 30,
+    "share": 0.75,
+    "wilson95": [
+     0.5981,
+     0.8581
+    ]
+   },
+   "unresolved": {
+    "k": 7,
+    "share": 0.175,
+    "wilson95": [
+     0.0875,
+     0.3195
+    ]
+   },
+   "conflicting": {
+    "k": 3,
+    "share": 0.075,
+    "wilson95": [
+     0.0258,
+     0.1986
+    ]
+   },
+   "reasons": {
+    "U3": 7,
+    "C1": 3
+   }
+  },
+  "treated_B": {
+   "n": 26,
+   "record-consistent": {
+    "k": 0,
+    "share": 0.0,
+    "wilson95": [
+     0.0,
+     0.1287
+    ]
+   },
+   "unresolved": {
+    "k": 23,
+    "share": 0.8846,
+    "wilson95": [
+     0.7102,
+     0.96
+    ]
+   },
+   "conflicting": {
+    "k": 3,
+    "share": 0.1154,
+    "wilson95": [
+     0.04,
+     0.2898
+    ]
+   },
+   "reasons": {
+    "U1": 26,
+    "U3": 3,
+    "C1": 3
+   }
+  },
+  "treated_C": {
+   "n": 19,
+   "record-consistent": {
+    "k": 0,
+    "share": 0.0,
+    "wilson95": [
+     0.0,
+     0.1682
+    ]
+   },
+   "unresolved": {
+    "k": 14,
+    "share": 0.7368,
+    "wilson95": [
+     0.5121,
+     0.8819
+    ]
+   },
+   "conflicting": {
+    "k": 5,
+    "share": 0.2632,
+    "wilson95": [
+     0.1181,
+     0.4879
+    ]
+   },
+   "reasons": {
+    "U5": 10,
+    "U4": 8,
+    "U1": 6,
+    "C1": 4,
+    "U3": 2,
+    "C3": 1,
+    "C4": 1
+   }
+  }
+ },
+ "census": {
+  "treated_A_cand": {
+   "n": 622,
+   "record-consistent": {
+    "k": 531,
+    "share": 0.8537,
+    "wilson95": [
+     0.8238,
+     0.8793
+    ]
+   },
+   "unresolved": {
+    "k": 79,
+    "share": 0.127,
+    "wilson95": [
+     0.1031,
+     0.1555
+    ]
+   },
+   "conflicting": {
+    "k": 12,
+    "share": 0.0193,
+    "wilson95": [
+     0.0111,
+     0.0334
+    ]
+   },
+   "reasons": {
+    "U3": 79,
+    "C1": 12
+   }
+  },
+  "treated_B": {
+   "n": 26,
+   "record-consistent": {
+    "k": 0,
+    "share": 0.0,
+    "wilson95": [
+     0.0,
+     0.1287
+    ]
+   },
+   "unresolved": {
+    "k": 23,
+    "share": 0.8846,
+    "wilson95": [
+     0.7102,
+     0.96
+    ]
+   },
+   "conflicting": {
+    "k": 3,
+    "share": 0.1154,
+    "wilson95": [
+     0.04,
+     0.2898
+    ]
+   },
+   "reasons": {
+    "U1": 26,
+    "U3": 3,
+    "C1": 3
+   }
+  },
+  "treated_C": {
+   "n": 19,
+   "record-consistent": {
+    "k": 0,
+    "share": 0.0,
+    "wilson95": [
+     0.0,
+     0.1682
+    ]
+   },
+   "unresolved": {
+    "k": 14,
+    "share": 0.7368,
+    "wilson95": [
+     0.5121,
+     0.8819
+    ]
+   },
+   "conflicting": {
+    "k": 5,
+    "share": 0.2632,
+    "wilson95": [
+     0.1181,
+     0.4879
+    ]
+   },
+   "reasons": {
+    "U5": 10,
+    "U4": 8,
+    "U1": 6,
+    "C1": 4,
+    "U3": 2,
+    "C3": 1,
+    "C4": 1
+   }
+  }
+ },
+ "census_control_pool_A": {
+  "n": 327,
+  "record-consistent": {
+   "k": 274,
+   "share": 0.8379,
+   "wilson95": [
+    0.7941,
+    0.8739
+   ]
+  },
+  "unresolved": {
+   "k": 41,
+   "share": 0.1254,
+   "wilson95": [
+    0.0938,
+    0.1657
+   ]
+  },
+  "conflicting": {
+   "k": 12,
+   "share": 0.0367,
+   "wilson95": [
+    0.0211,
+    0.063
+   ]
+  },
+  "reasons": {
+   "U3": 41,
+   "C1": 12,
+   "C3": 1,
+   "C4": 1
+  }
+ },
+ "census_headline_health_treated": {
+  "n": 310,
+  "record-consistent": {
+   "k": 280,
+   "share": 0.9032,
+   "wilson95": [
+    0.8652,
+    0.9314
+   ]
+  },
+  "unresolved": {
+   "k": 28,
+   "share": 0.0903,
+   "wilson95": [
+    0.0632,
+    0.1274
+   ]
+  },
+  "conflicting": {
+   "k": 2,
+   "share": 0.0065,
+   "wilson95": [
+    0.0018,
+    0.0232
+   ]
+  },
+  "reasons": {
+   "U3": 28,
+   "C1": 2
+  }
+ },
+ "census_headline_health_control": {
+  "n": 241,
+  "record-consistent": {
+   "k": 220,
+   "share": 0.9129,
+   "wilson95": [
+    0.8705,
+    0.9423
+   ]
+  },
+  "unresolved": {
+   "k": 20,
+   "share": 0.083,
+   "wilson95": [
+    0.0544,
+    0.1247
+   ]
+  },
+  "conflicting": {
+   "k": 1,
+   "share": 0.0041,
+   "wilson95": [
+    0.0007,
+    0.0231
+   ]
+  },
+  "reasons": {
+   "U3": 20,
+   "C1": 1
+  }
+ },
+ "signature_all_with_R": {
+  "n_with_R": 547,
+  "auc_matched": 0.6358,
+  "median_R": 0.8834,
+  "share_R_le_0p7": 0.2322
+ },
+ "signature_by_grade_class": {
+  "A_cand|conflicting": {
+   "n_with_R": 12,
+   "auc_matched": 0.6597,
+   "median_R": 0.8566,
+   "share_R_le_0p7": 0.25
+  },
+  "A_cand|record-consistent": {
+   "n_with_R": 455,
+   "auc_matched": 0.644,
+   "median_R": 0.8815,
+   "share_R_le_0p7": 0.2374
+  },
+  "A_cand|unresolved": {
+   "n_with_R": 62,
+   "auc_matched": 0.5984,
+   "median_R": 0.9374,
+   "share_R_le_0p7": 0.2097
+  },
+  "B|conflicting": {
+   "n_with_R": 1,
+   "auc_matched": 0.8333,
+   "median_R": 0.8197,
+   "share_R_le_0p7": 0.0
+  },
+  "B|unresolved": {
+   "n_with_R": 17,
+   "auc_matched": 0.5245,
+   "median_R": 0.9787,
+   "share_R_le_0p7": 0.1765
+  },
+  "C|conflicting": {
+   "n_with_R": 0
+  },
+  "C|unresolved": {
+   "n_with_R": 0
+  }
+ },
+ "signature_headline_by_class": {
+  "conflicting": {
+   "n_with_R": 2,
+   "auc_matched": 0.7,
+   "median_R": 0.8643,
+   "share_R_le_0p7": 0.0
+  },
+  "record-consistent": {
+   "n_with_R": 280,
+   "auc_matched": 0.6792,
+   "median_R": 0.8567,
+   "share_R_le_0p7": 0.2714
+  },
+  "unresolved": {
+   "n_with_R": 28,
+   "auc_matched": 0.6363,
+   "median_R": 0.8564,
+   "share_R_le_0p7": 0.2143
+  }
+ },
+ "signature_sample_by_grade_class": {
+  "A_cand|conflicting": {
+   "n_with_R": 3,
+   "auc_matched": 0.8833,
+   "median_R": 0.6058,
+   "share_R_le_0p7": 0.6667
+  },
+  "A_cand|record-consistent": {
+   "n_with_R": 26,
+   "auc_matched": 0.7212,
+   "median_R": 0.8269,
+   "share_R_le_0p7": 0.3462
+  },
+  "A_cand|unresolved": {
+   "n_with_R": 4,
+   "auc_matched": 0.6208,
+   "median_R": 0.8198,
+   "share_R_le_0p7": 0.5
+  },
+  "B|conflicting": {
+   "n_with_R": 1,
+   "auc_matched": 0.8333,
+   "median_R": 0.8197,
+   "share_R_le_0p7": 0.0
+  },
+  "B|unresolved": {
+   "n_with_R": 17,
+   "auc_matched": 0.5245,
+   "median_R": 0.9787,
+   "share_R_le_0p7": 0.1765
+  },
+  "C|conflicting": {
+   "n_with_R": 0
+  },
+  "C|unresolved": {
+   "n_with_R": 0
+  }
+ },
+ "evidence_frame": {
+  "treated_by_grade": {
+   "A_cand": {
+    "n": 622,
+    "n_main_gt1": 0,
+    "collective": 0,
+    "old_code_parcel": 140,
+    "old_code_recovery": 130,
+    "other_main_use_differs": 0,
+    "energy_items_max_gt1": 0,
+    "energy_addr_eq_register": 426,
+    "energy_addr_differs": 53,
+    "name": {
+     "match": 531,
+     "type_only": 46,
+     "blank": 33,
+     "other": 12
+    },
+    "area": {
+     "within30_gfa": 622
+    },
+    "use": {
+     "agree": 622
+    }
+   },
+   "B": {
+    "n": 26,
+    "n_main_gt1": 26,
+    "collective": 0,
+    "old_code_parcel": 8,
+    "old_code_recovery": 5,
+    "other_main_use_differs": 14,
+    "energy_items_max_gt1": 0,
+    "energy_addr_eq_register": 13,
+    "energy_addr_differs": 2,
+    "name": {
+     "match": 20,
+     "other": 3,
+     "blank": 2,
+     "type_only": 1
+    },
+    "area": {
+     "within30_gfa": 26
+    },
+    "use": {
+     "agree": 26
+    }
+   },
+   "C": {
+    "n": 19,
+    "n_main_gt1": 6,
+    "collective": 0,
+    "old_code_parcel": 2,
+    "old_code_recovery": 2,
+    "other_main_use_differs": 4,
+    "energy_items_max_gt1": 0,
+    "energy_addr_eq_register": 13,
+    "energy_addr_differs": 1,
+    "name": {
+     "match": 13,
+     "other": 4,
+     "blank": 2
+    },
+    "area": {
+     "within30_gfa": 10,
+     "footprint_only": 8,
+     "outside": 1
+    },
+    "use": {
+     "facility_type_other": 10,
+     "agree": 8,
+     "conflict": 1
+    }
+   }
+  }
+ },
+ "energy_api": {
+  "request_keys": "sigunguCd, bjdongCd, platGbCd, bun, ji, useYm (src/s03_energy.py); no building identifier can be passed",
+  "cached_response_fields": "useQty, newPlatPlc, number of items (data/raw/energy/calls_*.jsonl); the full response body was not cached",
+  "meter_to_building_attribution_in_cache": false,
+  "note": "No cached field identifies a building, a meter or a customer. Whether the live response carries further fields cannot be checked offline; the collection code read only useQty and newPlatPlc."
+ },
+ "ai_audit_overlap": {
+  "n": 70,
+  "note": "earlier AI-assisted labels (not human-verified) against this script's class, all 70",
+  "table": {
+   "correct|conflicting": 2,
+   "correct|record-consistent": 43,
+   "correct|unresolved": 17,
+   "uncertain|conflicting": 1,
+   "uncertain|unresolved": 5,
+   "wrong|unresolved": 2
+  }
+ }
+}
