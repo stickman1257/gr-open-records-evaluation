@@ -121,7 +121,7 @@ def fig_calendar():
     P = pd.read_csv(RES / "r3_calendar_profile.csv"); P = P[(P.use == "보건") & (P.n_buildings >= 20)].copy()
     P["t"] = P.quarter.str[:4].astype(int) + (P.quarter.str[-1].astype(int) - 1) / 4 + 0.125; summer = P.quarter.str.endswith("Q3")
     fig = plt.figure(figsize=(W, 2.4)); a = fig.add_axes([0.085, 0.2, 0.88, 0.72]); a.axhline(0, color=MID, lw=0.6)
-    for m, fc, ec, lab in [(~summer, INK, INK, "comparison health posts"), (summer, "white", "0.55", "July–September (imprecise)")]:
+    for m, fc, ec, lab in [(~summer, INK, INK, "comparison health posts"), (summer, "white", "0.55", "July–September (not reliable: cooling load not captured)")]:
         d = P[m]
         a.errorbar(d.t, 100 * d.pct, yerr=[100 * (d.pct - d.pct_lo), 100 * (d.pct_hi - d.pct)], fmt="o", ms=4, mfc=fc, mec=ec, mew=0.8, ecolor=ec, elinewidth=0.7, capsize=1.5, label=lab)
     for k, (ym, lab) in enumerate(EVENTS, 1):

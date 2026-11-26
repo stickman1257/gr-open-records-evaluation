@@ -12,10 +12,12 @@ The repository holds the code that produces the paper's numbers, tables and figu
 | `src/s04`–`s06` | panel, estimators (stacked DiD, imputation), counterfactual models, benchmark |
 | `src/a_*`, `v*`, `ep_*`, `pi_*` | descriptives, robustness checks, linkage audit, agency comparison |
 | `src/r3_*`, `r4*`, `x08_ep_v3.py` | main event study, sensitivity analysis, benchmark and the remaining reliability checks (`x01`, `x03` hold helpers for `x08`) |
-| `paper/` | figures 1–5 and Appendix D tables from `results/` |
+| `paper/` | figure and Appendix D scripts; `Supplementary_material_S1.pdf` (analysis history and table-to-file map) |
 | `results/` | aggregate result files behind the paper; no building-level rows |
 | `plan/analysis_plan.md` | analysis plan fixed before the main estimates |
 | `manifests/` | SHA-256 manifests of the collected records and bulk files |
+
+The analysis history (what was pre-specified, what changed after which results were seen, and how the sample and estimator changed from the earlier panel) is documented in Supplementary material S1 of the paper.
 
 ## Tables and figures
 
@@ -50,7 +52,7 @@ Python 3.13 with `requirements.txt`. The sensitivity analysis (`r3_honest*.py`) 
    ```
    The energy service allows about 10,000 calls per operation and day, so `s03_energy.py` is resumable and is repeated until complete. A later rebuild can differ if the services revise their data; `manifests/` records what was collected.
 3. Analyse: `bash run_all.sh` (about 3 hours).
-4. Without the data, `paper/make_figs_ep.py` and `paper/make_appD.py` redraw the figures and Appendix D from `results/`.
+4. Without the data, `paper/make_figs_ep.py` redraws the figures (except Fig. 2b, which needs building-level data) and `paper/make_appD.py` writes the values of Appendix Tables D.1–D.3 and D.5 from `results/` (in an earlier table layout). The values of Tables D.3–D.4 that the script does not write are in `r3_es_variants.csv`, `r4_analyses.json`, `r4b_analyses.json` and `r4d_analyses.json`; Supplementary material S1 (`paper/Supplementary_material_S1.pdf`, section S1.5) lists the file behind each table.
 
 ## Data
 
