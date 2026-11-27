@@ -23,6 +23,6 @@ for name, tr, dc in V:
     o, ev, S = R.event_long(B, E, cluster="sigungu", treated=tr, drop_ctrl=dc)
     p = o["post_1_12"]; rows.append(dict(variant=name, pct=p["pct"], pct_lo=p["pct_ci"][0], pct_hi=p["pct_ci"][1], theta_log=p["theta_log"], se_log=p["se_log"],
                                          n_treated=o["n_treated"], n_control=o["n_control"], n_clusters=o["n_clusters"], pretrend_p=o["pretrend"]["p_F"],
-                                         label="post hoc (after review round 4)"))
+                                         label="post hoc"))
     print(rows[-1], flush=True)
 pd.DataFrame(rows).to_csv(RES / "r3_es_variants.csv", index=False)

@@ -7,7 +7,7 @@ from common import RES
 import s04_analysis as A, r3_analysis as R
 from s03_energy import ym_add
 B, E = A.load(); G = pd.read_csv(RES / "r3_building_gaps.csv"); head = set(G.pid); R.TREATED_HEAD.update(head); Bi = B.drop_duplicates("pid").set_index("pid")
-out = {"label": "post hoc (Energy Policy review, round 2)"}
+out = {"label": "post hoc"}
 win = set(Bi.loc[list(head)][(Bi.loc[list(head)].start_ym >= 202207) & (Bi.loc[list(head)].start_ym <= 202306)].index)
 o, ev, S = R.event_long(B, E, cluster="sigungu", treated=head - win)
 out["without_start_2022H2_2023H1"] = dict(n_dropped=len(win), n_treated=o["n_treated"], post_1_12=o["post_1_12"], pretrend_p=o["pretrend"]["p_F"])

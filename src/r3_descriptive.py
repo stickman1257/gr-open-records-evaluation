@@ -39,7 +39,7 @@ def calendar_profile(B, E, use):
 
 
 def main():
-    B, E = A.load(); out = {"label": "post hoc (Energy Policy review R3, E9 / E11)"}
+    B, E = A.load(); out = {"label": "post hoc"}
     K = pd.read_csv(RES / "ep_scope_locator_kalis.csv"); F = pd.read_csv(RES / "ep_scope_locator_flags.csv")
     out["locator_vs_statistics"] = K.to_dict("records"); out["locator_flags"] = F.to_dict("records")
     Bi = B.drop_duplicates("pid")

@@ -143,7 +143,7 @@
   }
  },
  "treated_support": {
-  "definition": "Review round 2, minor 2: treated buildings with >= 1 supported post month against the treated buildings of the analysed sample.\nAnalysed sample = treated buildings in the imputation frame (grade A after the regrade, >= MIN_WIN of 12 months in each window, QA gate).\nA post month (e+1 .. e+12) is supported if its use x month cell holds >= 1 control-pool building in the fit (s04 imputation_setup,\nfit()['ok']); only supported post months enter the ATT, so n_treated of the estimate = n_treated_with_supported_post_month.\nSamples: headline_health_centre (specification imputation_health_only) and pooled (imputation_use; with by_use).",
+  "definition": "Treated buildings with >= 1 supported post month against the treated buildings of the analysed sample.\nAnalysed sample = treated buildings in the imputation frame (grade A after the regrade, >= MIN_WIN of 12 months in each window, QA gate).\nA post month (e+1 .. e+12) is supported if its use x month cell holds >= 1 control-pool building in the fit (s04 imputation_setup,\nfit()['ok']); only supported post months enter the ATT, so n_treated of the estimate = n_treated_with_supported_post_month.\nSamples: headline_health_centre (specification imputation_health_only) and pooled (imputation_use; with by_use).",
   "elec": {
    "headline_health_centre": {
     "status": "ok",

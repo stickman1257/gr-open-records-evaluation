@@ -50,7 +50,7 @@ def evaluate(B, E, carrier, ctrl_trim=3):
 
 
 def treated_support(B, E, carrier):
-    """Review round 2, minor 2: treated buildings with >= 1 supported post month against the treated buildings of the analysed sample."""
+    """Treated buildings with >= 1 supported post month against the treated buildings of the analysed sample."""
     def one(D):
         t = D[(D.ctrl == 0) & (D.post == 1)]; g = t.groupby("pid").ok
         n_any, n_all = int(g.any().sum()), int(g.all().sum()); n = int(D[D.ctrl == 0].pid.nunique()); n_post = int(t.pid.nunique())

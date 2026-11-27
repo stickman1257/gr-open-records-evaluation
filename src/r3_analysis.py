@@ -11,7 +11,7 @@ from common import RES, PROC
 import s04_analysis as A
 from s03_energy import ym_add
 
-LABEL = "post hoc (Energy Policy review R3; rules recorded in commit e580a0f before the run)"
+LABEL = "post hoc; decision rules recorded before the run"
 HC = ("보건",); CR = ("control", "aux_2023")
 NB = int(os.environ.get("R3_NBOOT", "1000")); NPROC = int(os.environ.get("R3_NPROC", "10"))
 PRE_LO, POST_HI, REF = -36, 24, (-6, -4)

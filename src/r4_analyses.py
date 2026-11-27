@@ -12,7 +12,7 @@ import pyfixest as pf
 from s03_energy import ym_add
 warnings.filterwarnings("ignore")
 pct = lambda a: float(np.exp(a) - 1)
-out = {"label": "post hoc (Energy Policy review R4, referee round 1)"}
+out = {"label": "post hoc"}
 B, E = A.load(); G = pd.read_csv(RES / "r3_building_gaps.csv"); head = set(G.pid); R.TREATED_HEAD.update(head)
 Bi = B.drop_duplicates("pid").set_index("pid")
 

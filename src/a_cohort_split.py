@@ -6,7 +6,7 @@ from common import RES
 import s04_analysis as A
 from a_interim_checks import estimate, rows_from, SAMPLES, HC, DC
 
-LABEL = "added after the interim look, before the final data (R3-4); cohort split = exploratory decomposition of the headline"
+LABEL = "added after the interim look, before the final data; cohort split = exploratory decomposition of the headline"
 NB = int(os.environ.get("IMP_NBOOT", "200")); NBH = int(os.environ.get("IMP_NBOOT_HEAD", "1000"))
 CUT = 202311
 

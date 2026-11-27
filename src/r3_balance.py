@@ -80,7 +80,7 @@ def _work(seed):
 def main():
     t0 = time.time(); B, E = A.load()
     S = A.imputation_setup(B, E, "elec", uses=("보건",), fe="use", ctrl_roles=("control", "aux_2023"), ctrl_trim=3, anticip=3)
-    d = covariates(B, E, S); one = np.ones(len(S["pids"])); res = dict(label="post hoc (Energy Policy review R3, E3d)", coverage=d["coverage"])
+    d = covariates(B, E, S); one = np.ones(len(S["pids"])); res = dict(label="post hoc", coverage=d["coverage"])
     for tag, early in (("trajectory_B3", True), ("B1_on_v3", False)):
         w, fl = weights(S, d, one, early); f = S["fit"](w); a = S["att"](f)[0]; pw = w[d["ci"]]; pw = pw[pw > 0]
         res[tag] = dict(att_log=float(a), pct=float(np.exp(a) - 1), flags={str(k): v for k, v in fl.items()}, ess=float(pw.sum() ** 2 / (pw ** 2).sum()), n_pos_controls=int(len(pw)),

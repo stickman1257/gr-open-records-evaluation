@@ -717,7 +717,7 @@ if __name__ == "__main__":
     rows = []
     for car in ["elec", "total", "gas"]:
         for name, kw, note in [("primary_within_use", prim, "primary stacked specification; treated months -3..-1 excluded"),
-                               ("primary_within_use_with_anticipation_months", prim_ev, "as primary but treated months -3..-1 kept (specification before round 2)"),
+                               ("primary_within_use_with_anticipation_months", prim_ev, "as primary but treated months -3..-1 kept (earlier specification)"),
                                ("originally_planned_feasible", dict(fe="sido", support=False, ctrl_until=202406), NOTE_PLAN)]:
             try:
                 r = stacked_did(B, E, car, **kw)

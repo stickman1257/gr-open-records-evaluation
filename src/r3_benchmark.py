@@ -117,7 +117,7 @@ def main():
                      implied_reversion_log=rho * dT, implied_reversion_se=abs(dT) * rho_se, implied_pct=float(np.exp(rho * dT) - 1),
                      note="building-level pseudo gap of random pseudo-treated health posts regressed on their baseline deviation from contemporaneous peers; "
                           "implied = rho x mean deviation of the retrofitted health posts (added after the debug run, before the v3 run)")
-    out = dict(label="post hoc (Energy Policy review R3)", seed=SEED, reps=REPS, mr_reps=MR_REPS, summary=Sm.to_dict("records"), meanrev=Mm.to_dict("records"),
+    out = dict(label="post hoc", seed=SEED, reps=REPS, mr_reps=MR_REPS, summary=Sm.to_dict("records"), meanrev=Mm.to_dict("records"),
                meanrev_paired_diff={k: dict(mean_log=float(v["mean"]), mc_se=float(v["mc_se"]), reps=int(v["count"]), pct=float(np.exp(v["mean"]) - 1)) for k, v in md.iterrows()},
                bias_diagnosis=dict(by_distance=diag.to_dict("records"), slope_per_month=float(fit.params["months_post_end_to_real_start"]),
                                    slope_se=float(fit.bse["months_post_end_to_real_start"]), slope_p=float(fit.pvalues["months_post_end_to_real_start"]), n=int(fit.nobs)),
